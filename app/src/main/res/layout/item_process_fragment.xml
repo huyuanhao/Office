@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_80"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/check_box_bg_selector"
+            android:layout_marginLeft="@dimen/widget_size_10" />
+
+        <ImageView
+            android:id="@+id/iv_process_img"
+            android:layout_width="@dimen/widget_size_65"
+            android:layout_height="@dimen/widget_size_65"
+            android:layout_marginBottom="@dimen/widget_size_7"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_7"
+            android:background="@color/app_title_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_7"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_process_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从业人员健康办理证"
+                android:textColor="@color/text_color_0e0e0e"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/font_size_15" />
+
+            <TextView
+                android:id="@+id/tv_process_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_size_5"
+                android:text="WJWL123456"
+                android:textColor="@color/hint"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_process_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_size_5"
+                android:text="2018-04-3 15:33:22"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/font_size_13" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lt_collection"
+            android:layout_width="@dimen/widget_size_80"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_process_gui"
+                android:layout_width="73dp"
+                android:layout_height="@dimen/widget_size_25"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/widget_size_5"
+                android:layout_marginTop="@dimen/widget_size_2"
+                android:background="@drawable/white_corners_5_dp"
+                android:gravity="center"
+                android:text="办事指南"
+                android:textColor="#0293ea"
+                android:textSize="@dimen/font_size_14" />
+
+            <TextView
+                android:id="@+id/tv_process_go"
+                android:layout_width="@dimen/widget_size_70"
+                android:layout_height="@dimen/widget_size_25"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/widget_size_5"
+                android:background="@drawable/blue2_corners_icon_dp"
+                android:gravity="center"
+                android:text="立即办事"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/widget_size_7"
+            android:layout_marginBottom="@dimen/widget_size_7"
+            android:layout_marginRight="@dimen/widget_size_15"
+            android:layout_marginTop="@dimen/widget_size_7"
+            android:background="@drawable/icon_mine_direction" />
+    </LinearLayout>
+</LinearLayout>

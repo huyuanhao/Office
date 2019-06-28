@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:textColor="@color/text_color_777777"
+        android:textSize="40px"
+        android:gravity="center_vertical"
+        android:paddingLeft="35px"
+        android:text="@string/choice_of_payment_institution"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,615 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.powerrich.office.oa.view.GradationScrollView
+            android:id="@+id/gradation_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.powerrich.office.oa.view.BannerLayout
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="630px"
+                    app:autoPlayDuration="4000"
+                    app:indicatorMargin="20dp"
+                    app:indicatorPosition="rightBottom"
+                    app:indicatorShape="oval"
+                    app:indicatorSpace="3dp"
+                    app:isAutoPlay="true"
+                    app:scrollDuration="600"
+                    app:selectedIndicatorColor="@color/blue_main"
+                    app:selectedIndicatorHeight="6dp"
+                    app:selectedIndicatorWidth="6dp"
+                    app:unSelectedIndicatorColor="@color/white"
+                    app:unSelectedIndicatorHeight="6dp"
+                    app:unSelectedIndicatorWidth="6dp" />
+
+
+                <com.powerrich.office.oa.view.NoScrollGridView
+                    android:id="@+id/gv_list_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/split_line_color"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/split_line_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="143px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/today_hot"
+                        android:textColor="@color/hot_bg_color"
+                        android:textSize="50px"
+                        android:textStyle="italic|bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30px"
+                        android:layout_marginLeft="35px"
+                        android:layout_marginRight="35px"
+                        android:src="@drawable/home_hot_video" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_hot_news"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/hot_news"-->
+                    <!--android:textColor="#333333"-->
+                    <!--android:textSize="46px" />-->
+
+                    <com.powerrich.office.oa.view.AutoScrollTextView
+                        android:id="@+id/scroll_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30px" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="420px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="45px"
+                        android:text="移动物联网博览会"
+                        android:textColor="#5E5E5E"
+                        android:textSize="44px" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_zhjs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130px"
+                                android:layout_height="120px"
+                                android:layout_marginTop="50px"
+                                android:src="@drawable/home_icon_zhjs" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50px"
+                                android:layout_marginBottom="50px"
+                                android:text="展会介绍"
+                                android:textColor="#0e0e0e"
+                                android:textSize="40px" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_chzn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130px"
+                                android:layout_height="120px"
+                                android:layout_marginTop="50px"
+                                android:src="@drawable/home_icon_chzn" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50px"
+                                android:layout_marginBottom="50px"
+                                android:text="参会指南"
+                                android:textColor="#0e0e0e"
+                                android:textSize="40px" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_lxwm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130px"
+                                android:layout_height="120px"
+                                android:layout_marginTop="50px"
+                                android:src="@drawable/home_icon_lxwm" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50px"
+                                android:layout_marginBottom="50px"
+                                android:text="联系我们"
+                                android:textColor="#0e0e0e"
+                                android:textSize="40px" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_qb_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130px"
+                                android:layout_height="120px"
+                                android:layout_marginTop="50px"
+                                android:src="@drawable/home_icon_ewmmp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50px"
+                                android:layout_marginBottom="50px"
+                                android:text="二维码门票"
+                                android:textColor="#0e0e0e"
+                                android:textSize="40px" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="470px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="45px"
+                        android:text="@string/government_service"
+                        android:textColor="@color/common_gray"
+                        android:textSize="43px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="70px"
+                        android:layout_marginRight="30px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_personal_work"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/home_work_bg_color"
+                            android:orientation="horizontal"
+                            android:padding="36px">
+
+                            <ImageView
+                                android:layout_width="168px"
+                                android:layout_height="168px"
+                                android:src="@drawable/home_icon_personal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="100px"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/personal_work"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="48px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25px"
+                                    android:text="@string/natural_person_work"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="36px" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_enterprise_work"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="36px"
+                            android:layout_weight="1"
+                            android:background="@color/home_work_bg_color"
+                            android:orientation="horizontal"
+                            android:padding="36px">
+
+                            <ImageView
+                                android:layout_width="168px"
+                                android:layout_height="168px"
+                                android:src="@drawable/home_icon_enterprise" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="100px"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/enterprise_work"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="48px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25px"
+                                    android:text="@string/legal_person_work"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="36px" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:layout_marginTop="20px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48px"
+                        android:layout_marginTop="37px"
+                        android:text="@string/vitality_yt"
+                        android:textColor="@color/common_gray"
+                        android:textSize="43px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110px"
+                        android:layout_marginTop="93px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_volunteer"
+                            android:layout_width="395px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="107px"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="240px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="志愿者资讯"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="44px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="@string/volunteer_text"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="32px" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="110px"
+                                android:layout_height="110px"
+                                android:layout_marginLeft="45px"
+                                android:src="@drawable/home_icon_volunteer" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mobile_business"
+                            android:layout_width="375px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="213px"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="220px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/move"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="44px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="@string/move_text"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="32px" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="110px"
+                                android:layout_height="110px"
+                                android:layout_marginLeft="45px"
+                                android:src="@drawable/home_icon_move" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110px"
+                        android:layout_marginTop="72px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_yingtan"
+                            android:layout_width="395px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="107px"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="240px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/volunteer"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="44px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="@string/yt_text"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="32px" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="110px"
+                                android:layout_height="110px"
+                                android:layout_marginLeft="45px"
+                                android:src="@drawable/home_icon_yt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_find_near"
+                            android:layout_width="375px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="213px"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="220px"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/find_rim"
+                                    android:textColor="@color/home_text_color"
+                                    android:textSize="44px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="@string/rim_text"
+                                    android:textColor="@color/home_text_bg_color"
+                                    android:textSize="32px" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="110px"
+                                android:layout_height="110px"
+                                android:layout_marginLeft="45px"
+                                android:src="@drawable/home_icon_rim" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.powerrich.office.oa.view.GradationScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="225px"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <!--android:layout_width="1080px"-->
+            <!--android:layout_height="100px"-->
+            <!--android:layout_marginLeft="40px"-->
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="0dp"
+                android:layout_height="100px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="90px"
+                android:layout_marginRight="40px"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="36px"
+                    android:src="@drawable/icon_search_common" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="查找服务事项"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:layout_marginRight="40px"
+                android:src="@drawable/icon_scan_common"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/qr_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.95"
+            android:visibility="gone"
+            android:background="#4C4C4C">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/guide_qr"
+                android:visibility="visible"
+                apps:visibility="visible" />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

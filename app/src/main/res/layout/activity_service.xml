@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg">
+
+    <com.powerrich.office.oa.view.GradationScrollView
+        android:id="@+id/fading_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="630px"
+                android:background="@drawable/banner_home_3" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/white_shape_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="36px"
+                    android:src="@drawable/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="查找服务事项"
+                    android:textColor="#999999"
+                    android:textSize="40px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="58px"
+                    android:layout_marginTop="30px"
+                    android:text="@string/recently_use"
+                    android:textColor="@color/common_gray"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="#F2F2F2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="245px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lately1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:layout_height="80px"
+                            android:src="@drawable/home_icon_1" />
+
+                        <TextView
+                            style="@style/normal_item_name"
+                            android:layout_marginTop="25px"
+                            android:text="@string/social_security_query"
+                            android:textColor="#0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
+                        android:id="@+id/lately2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:layout_height="80px"
+                            android:src="@drawable/home_icon_2" />
+
+                        <TextView
+                            style="@style/normal_item_name"
+                            android:layout_marginTop="25px"
+                            android:text="@string/accumulation_fund"
+                            android:textColor="#0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
+                        android:id="@+id/lately3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:layout_height="80px"
+                            android:src="@drawable/home_icon_3" />
+
+                        <TextView
+                            style="@style/normal_item_name"
+                            android:layout_marginTop="25px"
+                            android:text="@string/health_insurance"
+                            android:textColor="#0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
+                        android:id="@+id/lately4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:layout_height="80px"
+                            android:src="@drawable/home_icon_5" />
+
+                        <TextView
+                            style="@style/normal_item_name"
+                            android:layout_marginTop="25px"
+                            android:text="@string/registration"
+                            android:textColor="#0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="58px"
+                    android:layout_marginTop="30px"
+                    android:text="生活服务"
+                    android:textColor="#ff7315"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="#F2F2F2" />
+
+                <GridView
+                    android:id="@+id/gv_living"
+                    android:layout_width="match_parent"
+                    android:layout_height="490px"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="58px"
+                    android:layout_marginTop="30px"
+                    android:text="@string/medical_treatment_health"
+                    android:textColor="#11b11d"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="#F2F2F2" />
+
+                <GridView
+                    android:id="@+id/gv_medical"
+                    android:layout_width="match_parent"
+                    android:layout_height="340px"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="58px"
+                    android:layout_marginTop="30px"
+                    android:text="@string/insurance_and_housing"
+                    android:textColor="#1f74f0"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="#F2F2F2" />
+
+                <GridView
+                    android:id="@+id/gv_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="340px"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="58px"
+                    android:layout_marginTop="30px"
+                    android:text="出行"
+                    android:textColor="#F3990F"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:background="#F2F2F2" />
+
+                <GridView
+                    android:id="@+id/gv_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.powerrich.office.oa.view.GradationScrollView>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:background="@color/transparent"
+        android:paddingTop="87px">
+
+
+        <ImageView
+            android:id="@+id/system_back"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_back"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/transparent"
+            android:textSize="55px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_top_right"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_home"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_custom_right"
+            style="@style/common_top_btn"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_toLeftOf="@id/btn_top_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

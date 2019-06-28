@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:orientation="vertical"
+    tools:context=".activity.OnlineBookingDetailActivity">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_yyh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="52px"
+                    android:layout_marginBottom="52px"
+                    android:text="预约号:"
+                    android:textColor="#0e0e0e"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="28px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="50px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21px"
+                android:paddingLeft="33px"
+                android:paddingRight="33px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="48px"
+                    android:drawablePadding="62px"
+                    android:drawableTop="@drawable/pic_mine_suc"
+                    android:gravity="center"
+                    android:text="预约成功"
+                    android:textColor="#333333"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/tv_booking_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="148px"
+                    android:text="尊敬的 (先生/女士):"
+                    android:textColor="#333333"
+                    android:textSize="46px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80px"
+                    android:textColor="#333333"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_item_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80px"
+                    android:textColor="#333333"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="84px"
+                    android:text="&#8195;&#8195;为了您的预约事项顺利办理，并节约社会资源，请您按预约时间前往办理，非预约时间段将不再受理您的预约事项，请知悉！"
+                    android:textColor="#333333"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_to_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58px"
+                    android:drawableRight="@drawable/arrows2_right"
+                    android:gravity="center_vertical"
+                    android:text="办事指南"
+                    android:textColor="@color/blue_main"
+                    android:textSize="46px" />
+
+                <com.powerrich.office.oa.view.NoScrollListView
+                    android:id="@+id/lv_material_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38px"
+                    android:layout_marginTop="56px"
+                    android:layout_marginRight="38px"
+                    android:layout_marginBottom="65px"
+                    android:divider="@null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="127px"
+                    android:layout_margin="50px"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:text="取消预约"
+                    android:visibility="gone"
+                    android:textSize="46px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

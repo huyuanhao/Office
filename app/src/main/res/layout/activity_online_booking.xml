@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/common_title_bar" />
+    <include layout="@layout/common_search_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="256px"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ExpandableListView
+                    android:id="@+id/expand_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:groupIndicator="@null" />
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    style="@style/layout_wrap"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_no_data"
+                    android:gravity="center"
+                    android:drawablePadding="20px"
+                    android:text="@string/system_no_data"
+                    android:textColor="@color/text_color_8b8b8b"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>

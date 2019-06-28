@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/common_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_event"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_event"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:padding="@dimen/dp8"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/unit1"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_unit"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_time"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_time"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:padding="@dimen/dp8"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_man1"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_man"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_man_idcard"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_man_idcard"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_man_phone"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_man_phone"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:padding="@dimen/dp8"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:layout_weight="1"
+                    android:text="@string/booking_status"
+                    android:textSize="@dimen/ts14"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_booking_status"
+                    style="@style/normal_item_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts14"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

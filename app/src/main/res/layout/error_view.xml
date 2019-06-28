@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_app"
+    android:id="@+id/error_view"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="450px"
+        android:layout_height="650px"
+        android:layout_marginTop="250px"
+        android:src="@drawable/error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_0e0e0e"
+        android:layout_marginTop="50px"
+        android:textSize="70px"
+        android:text="网络异常"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:textColor="@color/text_color_545454"
+        android:textSize="60px"
+        android:text="网络不给力，请检查网络"/>
+
+    <TextView
+        android:id="@+id/tv_fresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:textColor="@color/text_color_777777"
+        android:textSize="40px"
+        android:visibility="gone"
+        android:text="下拉刷新重试"/>
+</LinearLayout>

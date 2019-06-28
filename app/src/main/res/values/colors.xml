@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_color">#db0f0c</color>
+    <color name="white">#ffffff</color>
+    <color name="pure_white">#f4f3f0</color>
+	<color name="red">#FF2525</color>
+    <color name="orange">#FF7400</color>
+    <color name="title_bar_color">#11a3fa</color>
+    <!-- 标题栏返回按钮的背景颜色 -->
+    <drawable name="button_backward_pressed">#40F64C99</drawable>
+    <drawable name="button_backward_normal">#0000</drawable>
+
+    <!-- 程序主色调 -->
+    <color name="bg_app">#ECECEC</color>
+    <color name="background">#f2f2f2</color>
+    <color name="table_background">#cbcbcb</color>
+    <color name="gray">#808080</color>
+    <color name="light_white">#fcfcfc</color>
+    <color name="tab_main_color">#1e1d1d</color>
+    <color name="blue_main">#11a3fa</color>
+    <color name="hint">#999999</color>
+    <color name="green">#4CEB74</color>
+    <color name="color_E25D60">#E25D60</color>
+    <color name="color_88000000">#88000000</color>
+    <color name="color_404E61">#404E61</color>
+
+
+    <!-- 内容条目按下时的样式 -->
+    <drawable name="pressed_bg">#f2f2f2</drawable>
+    <drawable name="nopressed_bg">#fff</drawable>
+
+    <!-- 警示性按钮的背景颜色 -->
+    <drawable name="button_caution_pressed">#d1337b</drawable>
+    <drawable name="button_caution_normal">#f559b1</drawable>
+    <color name="transparent">#00000000</color>
+
+    <color name="common_top_titlebar_bgcolor">#9fdbff</color>
+	<color name="gray_split_line_bg">#F8F8F8</color>
+	<color name="text_color_8b8b8b">#8b8b8b</color>
+	<color name="gray_system_bg">#ececec</color>
+	<color name="button_bg">#71C2F7</color>
+	<color name="text_color_545454">#545454</color>
+	<color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="mine_bottom_background">#fb1717</color>
+    <color name="gray_split_line_bg_group">#D6D6D6</color>
+	<color name="bg_red">#D64A55</color>
+    <color name="black">#000000</color>
+    <color name="text_color_777777">#777777</color>
+    <color name="common_gray">#666666</color>
+    <color name="text_color_0e0e0e">#0e0e0e</color>
+    <color name="split_line_color">#f2f0f0</color>
+
+    <color name="bar">#6CB0DF</color>
+    <color name="bar1">#B5C2CA</color>
+    <color name="bar2">#F5E6BF</color>
+    <color name="bar3">#81D8C8</color>
+
+    <color name="description">#686868</color>
+
+    <color name="line">#8CD276</color>
+    <color name="linefill">#DEEFE4</color>
+    <color name="line1">#E9C517</color>
+    <color name="line1fill">#ECEAD0</color>
+    <color name="line2">#9F8FBA</color>
+    <color name="line2fill">#EBE4F8</color>
+
+
+    <color name="login_user_name_select">#00CCFD</color>
+    <color name="login_logal_nomal">#000005</color>
+
+    <color name="send">#FF5400</color>
+    <color name="take">#29D955</color>
+    <color name="color_333333">#333333</color>
+    <color name="app_button_color">#58ccfe</color>
+    <color name="app_button_color_press">#4ba3c9</color>
+    <color name="app_title_color">#9fdbff</color>
+    <color name="app_work_select">#009AFF</color>
+    <color name="app_work_no_select">#333333</color>
+    <color name="main_select_color">#ea7805</color>
+    <color name="main_select_color_press">#e0703b05</color>
+    <color name="home_work_bg_color">#FBFBFB</color>
+    <color name="hot_bg_color">#F25358</color>
+    <color name="home_text_color">#646464</color>
+    <color name="home_text_bg_color">#9D9D9D</color>
+    <color name="registration_text_color">#4B4B4B</color>
+    <color name="color_fc7705">#ff7400</color>
+    <color name="table_item_color">#F0F9FF</color>
+    <color name="table_text_color">#00A1FD</color>
+    <color name="color_686868">#686868</color>
+    <color name="web_title_color">#9D9D9D</color>
+    <color name="table_color">#B5D1E9</color>
+    <color name="color_9fdbff">#00CDFF</color>
+    <color name="login_tv_bt">#11A3FA</color>
+    <color name="banner1">#1577E4</color>
+    <color name="banner2">#506DE4</color>
+    <color name="banner3">#367BF0</color>
+    <color name="banner4">#FE9230</color>
+
+    <color name="ddd">#dddddd</color>
+</resources>

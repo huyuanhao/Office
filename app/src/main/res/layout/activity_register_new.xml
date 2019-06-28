@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterNewActivity">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                style="@style/register_item_rlt"
+                android:layout_above="@+id/view_material">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_material_name"
+                        style="@style/register_tv_name_item"
+                        android:text="用户名" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_material"
+                        style="@style/register_et_item"
+                        android:hint="只能包含字母和数字，长度6~18位" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_material"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pwd"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_pwd"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pwd_name"
+                        style="@style/register_tv_name_item"
+                        android:text="密  码" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_pwd"
+                        style="@style/register_et_item"
+                        android:hint="密码长度6~18位"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_pwd"
+                    style="@style/register_view_line" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_again_pwd"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_again_pwd"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_again_pwd_name"
+                        style="@style/register_tv_name_item"
+                        android:text="确认密码" />
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_again_pwd"
+                        style="@style/register_et_item"
+                        android:hint="需与上次输入的密码保持一致"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_again_pwd"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_legal_name"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_legal_name"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_legal_name"
+                        style="@style/register_tv_name_item"
+                        android:text="法人姓名" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_legal_name"
+                        style="@style/register_et_item"
+                        android:hint="请输入法人姓名"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_legal_name"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_thename"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_thename"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_thename"
+                        style="@style/register_tv_name_item"
+                        android:text="姓名" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_thename"
+                        style="@style/register_et_item"
+                        android:hint="请输入姓名"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_thename"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_gr_idcard"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_gr_idcard"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_gr_idcard"
+                        style="@style/register_tv_name_item"
+                        android:text="身份证" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_gr_idcard"
+                        style="@style/register_et_item"
+                        android:hint="请输入身份证号码"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_gr_idcard"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_gr_effectiveStarting"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_gr_effectiveStarting"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_gr_effectiveStarting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/register_tv_name_item"
+                        android:text="身份证有效起始" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_gr_effectiveStarting_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48px"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入身份证有效起始"
+                        android:textColor="#0e0e0e"
+                         />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_gr_effectiveStarting"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gr_periodofvalidity"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_gr_periodofvalidity"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_gr_periodofvalidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/register_tv_name_item"
+                        android:text="身份证有效期" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_gr_periodofvalidity_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48px"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入身份证有效期"
+                        android:textColor="#0e0e0e"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_gr_periodofvalidity"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_idcard"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_idcard"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_idcard_name"
+                        style="@style/register_tv_name_item"
+                        android:text="身份证号" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_idcard"
+                        style="@style/register_et_item"
+                        android:hint="请输入法人身份证号"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_idcard"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_legal_type"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_legal_type"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_legal_type_name"
+                        style="@style/register_tv_name_item"
+                        android:text="企业类型" />
+
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_legal_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_legal_qy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25px"
+                            android:button="@drawable/radio_button_style"
+                            android:checked="true"
+                            android:text="企业"
+                            android:textSize="46px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_legal_shtt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/radio_button_style"
+                            android:text="社会团体"
+                            android:layout_marginLeft="27px"
+                            android:textSize="46px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_legal_sydw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/radio_button_style"
+                            android:text="事业单位"
+                            android:layout_marginLeft="27px"
+                            android:textSize="46px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_legal_zzjg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/radio_button_style"
+                            android:text="行政机关"
+                            android:layout_marginLeft="27px"
+                            android:textSize="46px" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_legal_type"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_company_name"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_company_name"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        style="@style/register_tv_name_item"
+                        android:text="企业名称" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_company_name"
+                        style="@style/register_et_item"
+                        android:hint="请输入企业名称"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_company_name"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_credit_code"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_credit_code"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_credit_code_name"
+                        style="@style/register_tv_name_item"
+                        android:text="信用代码" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_credit_code"
+                        style="@style/register_et_item"
+                        android:hint="请输入统一社会信用代码"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_credit_code"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_business_address"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_business_address"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_business_address_name"
+                        style="@style/register_tv_name_item"
+                        android:text="企业地址" />
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_business_address"
+                        style="@style/register_et_item"
+                        android:hint="请输入企业地址"
+                        android:inputType="textEmailSubject" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_business_address"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_email"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_email"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_emial_name"
+                        style="@style/register_tv_name_item"
+                        android:text="电子邮件" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_email_vital"
+                        style="@style/register_et_item"
+                        android:hint="请输入电子邮箱"
+                        android:inputType="textEmailSubject" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_email"
+                    style="@style/register_view_line" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_outside"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_outside"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_outside_name"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_333333"
+                        android:textSize="48px"
+                        android:text="是否省外人员" />
+
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_out_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/rb_out_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70px"
+                            android:checked="true"
+                            android:text="否" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_outside"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_phonenumber"
+                style="@style/register_item_rlt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_phonenumber"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_phonenumber_name"
+                        style="@style/register_tv_name_item"
+                        android:text="手机号" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_phonenumber"
+                        style="@style/register_et_item"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:hint="请输入手机号"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:id="@+id/bt_vetify"
+                        android:layout_width="330px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="20px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/valicode_selecter_shap"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:textColor="@color/white"
+                        android:textSize="43px" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_phonenumber"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_auth_code"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_auth_code"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_auth_code_name"
+                        style="@style/register_tv_name_item"
+                        android:text="验证码" />
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_auth_code"
+                        style="@style/register_et_item"
+                        android:hint="请输入验证码"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_auth_code"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_adress"
+                style="@style/register_item_rlt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/view_adress"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_adress_name"
+                        style="@style/register_tv_name_item"
+                        android:text="地址" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_adress"
+                        style="@style/register_et_item"
+                        android:inputType="text"
+                        android:hint="请输入地址" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_adress"
+                    style="@style/register_view_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="我已阅读并同意《江西政务服务实名认证用户平台注册协议》"
+                    android:textColor="#333333"
+                     android:textSize="40px"
+                    android:gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_register"
+                style="@style/normal_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="100px"
+                android:layout_marginRight="100px"
+                android:layout_marginBottom="20px"
+                android:background="@drawable/register_selecter_shap"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="53px" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

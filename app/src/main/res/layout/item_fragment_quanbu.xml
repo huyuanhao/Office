@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="match_parent"
+        android:layout_height="136px"
+        android:text="2018"
+        android:textSize="54px"
+        android:textColor="@color/color_333333"
+        android:background="#ECF0F2"
+        android:paddingTop="48px"
+        android:paddingLeft="53px"
+        android:textStyle="bold"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:layout_marginLeft="52px"
+            android:layout_marginTop="52px"
+            android:text="部分提取"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:layout_marginLeft="52px"
+            android:layout_marginTop="128px"
+            android:text="11-12"
+            android:textColor="@color/color_999999"
+            />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:layout_marginLeft="52px"
+            android:layout_marginTop="52px"
+            android:layout_marginRight="52px"
+            android:text="36,00"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

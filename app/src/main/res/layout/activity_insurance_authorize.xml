@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/common_title_bar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150px"
+        android:layout_marginTop="150px"
+        android:drawablePadding="30px"
+        android:drawableTop="@drawable/timg"
+        android:gravity="center"
+        android:text="鹰潭市生物识别综合服务平台"
+        android:textColor="@color/black"
+        android:textSize="50px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="#E2E2E2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="100px"
+        android:text="该服务由鹰潭市人力资源和社会保障局提供，向其提供以下权限即可继续操作"
+        android:textColor="@color/black"
+        android:textSize="46px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:drawableLeft="@drawable/roll_dot"
+        android:drawablePadding="10px"
+        android:text="使用身份信息(姓名、证件号)办理业务"
+        android:textColor="@color/text_color_545454"
+        android:textSize="36px" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/blue_corners_icon"
+        android:clickable="true"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="50px" />
+
+</LinearLayout>

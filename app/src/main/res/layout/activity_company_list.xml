@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_system_bg"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+    <include layout="@layout/no_data_view"/>
+</FrameLayout>

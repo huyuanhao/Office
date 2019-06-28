@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_town"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="城镇职工社保查询"
+            android:textColor="@color/color_333333"
+            android:drawableLeft="@drawable/basic_information"
+            android:gravity="center_vertical"
+            android:drawablePadding="15px"
+            android:textSize="46px" />
+
+
+        <TextView
+            android:layout_width="30px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="46px"
+            android:background="@drawable/icon_mine_direction" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_rural"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="城乡居民社保查询"
+            android:drawableLeft="@drawable/old_age_insurance"
+            android:gravity="center_vertical"
+            android:drawablePadding="15px"
+            android:textColor="@color/color_333333"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="46px"
+            android:background="@drawable/icon_mine_direction" />
+    </RelativeLayout>
+
+
+</LinearLayout>

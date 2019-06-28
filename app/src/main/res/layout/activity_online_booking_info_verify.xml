@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_confirm"
+        android:layout_below="@+id/top_layout"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_margin="@dimen/padding_10"
+            android:text="@string/online_Booking_infoVerify_title" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_20"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.powerrich.office.oa.view.NoEmojiEditText
+                android:id="@+id/et1"
+                style="@style/normal_item_name"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:hint="@string/online_Booking_infoVerify_name"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:padding="@dimen/dp8"
+                android:textSize="@dimen/ts14"
+                android:textColorHint="#666666" />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_system_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.powerrich.office.oa.view.NoEmojiEditText
+                android:id="@+id/et2"
+                style="@style/normal_item_name"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:hint="@string/online_Booking_infoVerify_id"
+                android:inputType="number"
+                android:digits="0123456789xyzXYZ"
+                android:maxLength="18"
+                android:padding="@dimen/dp8"
+                android:textSize="@dimen/ts14"
+                android:textColorHint="#666666" />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_system_bg" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et3"
+                    style="@style/normal_item_name"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:hint="@string/online_Booking_infoVerify_phone"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="@dimen/dp8"
+                    android:textSize="@dimen/ts14"
+                    android:textColorHint="#666666" />
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray_system_bg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_timer"
+                style="@style/normal_item_name"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_corner_selector"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/white"
+                android:text="@string/online_Booking_infoVerify_veeify" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                android:id="@+id/et4"
+                style="@style/normal_item_name"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:hint="@string/online_Booking_infoVerify_veeify_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/dp8"
+                android:textSize="@dimen/ts14"
+                android:textColorHint="#666666" />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_system_bg" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/normal_item_name"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/padding_20"
+        android:background="@drawable/blue_corners_icon"
+        android:padding="@dimen/padding_10"
+        android:text="@string/online_Booking_hall_confirm"
+        android:textColor="@color/white" />
+</RelativeLayout>

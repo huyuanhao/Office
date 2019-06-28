@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60px"
+    android:paddingLeft="60px"
+    android:paddingRight="60px"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入取消原因:"
+        android:textColor="@color/black"
+        android:textSize="50px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(注意:在预约时间24h内不可取消)"
+        android:textColor="@color/red"
+        android:textSize="40px"/>
+    <com.powerrich.office.oa.view.NoEmojiEditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:padding="10px"
+        android:lines="5"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:scrollbars="vertical"
+        android:gravity="left|top"
+        android:hint="(最多输入100字)"
+        android:textSize="46px"
+        android:textColor="@color/black"
+        android:background="@drawable/gray_stroke_corners_bg"/>
+</LinearLayout>

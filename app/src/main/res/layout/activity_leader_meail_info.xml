@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="65px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/write_man"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_write_man"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="textPersonName"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/consulting_telephone"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_tel"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/write_time"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_write_time"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="phone"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/consulting_title"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_title"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="textShortMessage"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/write_content"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_write_content"
+                    style="@style/normal_item_name"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:gravity="left|top"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:minLines="6"
+                    android:padding="20px"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/department_name"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_department_name"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="textEmailAddress"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/leader_name"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_leader_name"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/is_revert"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_is_revert"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="回信时间"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_revert_time"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/consulting_place"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et5"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:inputType="text"
+                    android:padding="20px"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:layout_marginRight="65px"
+                android:layout_marginTop="35px"
+                android:layout_marginBottom="@dimen/dp20"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="35px"
+                    android:text="@string/revert_content"
+                    android:textSize="46px"/>
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_revert_content"
+                    style="@style/normal_item_name"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:gravity="left|top"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:minLines="6"
+                    android:padding="20px"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="46px"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

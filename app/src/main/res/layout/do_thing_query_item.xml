@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="环节名称" />
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="办理人" />
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="办理部门" />
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="办理状态" />
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="接受时间" />
+
+            <TextView
+                style="@style/listViewTable"
+                android:layout_weight="1"
+                android:text="办理时间" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.powerrich.office.oa.view.NoScrollListView
+                android:id="@+id/horizontal_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                style="@style/layout_wrap"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_no_data"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="@string/system_no_data"
+                android:textColor="@color/text_color_8b8b8b"
+                android:textSize="50px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

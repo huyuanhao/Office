@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="631px"
+                    android:background="@color/title_bar_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="571px"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:text="账户余额（元）"
+                        android:textColor="@color/white"
+                        android:textSize="38px" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="132px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0000"
+                            android:textColor="@color/white"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tv_statu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:text="正常"
+                            android:textColor="@color/green"
+                            android:textSize="42px" />
+
+                        <ImageView
+                            android:layout_width="44px"
+                            android:layout_height="44px"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/jj_switcher" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/info"
+                        android:layout_width="421px"
+                        android:layout_height="104px"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/rect_0099ff"
+                        android:gravity="center"
+                        android:text="账户信息"
+                        android:textColor="@color/title_bar_color"
+                        android:textSize="46px" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="1162px"
+                    android:layout_height="300px"
+                    android:layout_below="@id/ll_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20px"
+                    app:cardCornerRadius="10px"
+                    app:cardElevation="10px"
+                    app:contentPadding="10px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_jc"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="100px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的缴存"
+                                android:textColor="@color/black"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:id="@+id/deposite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00.00"
+                                android:textColor="@color/green"
+                                android:textSize="84px" />
+
+                            <TextView
+                                android:id="@+id/deposite_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最近缴存 2018-01-01"
+                                android:textColor="@color/hint"
+                                android:textSize="36px" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="2px"
+                            android:layout_height="200px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/bg_app" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_tq"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="100px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的提取"
+                                android:textColor="@color/black"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:id="@+id/extract"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00.00"
+                                android:textColor="@color/color_E25D60"
+                                android:textSize="84px" />
+
+                            <TextView
+                                android:id="@+id/extract_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最近提取 2018-01-01"
+                                android:textColor="@color/hint"
+                                android:textSize="36px" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="62px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的贷款"
+                    android:textColor="@color/black"
+                    android:textSize="54px" />
+
+                <LinearLayout
+                    android:id="@+id/ll_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贷款状态"
+                            android:textColor="@color/color_404E61"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
+                            android:text="本期还款金额"
+                            android:textColor="@color/color_404E61"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:text="本期还款日期"
+                            android:textColor="@color/color_404E61"
+                            android:textSize="46px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/loan_statu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="正常还款"
+                            android:textColor="@color/green"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/loan_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25px"
+                            android:text="00.00元"
+                            android:textColor="@color/color_333333"
+                            android:textSize="55px"
+                            android:textStyle="bold" />px
+
+                        <TextView
+                            android:id="@+id/loan_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:text=""
+                            android:textColor="@color/hint"
+                            android:textSize="46px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="40px"
+                        android:background="@color/bg_app" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.powerrich.office.oa.view.RxRoundProgress
+                            android:id="@+id/roundProgressBar"
+                            android:layout_width="300px"
+                            android:layout_height="270px"
+                            android:layout_gravity="center_horizontal"
+                            app:roundColor1="@color/title_bar_color"
+                            app:roundProgressColor1="@color/title_bar_color"
+                            app:roundWidth1="20px"
+                            app:textColor1="@color/title_bar_color"
+                            app:textSize1="40px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="贷款余额"
+                            android:textColor="@color/title_bar_color"
+                            android:textSize="40px" />
+
+                        <ImageView
+                            android:layout_width="268px"
+                            android:layout_height="20px"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/jj_bottom_line" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="62px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="业务办理"
+                    android:textColor="@color/black"
+                    android:textSize="54px" />
+
+                <GridView
+                    android:id="@+id/gv_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="62px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="业务查询"
+                    android:textColor="@color/black"
+                    android:textSize="54px" />
+
+                <GridView
+                    android:id="@+id/gv_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

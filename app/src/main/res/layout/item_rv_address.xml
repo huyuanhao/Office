@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/dp10">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center_vertical">
+         <RadioButton
+             android:id="@+id/rb_address"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="@dimen/ts18"
+             android:text="设为默认地址"/>
+         <TextView
+             android:id="@+id/tv_edit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/edit"/>
+         <TextView
+             android:id="@+id/tv_delete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/dp10"
+             android:text="@string/delete"/>
+
+     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line_indicator_unselected_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周   键"
+            android:textSize="@dimen/ts18"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="151*******555"
+            android:layout_marginLeft="@dimen/dp20"
+            android:textSize="@dimen/ts18"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5">
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="的首发得分阿斯蒂芬打发斯蒂芬"
+            android:textSize="@dimen/ts14"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

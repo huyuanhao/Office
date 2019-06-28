@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <include layout="@layout/work_progress_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/icon_declare_success"
+                android:gravity="center"
+                android:text="申报成功"
+                android:textColor="@color/color_333333"
+                android:textSize="50px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="81px"
+                android:padding="@dimen/dp5"
+                android:text="尊敬的用户您好："
+                android:textColor="@color/color_333333"
+                android:textSize="46px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_declare_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="43px"
+                android:layout_marginTop="30px"
+                android:padding="10px"
+                android:text="您好，您申报的【个体工商户设立登记审批】办件已经申报成功。\n办件申报号为：【360600-scjdj-024-12018052902】您可在五个工作日后，在APP“个人办事”— “办件查询”或“用户中心”中查看预审结果。"
+                android:textColor="@color/color_333333"
+                android:textSize="46px" />
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="58px"
+                android:drawableRight="@drawable/arrows2_right"
+                android:gravity="center_vertical"
+                android:text="完成"
+                android:textColor="@color/blue_main"
+                android:textSize="46px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

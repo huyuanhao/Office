@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_voluteer_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cancle_press"
+            android:cacheColorHint="#00000000"
+            android:overScrollMode="never" />
+
+        <FrameLayout
+            android:id="@+id/fl_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/no_data_view" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

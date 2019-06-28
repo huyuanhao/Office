@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56px"
+        android:layout_marginTop="78px"
+        android:text="鹰潭市住房公积金管理中心"
+        android:textColor="@color/color_333333"
+        android:textSize="54px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56px"
+        android:layout_marginTop="30px"
+        android:text="鹰潭市月湖区胜利东路32号"
+        android:textColor="@color/color_666666"
+        android:textSize="54px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="56px"
+        android:layout_marginTop="55px"
+        android:layout_marginRight="56px"
+        android:background="#f1f1f1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56px"
+            android:drawableLeft="@drawable/icon_wangdian_phone"
+            android:text="电话"
+            android:textColor="@color/color_333333"
+            android:drawablePadding="8px"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/tv_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="56px"
+            android:drawableLeft="@drawable/icon_wangdian_navigation"
+            android:text="导航"
+            android:textColor="@color/color_333333"
+            android:drawablePadding="8px"
+            android:textSize="48px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56px"
+            android:layout_marginRight="56px"
+            android:drawableLeft="@drawable/icon_wangdian_detail"
+            android:text="详情"
+            android:textColor="@color/color_333333"
+            android:drawablePadding="8px"
+            android:textSize="48px" />
+    </RelativeLayout>
+</LinearLayout>

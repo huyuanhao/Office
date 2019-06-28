@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_system_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_table01"
+            style="@style/listViewTableItem"
+            android:textSize="40px"
+            android:textColor="#666666"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:id="@+id/tv_table02"
+            style="@style/listViewTableItem"
+            android:textSize="40px"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_table04"
+            style="@style/listViewTableItem"
+            android:textSize="40px"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_table03"
+            style="@style/listViewTableItem"
+            android:textSize="40px"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_table05"
+            style="@style/listViewTableItem"
+            android:textSize="40px"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

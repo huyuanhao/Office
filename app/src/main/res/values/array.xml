@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_title">
+        <item>全部</item>
+        <item>当季</item>
+        <item>免签</item>
+        <item>航旅</item>
+        <item>博物馆</item>
+        <item>自由行</item>
+    </string-array>
+    <!-- 受理范围（通办范围 0：全国、1：跨省、2：跨市、3：跨县） -->
+    <string-array name="accept_scope">
+        <item>全国</item>
+        <item>跨省</item>
+        <item>跨市</item>
+        <item>跨县</item>
+    </string-array>
+    <!-- 用户选择事项证照是否邮寄：1.邮寄 2.自取 -->
+    <string-array name="express_ways">
+        <item>自取</item>
+        <item>邮寄</item>
+    </string-array>
+
+    <!-- 获取材料形式：1.电子件2.原件3.复印件4.纸质材料 -->
+    <string-array name="material_form">
+        <item>电子件</item>
+        <item>原件</item>
+        <item>复印件</item>
+        <item>纸质材料</item>
+    </string-array>
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="process_state">
+        <item>当前进度：暂存</item>
+        <item>当前进度：待审核</item>
+        <item>当前进度：已受理</item>
+        <item>当前进度：已完结</item>
+        <item>当前进度：工作流退回</item>
+        <item>当前进度：待补交件</item>
+        <item>当前进度：受理回执</item>
+        <item>当前进度：预审退回</item>
+        <item>当前进度：不予受理</item>
+    </string-array>
+</resources>

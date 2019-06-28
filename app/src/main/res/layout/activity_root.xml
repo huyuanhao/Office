@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/blue_main"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rlt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/blue_main">
+
+
+        <ImageView
+            android:id="@+id/system_back"
+            android:layout_width="@dimen/widget_size_37"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/widget_size_10"
+            android:paddingRight="@dimen/widget_size_10"
+            android:src="@drawable/white_icon_back"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_top_right"
+            android:layout_width="@dimen/widget_size_37"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/widget_size_10"
+            android:paddingRight="@dimen/widget_size_10"
+            android:src="@drawable/white_icon_home"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_custom_right"
+            style="@style/common_top_btn"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:layout_toLeftOf="@id/btn_top_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_gravity="center"-->
+
+            <!--/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <FrameLayout
+        android:id="@+id/root_flt_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+    </FrameLayout>
+</LinearLayout>

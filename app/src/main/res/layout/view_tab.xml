@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_state2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_state2"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/ic_home_selector" />
+
+        <TextView
+            android:id="@+id/tv_state2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:tag="@string/tab_home"
+            android:text="首页"
+            android:textColor="@drawable/ic_text_color_selector"
+            android:textSize="34px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_state1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_state1"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/ic_first_selector" />
+
+        <TextView
+            android:id="@+id/tv_state1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:tag="@string/tab_service"
+            android:text="百事通"
+            android:textColor="@drawable/ic_text_color_selector"
+            android:textSize="34px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_state3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_state3"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/ic_message_selector" />
+
+        <TextView
+            android:id="@+id/tv_state3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:tag="@string/tab_third"
+            android:text="互动"
+            android:textColor="@drawable/ic_text_color_selector"
+            android:textSize="34px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_state4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_state4"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/ic_setting_selector" />
+
+        <TextView
+            android:id="@+id/tv_state4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:tag="@string/tab_mine"
+            android:text="我的"
+            android:textColor="@drawable/ic_text_color_selector"
+            android:textSize="34px" />
+    </LinearLayout>
+
+</LinearLayout>

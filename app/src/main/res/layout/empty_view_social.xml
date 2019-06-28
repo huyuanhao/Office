@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/bg_app">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="420px"
+        android:layout_height="504px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300px"
+        android:background="@drawable/nodate" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:text="暂未查询到相关信息"
+        android:textColor="#94A6B0"
+        android:textSize="57px" />
+
+    <TextView
+        android:id="@+id/empty_back"
+        android:layout_width="420px"
+        android:layout_height="130px"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500px"
+        android:gravity="center"
+        android:background="@drawable/blue_corners_64px"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="鹰潭市人力资源和社会保障局"
+        android:textColor="#999999"
+        android:textSize="30px" />
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="631px"
+        android:background="@color/title_bar_color"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="840px"
+            android:layout_height="80px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="38px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cb_swich_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="等额本息"
+                android:textColor="@color/text_blue_white" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cb_swich_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="等额本金"
+                android:textColor="@color/text_blue_white" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="89px">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首月月供参考(元)"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/mt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textColor="@color/white"
+                    android:textSize="80px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="支付利息(元)"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/mt_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textColor="@color/white"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="89px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每月递减(元)"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/mt_subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textColor="@color/white"
+                    android:textSize="80px" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="还款总额(元)"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/mt_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textColor="@color/white"
+                    android:textSize="48px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="62px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等额本金还款详情"
+            android:layout_marginBottom="62px"
+            android:textColor="@color/color_333333"
+            android:textSize="54px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款类型"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="公积金贷款"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款金额(万元)"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="600px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:hint="请输入金额"
+                android:gravity="center_vertical|right"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期限(年)"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <EditText
+                android:id="@+id/et_year"
+                android:layout_width="600px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:hint="请输入贷款期限"
+                android:gravity="center_vertical|right"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利率(%)"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="基准利率3.25%"
+                android:textColor="@color/color_404E61"
+                android:textSize="46px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/hint" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

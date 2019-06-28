@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="姓名" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/widget_size_20"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_p_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/font_size_14"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="姓别" />
+
+            <TextView
+                android:id="@+id/tv_p_sex"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="身份证号" />
+
+            <TextView
+                android:id="@+id/tv_p_card_id"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="手机号码" />
+
+            <TextView
+                android:id="@+id/tv_p_phone"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/tv_p_email"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="注册时间" />
+
+            <TextView
+                android:id="@+id/tv_p_register_time"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="企业名称" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/widget_size_8"-->
+                <!--android:layout_height="@dimen/widget_size_12"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/widget_size_15"-->
+                <!--android:background="@drawable/icon_mine_direction" />-->
+            <TextView
+                android:id="@+id/tv_c_name"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="统一社会信用代码" />
+
+            <TextView
+                android:id="@+id/tv_c_code"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="法人姓名" />
+
+            <TextView
+                android:id="@+id/tv_fr_name"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="法人身份证号" />
+
+            <TextView
+                android:id="@+id/tv_fr_id_card"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="企业地址" />
+
+            <TextView
+                android:id="@+id/tv_c_address"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="注册时间" />
+
+            <TextView
+                android:id="@+id/tv_c_register_time"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="联系人姓名" />
+
+            <TextView
+                android:id="@+id/tv_lxr_name"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="联系人电话" />
+
+            <TextView
+                android:id="@+id/tv_lxr_number"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:background="@drawable/layout_line_bg">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="联系人邮箱" />
+
+            <TextView
+                android:id="@+id/tv_lxr_email"
+                style="@style/user_info_item_right_userinfo"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:visibility="gone"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="电子证照" />
+
+        <ImageView
+            android:layout_width="@dimen/widget_size_8"
+            android:layout_height="@dimen/widget_size_12"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/widget_size_15"
+            android:background="@drawable/icon_mine_direction" />
+    </RelativeLayout>
+
+</LinearLayout>

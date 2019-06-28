@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8F9"
+    android:orientation="vertical"
+
+    tools:context=".fund.Activity.EarlyActivity">
+
+    <include layout="@layout/common_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="办理该业务需上传本人身份证，如果有配偶还要上传配偶身份证和结婚证"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="13dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/blue_corners_dp"
+                android:text="上传档案"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

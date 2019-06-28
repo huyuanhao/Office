@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+	<include layout="@layout/common_title_bar"/>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="@dimen/padding_10"
+	    android:background="#FCF5D1"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/ts16"
+	        android:text="@string/open_pharmacy_title"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/padding_10"
+	        android:textSize="@dimen/ts12"
+	        android:text="@string/open_pharmacy_content"/>
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/lv_pharmacy"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:listSelector="@color/transparent"
+	    ></ListView>
+</LinearLayout>

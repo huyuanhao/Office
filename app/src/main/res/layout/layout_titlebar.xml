@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:background="@color/common_top_titlebar_bgcolor" >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts18"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button_backward"
+        style="@style/Text.Title_Button"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_backward_selector"
+        android:drawableLeft="@drawable/back_arrow"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/table_margin"
+        android:text="@string/button_backward"
+        android:visibility="invisible" />
+
+    <!-- <Button
+        android:id="@+id/button_forward"
+        style="@style/Text.Title_Button"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_backward_selector"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingRight="@dimen/table_margin"
+        android:text="@string/button_submit"
+        android:visibility="invisible" /> -->
+        <Button
+        android:id="@+id/button_forward"
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingRight="@dimen/table_margin"
+        android:text=""
+        android:visibility="invisible" />
+
+</RelativeLayout>

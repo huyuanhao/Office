@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鹰潭市住房公积金对冲还贷协议"
+        android:textSize="54px"
+        android:layout_marginLeft="245px"
+        android:layout_marginTop="66px"
+        android:textColor="@color/color_333333"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48px"
+        android:textColor="@color/color_666666"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="60px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="546px"
+            android:layout_height="134px"
+            android:textColor="@color/white"
+            android:textSize="48px"
+            android:background="@drawable/blue_main_shape3"
+            android:text="同意"
+            android:layout_marginLeft="50px"
+            />
+
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="546px"
+            android:layout_height="134px"
+            android:textColor="@color/white"
+            android:textSize="48px"
+            android:background="@drawable/qian_hui_se_shap3"
+            android:text="不同意"
+            android:layout_marginLeft="50px"/>
+    </LinearLayout>
+
+</LinearLayout>

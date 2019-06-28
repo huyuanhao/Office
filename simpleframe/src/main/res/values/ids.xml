@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="content_view" type="id" />
+
+
+    <!--广告轮询-->
+    <item name="cb_item_tag" type="id"></item>
+    <item name="item_divider" type="id"/>
+    <item name="calligraphy_tag_id" type="id"/>
+    <item name="slidable_panel" type="id" />
+    <item name="slidable_content" type="id" />
+</resources>

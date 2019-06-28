@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="74px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <RadioButton
+            android:id="@+id/rb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/check_box_bg_selector"
+            android:button="@null"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="[默认地址]"
+            android:textColor="#ff7400"
+            android:textSize="46px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="陈志强"
+            android:textColor="@color/common_gray"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_weight="1"
+            android:text="13812345678"
+            android:textColor="@color/common_gray"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:background="@drawable/edit_bg_appbg"
+            android:padding="15px"
+            android:text="修改"
+            android:textColor="@color/common_gray"
+            android:textSize="46px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71px"
+            android:text="广通"
+            android:textColor="@color/common_gray"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35px"
+            android:text="光谷科技港"
+            android:textColor="@color/common_gray"
+            android:textSize="46px" />
+
+    </LinearLayout>
+
+</LinearLayout>

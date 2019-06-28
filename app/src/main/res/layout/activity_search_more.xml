@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="30px"
+            android:drawableTop="@drawable/ic_no_data"
+            android:gravity="center"
+            android:text="@string/system_no_data"
+            android:textColor="@color/text_color_8b8b8b"
+            android:textSize="50px"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/layout_refresh"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="#999999"
+            app:srlTextSizeTitle="13sp"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_linearlayout"></include>
+
+
+    <include layout="@layout/onetab_linearlayout"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+        <com.yt.simpleframe.view.StatusView
+            android:id="@+id/multiplestatusview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentView="@layout/simple_recycleview"
+            app:emptyView="@layout/no_data_view"
+            app:errorView="@layout/error_view"
+            app:loadingView="@layout/loading_view"
+            app:noNetworkView="@layout/no_network_view"></com.yt.simpleframe.view.StatusView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include layout="@layout/select_linearlayout" />
+</LinearLayout>

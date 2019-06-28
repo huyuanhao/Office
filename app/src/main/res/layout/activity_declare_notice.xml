@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title_bar" />
+
+    <include
+        android:id="@+id/ll_head"
+        layout="@layout/work_progress_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"
+        android:layout_below="@+id/ll_head"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12px"
+                    android:layout_height="61px"
+                    android:background="@color/blue_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="31px"
+                    android:text="办理条件"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_transact_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="54px"
+                android:layout_marginRight="62px"
+                android:layout_marginTop="52px"
+                android:text=""
+                android:textColor="@color/common_gray"
+                android:textSize="46px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_margin="35px"
+                android:background="@color/gray_system_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="47px"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12px"
+                    android:layout_height="61px"
+                    android:background="@color/blue_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="31px"
+                    android:text="办理材料"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.powerrich.office.oa.view.NoScrollListView
+                android:id="@+id/lv_transact_materials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/gray_system_bg" />
+
+            <CheckBox
+                android:id="@+id/cb_agree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32px"
+                android:layout_marginLeft="31px"
+                android:layout_marginRight="47px"
+                android:layout_marginTop="34px"
+                android:button="@drawable/check_box_bg_selector"
+                android:paddingLeft="32px"
+                android:text="本人已阅读申报须知并对办理该事项所提交的申报材料内容真实性负责。"
+                android:textColor="@color/hint"
+                android:textSize="50px" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33px"
+        android:layout_marginLeft="31px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/blue_corners_icon"
+        android:text="@string/online_booking_next"
+        android:textColor="@color/white"
+        android:textSize="50px" />
+
+</RelativeLayout>

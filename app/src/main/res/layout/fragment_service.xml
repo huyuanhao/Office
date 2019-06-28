@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg">
+
+    <com.powerrich.office.oa.view.GradationScrollView
+        android:id="@+id/gradation_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_service_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="630px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="8px"
+                        android:layout_height="54px"
+                        android:layout_marginLeft="37px"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="大美鹰潭"
+                        android:textColor="#666666"
+                        android:textSize="50px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="37px"
+                    android:layout_marginRight="37px"
+                    android:background="@color/gray_system_bg" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190px"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="37px"
+                    android:layout_marginRight="37px"
+                    android:layout_marginTop="20px">
+
+                    <ImageView
+                        android:layout_width="295px"
+                        android:layout_height="190px"
+                        android:src="@drawable/icon_trade_dmyt_img" />
+
+                    <TextView
+                        android:id="@+id/yingtan_news1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="306px"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="来鹰潭旅游吧！寻一番不同之美！"
+                        android:textColor="#333333"
+                        android:textSize="55px" />
+
+                    <TextView
+                        android:id="@+id/yingtan_news2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="306px"
+                        android:layout_marginTop="84px"
+                        android:ellipsize="end"
+                        android:lineSpacingMultiplier="1.3"
+                        android:lines="2"
+                        android:text="“第四届海峡两岸（鹰潭）青少年夏令营”丨在青山绿水中邂逅鹰潭贵溪"
+                        android:textColor="#666666"
+                        android:textSize="38px" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="272px"
+                    android:layout_marginLeft="37px"
+                    android:layout_marginRight="37px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/yingtan_news3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="18px"
+                        android:layout_marginRight="18px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_trade_dmyt_on" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:text="烈日下的坚守，致敬鹰潭平凡人！"
+                            android:textColor="#2078ac"
+                            android:textSize="40px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yingtan_news4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="18px"
+                        android:layout_marginRight="18px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_trade_dmyt_tw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:text="哪里凉快哪呆着去？鹰潭这些地方给你最凉爽"
+                            android:textColor="#2078ac"
+                            android:textSize="40px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yingtan_news5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="18px"
+                        android:layout_marginRight="18px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:src="@drawable/icon_trade_dmyt_tr" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:text="旅游安全小tips，请了解一下下！"
+                            android:textColor="#2078ac"
+                            android:textSize="40px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="8px"
+                        android:layout_height="54px"
+                        android:layout_marginLeft="37px"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="便民服务"
+                        android:textColor="#666666"
+                        android:textSize="50px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="37px"
+                    android:layout_marginRight="37px"
+                    android:background="@color/gray_system_bg" />
+
+                <GridView
+                    android:id="@+id/gv_convenient_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="8px"
+                        android:layout_height="54px"
+                        android:layout_marginLeft="37px"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="附近"
+                        android:textColor="#666666"
+                        android:textSize="50px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="37px"
+                    android:layout_marginRight="37px"
+                    android:background="@color/gray_system_bg" />
+
+                <GridView
+                    android:id="@+id/gv_nearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.powerrich.office.oa.view.GradationScrollView>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingTop="65px"
+        android:background="@color/transparent">
+
+
+        <ImageView
+            android:id="@+id/system_back"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_back"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:text="百事通"
+            android:textSize="55px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_top_right"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_home"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_custom_right"
+            style="@style/common_top_btn"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_toLeftOf="@id/btn_top_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

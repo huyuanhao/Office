@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include 
+        android:id="@+id/layout_title"
+        layout="@layout/common_title_bar" />
+	<ScrollView 
+	    android:id="@+id/scrollview"
+	    android:layout_below="@+id/layout_title"
+	    android:layout_above="@+id/ll_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="收件人"
+            android:textSize="@dimen/ts16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="3"
+            android:text="省水利局"
+            android:textSize="@dimen/ts16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="姓名"
+            android:textSize="@dimen/ts16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="3"
+            android:text="反映人"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/ts16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="手机号"
+            android:textSize="@dimen/ts16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="3"
+            android:text="159********"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/ts16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="标题"
+            android:textSize="@dimen/ts16" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="3"
+            android:background="@null"
+            android:inputType="text"
+            android:hint="请输入"
+            android:textSize="@dimen/ts16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="诉求内容"
+            android:textSize="@dimen/ts16" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请输入（10-1000字）"
+            android:lines="5"
+            android:inputType="text|textMultiLine"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/ts16" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:src="@drawable/photo_sc" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="问题所属"
+            android:textSize="@dimen/ts16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="是否公开"
+            android:textSize="@dimen/ts16" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/cb_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:button="@drawable/rb_selector"
+                android:paddingLeft="5dp"
+                android:text="公开"
+                android:textSize="@dimen/ts16" />
+
+            <RadioButton
+                android:id="@+id/cb_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:checked="true"
+                android:button="@drawable/rb_selector"
+                android:paddingLeft="5dp"
+                android:text="不公开"
+                android:textSize="@dimen/ts16" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="验证码"
+            android:textSize="@dimen/ts16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <com.powerrich.office.oa.view.NoEmojiEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="请输入短信验证码"
+                android:textSize="@dimen/ts16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_border_white_bg"
+                android:paddingBottom="@dimen/padding_2"
+                android:paddingLeft="@dimen/padding_3"
+                android:paddingRight="@dimen/padding_3"
+                android:paddingTop="@dimen/padding_2"
+                android:text="验证码"
+                android:textSize="@dimen/ts16" 
+                android:textColor="@color/blue_main" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+	</LinearLayout>
+	</ScrollView>
+	<LinearLayout 
+	    android:id="@+id/ll_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical">
+	    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_system_bg" />
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <CheckBox
+                android:id="@+id/cb_niming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:checked="true"
+                android:button="@drawable/rb_selector"
+                android:paddingLeft="5dp"
+                android:text="匿名"
+                android:textSize="@dimen/ts16" />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/blue_icon"
+	            android:paddingLeft="@dimen/padding_15"
+	            android:paddingRight="@dimen/padding_15"
+	            android:paddingTop="8dp"
+	            android:paddingBottom="8dp"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/ts16" 
+	            android:text="提交"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

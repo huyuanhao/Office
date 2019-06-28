@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/widget_size_12"
+        android:layout_marginRight="@dimen/widget_size_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/widget_size_20"
+            android:paddingBottom="@dimen/widget_size_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="16831616516"
+            android:textSize="@dimen/font_size_20"
+            android:background="@drawable/layout_line_bg"
+            android:textColor="@color/color_999999"/>
+
+
+        <LinearLayout
+            android:id="@+id/lt_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_50"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_xh"
+                    android:text="选择注册类型"
+                    android:textSize="@dimen/font_size_14" />
+
+                <RadioButton
+                    android:id="@+id/rb_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/widget_size_40"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/cb_appbg1"
+                    android:drawablePadding="@dimen/widget_size_5"
+                    android:text="企业"
+                    android:textColor="@color/common_gray"
+                    android:textSize="@dimen/font_size_14" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/widget_size_20"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/widget_size_5"
+                    android:text="个人"
+                    android:drawableLeft="@drawable/cb_appbg1"
+                    android:textColor="@color/common_gray"
+                    android:textSize="@dimen/font_size_14" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_l1"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray_split_line_bg_group" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_50"
+            android:background="@color/transparent"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:textColorHint="@color/gray"
+
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_l2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray_split_line_bg_group" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_50"
+            android:background="@color/transparent"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"
+
+            android:textSize="@dimen/font_size_14" />
+
+        <include layout="@layout/default_line_0" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_50"
+            android:background="@color/transparent"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/font_size_14" />
+
+        <include layout="@layout/default_line_0" />
+
+        <TextView
+            android:id="@+id/tv_erro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="两次输入不一致，请重新输入"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_13" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_40"
+            android:layout_marginLeft="@dimen/widget_size_20"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_60"
+            android:background="@drawable/login_bt_corners_dp"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_15"
+            android:text="已经账号，直接登录"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

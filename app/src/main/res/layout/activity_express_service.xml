@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="245px"
+                android:paddingBottom="80px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:paddingTop="30px"
+                android:scaleType="fitXY"
+                android:src="@drawable/per_circle_four" />
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:text="个体户工商设立登记审批"
+                android:textColor="@color/color_333333"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="33px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="事项编码："
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_item_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_margin="35px"
+                android:background="@color/gray_system_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12px"
+                    android:layout_height="61px"
+                    android:background="@color/blue_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="办理材料揽收"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58px"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="30px"
+                        android:tag="0"
+                        android:text="否"
+                        android:textColor="@color/common_gray"
+                        android:textSize="46px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="37px"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="30px"
+                        android:tag="1"
+                        android:text="是"
+                        android:textColor="@color/common_gray"
+                        android:textSize="46px" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="41px"
+                        android:background="@drawable/white_corners2_icon"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:paddingTop="10px"
+                        android:text="新增地址"
+                        android:textColor="#009fff"
+                        android:textSize="36px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_box_more_up"
+                    android:drawablePadding="10px"
+                    android:text="更多"
+                    android:textColor="#0293ea"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_is_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63px"
+                android:layout_marginTop="30px"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px"
+                android:text="自行寄送到相关办理单位"
+                android:textColor="#E21414"
+                android:textSize="46px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="74px"
+                android:layout_marginTop="53px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[默认]"
+                    android:textColor="#ff7400"
+                    android:textSize="46px" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="陈志强"
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:text="13812345678"
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="71px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="44px"
+                android:text="湖北省  武汉市  洪山区  关东街道  华师园北路18号光谷科技港1栋B座"
+                android:textColor="@color/common_gray"
+                android:textSize="46px"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_margin="35px"
+                android:background="@color/gray_system_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12px"
+                    android:layout_height="61px"
+                    android:background="@color/blue_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="邮寄方式"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58px"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="30px"
+                        android:tag="0"
+                        android:text="自取"
+                        android:textColor="@color/common_gray"
+                        android:textSize="46px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="37px"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="30px"
+                        android:tag="1"
+                        android:text="邮寄"
+                        android:textColor="@color/common_gray"
+                        android:textSize="46px" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_add_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_appbg"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="添加地址"
+                    android:textColor="#009fff"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.powerrich.office.oa.view.NoScrollListView
+                    android:id="@+id/lv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="40px"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="暂无地址信息"
+                    android:textColor="@color/hint"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33px"
+        android:layout_marginLeft="31px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/blue_corners_icon"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="50px" />
+
+</RelativeLayout>

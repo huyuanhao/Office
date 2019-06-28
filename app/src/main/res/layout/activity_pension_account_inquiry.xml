@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/llt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="账户类型"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="城乡居民个人账户"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="账户金额"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="656"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="本金"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="254"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="利息"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="152"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="账户建立时间"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="2015-6"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/layout_line_bg">
+
+                    <TextView
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="所属统筹区"
+                        android:textColor="@color/color_999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:text="贵溪市"
+                        android:textColor="@color/color_333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <include layout="@layout/activity_medical_bottom" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/empty_view_social"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

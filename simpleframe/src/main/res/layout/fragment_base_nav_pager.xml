@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/navbar_style">
+
+            <com.yt.simpleframe.tabpagerindictor.TabPageIndicator
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:indicatorHeight="@dimen/widget_size_2"
+                app:indicatorPaddingLeft="@dimen/widget_size_10"
+                app:pst_dividerPadding="@dimen/widget_size_10"
+                app:setectTextColor="@color/main_select_color"
+                app:tabPaddingLeftRight="@dimen/widget_size_10"
+                app:tabTextSize="@dimen/font_size_16"
+                app:unsetectTextColor="@color/black" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/no_data_view"/>
+    </FrameLayout>
+
+</FrameLayout>

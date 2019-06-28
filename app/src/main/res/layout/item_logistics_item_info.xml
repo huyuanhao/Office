@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:id="@+id/v_top"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp2"
+            android:layout_height="@dimen/dp15"
+            android:background="#dfdfdf"/>
+
+        <LinearLayout
+
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ts18"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="08:15"/>
+            <TextView
+                android:id="@+id/tv_time_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ts12"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="2017-11-11"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/v_bottom"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp2"
+            android:layout_height="@dimen/dp15"
+            android:background="#dfdfdf"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="湖北省武汉市武昌区华师园北路 派件中"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ts14"/>
+
+
+</LinearLayout>

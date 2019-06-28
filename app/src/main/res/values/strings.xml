@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="brvah_app_name">Library</string>
+    <string name="brvah_loading">正在加载中...</string>
+    <string name="brvah_load_failed">加载失败，请点我重试</string>
+    <string name="brvah_load_end">没有更多数据</string>
+
+    <string name="system_operation_success_message">操作成功！</string>
+    <string name="system_operation_error_message">操作失败！</string>
+    <string name="system_load_message">正在获取数据，请稍候...</string>
+    <string name="system_upload_message">正在上传，请稍候...</string>
+    <string name="system_commit_message">正在提交数据，请稍候...</string>
+    <string name="system_auto_message">正在自动登录，请稍候...</string>
+    <string name="system_request_error_message">请求数据失败！</string>
+    <string name="system_net_error_message">网络不给力，请稍后再试！</string>
+    <string name="system_commit_error_message">提交数据失败！</string>
+    <string name="system_data_error_message">请求数据失败，连接超时！</string>
+    <string name="system_login_error_message">验证用户信息失败</string>
+    <string name="system_login_net_error_message">验证用户信息失败，连接超时！</string>
+    <string name="system_dialog_confirm">确定</string>
+    <string name="system_exit_prompt">友情提示</string>
+    <string name="system_exit_message">退出当前账号需重新登录，您确定退出系统</string>
+    <string name="app_name">i鹰潭</string>
+    <string name="text_tab_home">办事</string>
+    <string name="text_tab_service">便民服务</string>
+    <string name="text_tab_mine">我的</string>
+    <string name="text_tab_personal">个人中心</string>
+    <string name="text_account">账号与安全</string>
+    <string name="text_notification">通知与消息</string>
+    <string name="text_privacy">隐私</string>
+    <string name="text_general">通用</string>
+    <string name="text_about">关于去哪考</string>
+    <string name="button_backward">返回</string>
+    <string name="button_submit">提交</string>
+    <string name="text_age">年龄</string>
+    <string name="text_gender">性别</string>
+    <string name="text_username">用户名</string>
+    <string name="text_nickname">昵称</string>
+    <string name="text_place">地区</string>
+    <string name="text_learning">我想学/考</string>
+    <string name="text_education">学历层次</string>
+    <string name="text_speciality">专业</string>
+    <string name="text_credit">我的积分</string>
+    <string name="text_official_website">官方网站</string>
+    <string name="text_rate_app">去评分</string>
+    <string name="text_about_help">帮助</string>
+    <string name="text_about_feedback">反馈</string>
+    <string name="text_about_update">检查更新</string>
+    <string name="text_company">去哪考 版权所有 由武汉快点科技提供技术支持</string>
+    <string name="text_copyright">Copyright &#169; 2014-2020 Shizhenbao All Rights Reserved.</string>
+    <string name="text_exit">退&#160;出</string>
+    <string name="tab_home">home</string>
+    <string name="tab_service">service</string>
+    <string name="tab_mine">mine</string>
+    <string name="tab_personal">personal</string>
+    <string name="tab_third">third</string>
+
+    <!-- 加载相关字符 -->
+    <string name="pull_no_more_msg">没有更多数据了</string>
+    <string name="pull_pull_up_text">松开加载更多</string>
+    <string name="pull_down_text">下拉可以刷新</string>
+    <string name="pull_release_text">松开获取更多</string>
+    <string name="pull_down_update_time">最后更新时间 : </string>
+    <string name="pull_load_more_ongoing_text">正在加载...</string>
+    <string name="pull_click_load_more_text">点击加载更多</string>
+    <string name="gsys_xsearch_loading">正在加载中…</string>
+    <string name="document_detail_empty">没有找到数据</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">已经到底啦</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pull_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">@string/pull_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="alert_dialog_exit_title">您的账号在其它地方已登录，请重新登录！</string>
+    <string name="alert_dialog_title">下一环节列表为空，不能执行操作</string>
+    <!-- 登录-->
+    <string name="welconme_world">广通软件技术支持@2017</string>
+    <string name="person_login">个人用户</string>
+    <string name="company_login">法人用户</string>
+    <string name="passwd_login">密码登录</string>
+    <string name="eid_login">eID登录</string>
+    <string name="login_name_hint">请输入用户名、身份证号</string>
+    <string name="login_name_hint_1">请输入手机号</string>
+    <string name="login_psw_hint">请输入密码</string>
+    <string name="forget_psw">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="register">还没有账号，立即注册</string>
+    <!-- 首页 -->
+    <string name="home_onLine_booking">网上预约</string>
+    <string name="home_my_work">我要办事</string>
+    <string name="home_consulting">咨询投诉</string>
+    <string name="home_policy_statute">政策法规</string>
+    <string name="home_sunshine_affair">阳光政务</string>
+    <string name="home_affair_news">政务要闻</string>
+    <string name="home_capacity_search">我要搜索</string>
+    <string name="home_interaction_exchange">互动交流</string>
+    <string name="home_affair_work">政务办事</string>
+    <string name="home_my_site">我的地盘</string>
+    <string name="system_no_data">暂无数据</string>
+
+    <!--社保-->
+    <string name="social_security1">个人基本信息</string>
+    <string name="social_security2">养老缴费查询 </string>
+    <string name="social_security3">医疗缴费查询</string>
+    <string name="social_security4">失业缴费查询 </string>
+    <string name="social_security5">工伤缴费记录</string>
+    <string name="social_security6">生育缴费记录 </string>
+    <string name="social_security7">异地就医备案查询</string>
+    <string name="social_security8">参保缴费证明 </string>
+    <string name="social_security9">养老金收入证明</string>
+
+    <!-- 网上预约-->
+    <string name="online_booking_title">温馨提醒</string>
+    <string name="online_booking_num1">1.</string>
+    <string name="online_booking_num2">2.</string>
+    <string name="online_booking_num3">3.</string>
+    <string name="online_booking_text1">您办理的业务需要前往鹰潭市大厅现场受理，请点击“下一步”进入预约，预约受理时间和受理大厅。</string>
+    <string name="online_booking_text2">预约成功后后，请使用预约编号或身份证号查询预约信息，并打印申请表格，按照所选时间前往大厅现场办理业务。</string>
+    <string name="online_booking_text3">如需取消预约，可使用预约编号或身份证号查询后取消预约申请。</string>
+    <string name="online_booking_next">下一步</string>
+    <string name="online_booking_last">上一步</string>
+    <string name="online_booking_confirm">确认预约</string>
+    <string name="online_Booking_infoVerify_title">请核对个人信息确保预约办事一路顺畅</string>
+    <string name="online_Booking_infoVerify_phone">手机号码:</string>
+    <string name="online_Booking_infoVerify_email">电子邮箱:</string>
+    <string name="online_Booking_infoVerify_veeify">获取验证码</string>
+    <string name="online_Booking_infoVerify_veeify_hint">验证码</string>
+    <string name="online_Booking_infoVerify_name">姓名:</string>
+    <string name="online_Booking_infoVerify_id">身份证:</string>
+    <string name="online_Booking_hall_title">*该业务需预约后前往现场办理</string>
+    <string name="online_Booking_hall_dep">预约部门:</string>
+    <string name="online_Booking_hall_hall">预约事项:</string>
+    <string name="online_Booking_hall_date">预约日期:</string>
+    <string name="online_Booking_hall_date_hint">选择日期</string>
+    <string name="online_Booking_hall_select_title">时间段:</string>
+    <string name="online_Booking_hall_confirm">确定</string>
+    <!-- 我要办事 -->
+    <string name="family_register_detail_item_name">项目名称:</string>
+    <string name="family_register_detail_work_object">受理范围:</string>
+    <string name="family_register_detail_actualize_department">办理机关:</string>
+    <string name="family_register_detail_transact_time_limit">办理时限:</string>
+    <string name="family_register_detail_fee_scale">收费标准:</string>
+    <string name="family_register_detail_degree">到办事窗口次数:</string>
+    <string name="family_register_detail_refer_phone">咨询电话:</string>
+    <string name="family_register_detail_monitor_phone">监督投诉电话:</string>
+    <string name="family_register_detail_transact_place">办理时间、地点:</string>
+    <string name="accept_condition">受理条件</string>
+    <string name="transact_materials">办理材料</string>
+    <string name="charge_condition">收费情况</string>
+    <string name="setting_gist">设定依据</string>
+    <string name="family_register_detail_online_declare">在线申办</string>
+    <string name="online_booking">在线预约</string>
+    <string name="search">查询</string>
+    <string name="online_handling">网上办理</string>
+    <string name="family_register_detail_consult">咨询</string>
+    <string name="family_register_detail_route">路线</string>
+    <string name="family_register_detail_collect">收藏</string>
+    <string name="online_declare_project_name">项目名称</string>
+    <string name="online_declare_unit_name">单位名称</string>
+    <string name="online_declare_legal_representative">代&#160;&#160;表&#160;&#160;人</string>
+    <string name="online_declare_credit_code">信用代码</string>
+    <string name="online_declare_hint_must">（必填）</string>
+    <string name="online_declare_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="online_declare_id">身&#160;&#160;份&#160;&#160;证</string>
+    <string name="online_declare_contact">联&#160;&#160;系&#160;&#160;人</string>
+    <string name="online_declare_phone">手机号码</string>
+    <string name="online_declare_id_number">证件号码</string>
+    <string name="online_declare_address">通讯地址</string>
+    <string name="online_declare_way">取件方式</string>
+    <string name="online_declare_email">电子邮箱</string>
+    <string name="online_declare_mail">邮&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;编</string>
+    <string name="online_declare_email_address">邮寄地址</string>
+    <string name="online_declare_add_address">添加地址</string>
+    <string name="online_declare_heading">建议用地规划许可</string>
+    <string name="online_declare_commit">提交</string>
+    <!-- 咨询投诉 -->
+    <string name="consulting_iwant_suggestion">我要建议</string>
+    <string name="consulting_iwant_consulting">我要咨询</string>
+    <string name="consulting_lead_mail">领导信箱</string>
+    <string name="consulting_iwant_complaint">我要投诉</string>
+    <string name="consulting_iwant_declare">我要举报</string>
+    <string name="consulting_iwant_evaluate">我要评价</string>
+    <string name="consulting_iwant_query">办件查询</string>
+    <string name="consulting_iwant_history_mail">历史信件</string>
+    <string name="consulting_name">我的姓名</string>
+    <string name="consulting_telephone">联系电话</string>
+    <string name="consulting_phone">手机号码</string>
+    <string name="consulting_short_msg">短信通知</string>
+    <string name="consulting_mail">邮件通知</string>
+    <string name="consulting_email">电子邮箱</string>
+    <string name="consulting_postal_code">邮政编码</string>
+    <string name="consulting_address">联系地址</string>
+    <string name="consulting_dep">建议单位</string>
+    <string name="consulting_title">标&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;题</string>
+    <string name="consulting_place">所&#8197;&#8197;属&#8197;&#8197;地</string>
+    <string name="consulting_open">是否公开</string>
+    <string name="consulting_open_yes">是</string>
+    <string name="consulting_open_no">否</string>
+    <string name="consulting_content">内&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;&#8197;容</string>
+
+    <!-- 套餐 -->
+    <string name="open_pharmacy_title">办理说明</string>
+    <string name="open_pharmacy_content">准备好材料，按照流程网上申报或者窗口办理。</string>
+    <string name="open_pharmacy_name">材料名称:</string>
+    <string name="open_pharmacy_fs">份数:</string>
+    <string name="open_pharmacy_syj">复印件:</string>
+
+    <!-- 设置手势密码 -->
+    <string name="settings_create_pwd">创建手势密码</string>
+    <string name="settings_modify_pwd">修改手势密码</string>
+    <string name="gesturespassword_login_success">手势密码正确</string>
+    <string name="gesturespassword_login_title">请输入手势密码</string>
+    <string name="gesturespassword_password_title">手势密码</string>
+    <string name="gesturespassword_password_lock">手势密码锁定</string>
+    <string name="gesturespassword_password_modify">修改手势密码</string>
+    <string name="gesturespassword_seting_title">输入手势密码</string>
+    <string name="gesturespassword_set_again">请再次输入手势密码</string>
+    <string name="gesturespassword_min_points">最少4个点，请重新设置</string>
+    <string name="gesturespassword_set_notsame">两次输入的手势密码不一致，请重新设置</string>
+    <string name="gesturespassword_set_success">设置手势密码成功</string>
+    <string name="gesturespassword_mod_loginpassword">请输入登录密码验证身份</string>
+    <string name="gesturespassword_mod_success">修改手势密码成功</string>
+    <string name="gesturespassword_mod_oldsuccess">原始的手势密码正确，请输入新的手势密码</string>
+    <string name="gesturespassword_mod_oldfail">密码错误，请重新输入</string>
+    <string name="gesturespassword_mod_loginmsg">请先验证登录密码</string>
+    <string name="gestures_loginpassword_error">登录密码已修改，请重新登录</string>
+    <string name="gestures_forget_gesturespassword">忘记手势密码</string>
+    <string name="gestures_current_password">请输入当前手势密码</string>
+    <string name="gestures_switchuser">切换用户</string>
+    <string name="settings_exit_warning">警告</string>
+    <string name="settings_exit_message">退出系统后需要重新登录，您确定退出系统？</string>
+    <string name="confirm">确定</string>
+
+    <!-- 标题 -->
+    <string name="title_activity_my_work">我要办事</string>
+    <string name="title_activity_consulting">咨询投诉</string>
+    <string name="title_activity_queryhanding">办件查询</string>
+    <string name="title_activity_family_register">户籍</string>
+    <string name="title_activity_online_booking">预约办事</string>
+    <string name="title_activity_online_booking_hall">在线预约</string>
+    <string name="title_activity_base_information">基本信息</string>
+    <string name="title_activity_relative_materials">相关材料</string>
+    <string name="title_activity_online_booking_info_verify">信息验证</string>
+    <string name="title_activity_open_pharmacy">开药店</string>
+    <string name="title_activity_pharmacy_materials">材料</string>
+    <string name="title_activity_family_register_deail">户籍列表的详情</string>
+    <string name="title_activity_iwant_consulting">我要咨询</string>
+    <string name="title_activity_iwant_suggest">我要建议</string>
+    <string name="title_activity_lead_mail">领导信箱</string>
+    <string name="do_thing_detail">办件详情</string>
+    <string name="title_activity_query_tab_info">表单详情</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_center">个人中心</string>
+    <string name="mobile_phone_number">手机号码</string>
+    <string name="real_name_grade">实名等级</string>
+    <string name="user_name">用户名</string>
+    <string name="mailbox">邮箱</string>
+    <string name="address">地址</string>
+    <string name="address2">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址</string>
+    <string name="zip_code">邮编</string>
+    <string name="other_certificate">其它证件</string>
+    <string name="login_password">登录密码</string>
+    <string name="title_activity_iwant_declare">我要举报</string>
+    <string name="title_activity_iwant_complaint">我要投诉</string>
+    <string name="title_activity_write_to_me">给我写信</string>
+    <string name="iwant_consulting">我的咨询</string>
+    <string name="iwant_complain">我的投诉</string>
+    <string name="iwant_suggest">我的建议</string>
+    <string name="personal_work">个人办事</string>
+    <string name="enterprise_work">企业办事</string>
+    <string name="department_work">部门办事</string>
+    <string name="personal_items">个人事项</string>
+    <string name="company_items">企业事项</string>
+    <string name="department_items">部门事项</string>
+
+    <!-- 在线申报 -->
+    <string name="proposer">申请人</string>
+    <string name="online_declare">在线申报</string>
+    <string name="personal_declare">个人申报</string>
+    <string name="enterprise_declare">企业申报</string>
+    <string name="asterisk">*</string>
+    <string name="declare_people">申报人</string>
+    <string name="id_card">身份证</string>
+    <string name="contacts_name">联系人姓名</string>
+    <string name="contacts_mobile_phone">联系人手机</string>
+    <string name="contacts_id_card">联系人身份证</string>
+    <string name="contacts_phone">联系人电话</string>
+    <string name="contacts_address">联系地址</string>
+    <string name="is_express">是否快递</string>
+    <string name="addressee_name">收件人姓名</string>
+    <string name="addressee_number">收件人号码</string>
+    <string name="addressee_address">收件地址</string>
+    <string name="postalcode">邮政编码</string>
+    <string name="postage_explain">邮费说明</string>
+    <string name="next_step">下一步</string>
+    <string name="material_name">材料名称</string>
+    <string name="material_piece">材料份数</string>
+    <string name="material_original_copy">是否必备</string>
+    <string name="material_electrical_parts">材料形式</string>
+    <string name="material_paper">纸质件</string>
+
+
+    <string name="suggest_tips">建议您先登录再写信，便于后续能直接在用户中心查看回复</string>
+    <string name="booking_tips">建议您先登录再预约，便于后续能直接在用户中心查看回复</string>
+    <string name="declare_tips">建议您先登录再办理事项，便于后续能直接在用户中心查看</string>
+    <string name="declare_qb_tips">建议您先登录,再来使用此功能</string>
+    <string name="goto_login">前往登录</string>
+    <string name="cancel">取消</string>
+    <string name="more">更多</string>
+    <string name="title_activity_news">政务要闻</string>
+
+    <string name="company_name">企业名称</string>
+    <string name="company_linkman">企业联系人</string>
+    <string name="password">密码</string>
+    <string name="password_again">重复密码</string>
+    <string name="company_user_register">企业用户注册</string>
+    <string name="user_register">个人用户注册</string>
+    <string name="go_to_login">已有账号，去登陆</string>
+    <string name="protocols">我已阅读并同意《智慧城市注册协议》</string>
+    <string name="save_password">记住密码</string>
+
+    <string name="government_affairs_detail">政务详情</string>
+    <string name="know_all">百事通</string>
+    <string name="uiHelper_showTime_select_time">选择时间</string>
+    <string name="admin_category">行政类别</string>
+    <string name="charge_list">行政事业性收费清单</string>
+    <!--地址管理-->
+    <string name="new_address">添加新地址</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="address_manage">地址管理</string>
+    <string name="consignee">收货人</string>
+    <string name="company_name1">公司名称</string>
+    <string name="delete_address">删除地址</string>
+    <string name="save">保存</string>
+    <string name="sheng_name">省名称</string>
+    <string name="shi_name">市名称</string>
+
+    <!--我的支付-->
+    <string name="my_payment">我的支付</string>
+    <string name="payment_money">支付金额</string>
+    <string name="payment_state">支付状态</string>
+    <string name="payment_yes">已支付</string>
+    <string name="payment_no">未支付</string>
+    <string name="payment_fail">支付失败</string>
+    <string name="status">状态</string>
+    <string name="status_0">暂存</string>
+    <string name="status_1">待审核</string>
+    <string name="status_2">已受理</string>
+    <string name="status_3">已完结</string>
+    <string name="status_4">已回复</string>
+    <string name="status_5">未回复</string>
+    <string name="status_6">在办</string>
+    <string name="apply_time">申请时间</string>
+
+    <!-- 阳光政务 -->
+    <string name="admin_power_list">行政权力清单</string>
+    <string name="power_list">行政权力清单列表</string>
+    <string name="department_duty_list">部门责任清单</string>
+    <string name="negative_publicity">负面公示</string>
+    <string name="policy_statute">政策法规</string>
+    <string name="market_admittance_list">市场准入清单</string>
+    <string name="commonality_service_list">公共服务清单</string>
+    <string name="admin_charge_list">行政事业性收费清单</string>
+    <string name="admin_approve_intermediary_services_list">行政审批中介服务清单</string>
+    <string name="want_query">我要查询</string>
+    <string name="query_statistics">查询统计</string>
+    <string name="department">部门：</string>
+    <string name="project_approval">立项：</string>
+    <string name="charge_project">收费项目：</string>
+    <string name="funds_management">资金管理方式：</string>
+    <string name="policy_gist">政策依据：</string>
+    <string name="enterprise_name">企业名称：</string>
+    <string name="accuse_reason">检举原因：</string>
+    <string name="publicity_information">公示信息：</string>
+    <string name="publicity_date">公示日期：</string>
+    <!-- 政策法规 -->
+    <string name="policy_detail">政策详情</string>
+    <string name="normative_file">规范性文件</string>
+    <string name="local_regulations">地方性法规</string>
+    <string name="government_regulations">政府规章</string>
+    <string name="government_file">政府文件</string>
+    <string name="department_file">部门文件</string>
+    <string name="policy_unscramble">政策解读</string>
+    <string name="laws_regulations">法律法规</string>
+    <!-- 行政权力清单 -->
+    <string name="department_list">部门列表</string>
+    <string name="category_list">类别列表</string>
+    <string name="exploiting_work_unit">实施单位：</string>
+    <string name="power_project_name">项目名称：</string>
+    <string name="sub_item_name">子项名称：</string>
+    <string name="sub_item_exploiting_work_unit">子项实施单位：</string>
+    <string name="power_type">权种类别：</string>
+    <string name="settings_gist">设定依据：</string>
+    <string name="remark">备注：</string>
+    <string name="none_sub_item_name">暂无子项目</string>
+    <string name="none_sub_item_exploiting_work_unit">暂无子实施单位</string>
+    <!-- 市场准入清单 -->
+    <string name="limit_category">限制类</string>
+    <string name="prohibition_category">禁止类</string>
+    <string name="market_admittance_list_detail">市场准入清单详情</string>
+    <string name="approve_date">创建时间：</string>
+    <string name="approve_enterprise">领域：</string>
+    <string name="fail_describe">内容：</string>
+    <string name="link">类别：</string>
+    <string name="pid">id编号：</string>
+    <!-- 行政审批中介服务清单 -->
+    <string name="reserve_admin_approve_services_list">保留服务事项</string>
+    <string name="cancel_admin_approve_services_list">取消服务事项</string>
+    <string name="order_number">序号：</string>
+    <string name="services_project_name">中介服务项目名称：</string>
+    <string name="admin_approve_project_name">行政审批项目名称：</string>
+    <string name="approve_department">审批部门：</string>
+    <string name="services_project_setting_gist">中介服务项目设定依据：</string>
+    <string name="services_implement_organization">中介服务实施机构：</string>
+    <!-- 查询统计 -->
+    <string name="item_statistics">事项统计</string>
+    <string name="time_statistics">时间统计</string>
+    <string name="unit_statistics">单位统计</string>
+    <string name="result_statistics">结果统计</string>
+    <string name="item_name">事项名称</string>
+    <string name="quantity">数量</string>
+    <string name="do_thing_state">办件状态</string>
+
+    <!--办件详情-->
+    <string name="base_info">基本信息</string>
+    <string name="form_info">表单信息</string>
+    <string name="materials_info">材料信息</string>
+    <string name="attachment_info">附件信息</string>
+    <string name="bj_object_num">申报编号</string>
+    <string name="bj_object_name">项目名称</string>
+    <string name="bj_event_name">事项名称</string>
+    <string name="bj_event_num">事项编号</string>
+    <string name="bj_do_thing_type">办件类型</string>
+    <string name="bj_apply_person_name">申请人名称</string>
+    <string name="bj_linkman_id_type">联系人证件类型</string>
+    <string name="bj_linkman_id_num">联系人证件号码</string>
+    <string name="bj_linkman_name">联系人姓名</string>
+    <string name="bj_linkman_mobile_phone">联系人手机号</string>
+    <string name="bj_link_address">通讯地址</string>
+    <string name="bj_apply_time">申请时间</string>
+
+    <!--物流-->
+    <string name="express">我的物流</string>
+    <string name="express_info">物流信息</string>
+    <string name="express_num">运单号：</string>
+    <string name="express_is_take">已签收：</string>
+    <string name="express_is_take1">已签收</string>
+    <string name="express_is_not_take">未签收：</string>
+    <string name="express_is_not_take1">未签收</string>
+    <string name="express_is_take_message">感谢您的签收，期待再次为您服务</string>
+    <string name="express_is_not_take_message">未签收：</string>
+    <string name="express_look_info">查看物流信息</string>
+    <string name="express_take_man">收件人：</string>
+    <string name="order_status1">已下单</string>
+    <string name="order_status2">物流中</string>
+
+    <!--我的预约-->
+    <string name="my_booking">我的预约</string>
+    <string name="booking_detail">预约详情</string>
+    <string name="unit">单位：</string>
+    <string name="unit1">单位</string>
+    <string name="booking_man">预约人：</string>
+    <string name="booking_man1">预约人</string>
+    <string name="booking_event">预约事项</string>
+    <string name="booking_time">预约时间</string>
+    <string name="booking_man_idcard">预约人身份证号</string>
+    <string name="booking_man_phone">预约人联系电话</string>
+    <string name="booking_status">预约状态</string>
+    <string name="booking_status_1">预约中</string>
+    <string name="booking_status_2">取消预约</string>
+    <string name="booking_status_3">已完成</string>
+    <string name="real_name">真实姓名</string>
+    <string name="id_card_num">身份证号</string>
+    <string name="input_id_card_num">请输入身份证号</string>
+    <string name="input_real_name">请输入真实姓名</string>
+    <string name="phone_num">手机号码</string>
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="submit">提交</string>
+    <string name="tip">提示</string>
+    <string name="sure_auth">是否进行实名认证？</string>
+    <string name="sure">确定</string>
+    <string name="nation">民族</string>
+    <string name="input_nation">请输入民族</string>
+    <string name="auth">实名认证</string>
+    <string name="add">新增</string>
+
+
+    <string name="no_real_name">未实名认证</string>
+    <string name="yes_real_name">已实名认证</string>
+    <string name="social_credit_code">社会信用代码</string>
+    <string name="input_social_credit_code">请输入社会信用代码</string>
+    <string name="input_legal_person_phone">请输入法人手机号码</string>
+    <string name="legal_person_phone">法人手机号</string>
+    <string name="legal_person_id_card_num">法人身份证号</string>
+    <string name="input_legal_person_id_card_num">请输入法人身份证号</string>
+    <string name="legal_person">法人姓名</string>
+    <string name="input_legal_person">请输入法人姓名</string>
+    <string name="enterprise_address">企业地址</string>
+    <string name="input_enterprise_address">请输入企业地址</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+    <string name="time_collect">收藏时间：</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="offline_title">下线通知</string>
+    <string name="offline_message">您的账号在其它移动设备登录，请重新登录！</string>
+    <string name="consulting_department">咨询单位</string>
+    <string name="complain_department">投诉单位</string>
+    <string name="suggest_department">建议单位</string>
+    <string name="declare_department">举报单位</string>
+    <string name="name_can_not_be_empty">姓名不能为空</string>
+    <string name="phone_can_not_be_empty">手机号码格式不正确</string>
+    <string name="id_can_not_be_empty">身份证号码格式不正确</string>
+    <string name="post_code_can_not_be_empty">邮政编码格式不正确</string>
+    <string name="Email_can_not_be_empty">电子邮箱格式不正确</string>
+    <string name="title_can_not_be_empty">标题不能为空</string>
+    <string name="content_can_not_be_empty">内容不能为空</string>
+    <string name="The_content_should_not_be_less_than_20_words">内容不能少于20字</string>
+    <string name="please_choose_the_provincial_city">请选择省市区</string>
+
+
+    <!-- 办理材料寄送 -->
+    <string name="complete">完成</string>
+    <string name="express_send_info">快递寄送信息</string>
+    <string name="declare_success">申报成功</string>
+    <string name="material_send">寄送办理材料</string>
+    <string name="project_name">项目名称</string>
+    <string name="name">姓\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020名</string>
+    <string name="phone">电\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020话</string>
+    <string name="postal_code">邮政编码</string>
+    <string name="collect_materials_time">揽件时间</string>
+    <string name="province_name">省\u0020\u0020\名\u0020\u0020\称</string>
+    <string name="city_name">市\u0020\u0020\名\u0020\u0020\称</string>
+    <string name="receive_address">揽收地址</string>
+    <string name="speediness_order">快递下单</string>
+
+    <!--密码找回-->
+    <string name="find_password">密码找回</string>
+    <string name="change_password">密码修改</string>
+    <string name="verify_id">实名身份验证</string>
+    <string name="choose_find_pwd_way">请选择找回密码方式</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="input_new_pwd_again">请再次输入新密码</string>
+    <string name="set_new_pwd">请设定新的密码</string>
+    <string name="account">账号：</string>
+    <string name="id_message">身份信息</string>
+    <string name="hite_id_message">请确定身份证信息真实有效，否则无法通过审核</string>
+    <string name="hint_name">您的姓名（请填写身份证上的真实姓名）</string>
+    <string name="sex">性别</string>
+    <string name="hint_idcard">身份证号（将加密处理）</string>
+    <string name="hint_mobil_num">电话号码</string>
+    <string name="hint_address">居住地址</string>
+    <string name="upload_id_image">上传证件材料</string>
+    <string name="upload_id_image_massage">请上传身份证正反照片</string>
+    <string name="two_pwd_unlike">两次输入密码不一致</string>
+    <string name="downloading">正在下载...</string>
+    <string name="do_department">办理部门：</string>
+    <string name="integrated_query">综合查询</string>
+
+    <!--领导信箱-->
+    <string name="write_man">写&#8197;&#8197;信&#8197;&#8197;人</string>
+    <string name="write_time">送信时间</string>
+    <string name="write_content">信件内容</string>
+    <string name="department_name">部门名称</string>
+    <string name="leader_name">领导姓名</string>
+    <string name="is_revert">是否回复</string>
+    <string name="revert_time">回复时间</string>
+    <string name="revert_content">回复内容</string>
+    <string name="consulting_dept">咨询部门</string>
+    <string name="insurance_receive">社保年检</string>
+    <string name="memory_low">运行内存不足，请清理！</string>
+    <string name="result_no_face_detected">未检测到活体数据</string>
+    <string name="result_alive">活体检测：</string>
+    <string name="detection_result">检测结果</string>
+    <string name="service_authorize">服务授权</string>
+    <string name="face_auth">年检认证</string>
+    <string name="auth_list">认证记录</string>
+    <!-- 首页 -->
+    <string name="today_hot">今日热点</string>
+    <string name="hot_news">二三线城市为抢人才下血本</string>
+    <string name="government_service">政务服务</string>
+    <string name="natural_person_work">自然人办事</string>
+    <string name="legal_person_work">法人办事</string>
+    <string name="vitality_yt">活力鹰潭</string>
+    <string name="volunteer">全域旅游</string>
+    <string name="volunteer_text">鹰潭在线指南</string>
+    <string name="move">移动政商</string>
+    <string name="move_text">创新创业导向</string>
+    <string name="spirit_essence_yt">龙虎鹰潭&#160;&#160;&#160;&#160;</string>
+    <string name="yt_text">风景名胜攻略</string>
+    <string name="find_rim">找周边</string>
+    <string name="rim_text">吃喝玩乐集合</string>
+
+    <!-- 个人办事 -->
+    <string name="recently_use">最近使用</string>
+    <string name="married_register">结婚登记</string>
+    <string name="id_card_reapply">身份证补办</string>
+    <string name="housing_loans">住房贷款</string>
+    <string name="health_certificate_transact">健康证办理</string>
+    <string name="i_demand_do">我要办</string>
+    <string name="online_work">在线办事</string>
+    <string name="order_work">预约办事</string>
+    <string name="i_demand_check">我要查</string>
+    <string name="do_thing_query">办件查询</string>
+    <string name="enterprise_information_query">企业信息查询</string>
+    <string name="i_demand_look">我要看</string>
+
+    <!-- 挂号 -->
+    <string name="click_order">点击预约</string>
+    <string name="mark_source">可预约三天的号源</string>
+    <string name="order_record">预约记录</string>
+    <!-- 服务 -->
+    <string name="service">服务</string>
+    <string name="energy_charge">电费</string>
+    <string name="accumulation_fund">公积金</string>
+    <string name="health_insurance">医保查询</string>
+    <string name="registration">预约挂号</string>
+    <string name="living_payment">生活缴费</string>
+    <string name="water_rate">水费</string>
+    <string name="gas_fee">燃气费</string>
+    <string name="telephone_charge">话费</string>
+    <string name="tv_fee">电视费</string>
+    <string name="medical_treatment_health">医疗健康</string>
+    <string name="health_care_query">医保查询</string>
+    <string name="fixed_point_hospital">定点医院</string>
+    <string name="appointment_register">预约挂号</string>
+    <string name="vaccination">疫苗接种</string>
+    <string name="insurance_and_housing">保险与住房</string>
+    <string name="social_security_query">社保查询</string>
+    <string name="accumulation_fund_enquiries">公积金查询</string>
+    <string name="social_security_annual_inspection">社保年检</string>
+    <string name="notifications_outage">停水停电通知</string>
+    <string name="user_number">用户编号</string>
+    <string name="please_enter_the_user_number">请输入用户编号</string>
+    <string name="query_bill">查询账单</string>
+    <string name="immediate_payment">立即缴费</string>
+    <string name="choice_of_payment_institution">选择缴费机构</string>
+
+    <!--互动-->
+    <string name="news">新闻</string>
+    <string name="consultation">咨询</string>
+    <string name="complaint_proposal">投诉建议</string>
+    <string name="complaint">投诉</string>
+    <string name="proposal">建议</string>
+    <string name="mayoral_mailbox">领导信箱</string>
+    <string name="poll">民意调查</string>
+    <string name="admissible_department">受理部门</string>
+    <string name="type_of_letter">信件类型</string>
+    <string name="complaint_department">投诉部门</string>
+    <string name="proposal_department">建议部门</string>
+    <string name="theme">主题</string>
+    <string name="please_choose_department">请选择部门</string>
+    <string name="please_select_the_type">请选择类型</string>
+    <string name="please_enter_your_name">请输入你的姓名(必填)</string>
+    <string name="please_enter_your_id">请输入你的身份证号码</string>
+    <string name="please_enter_your_phone">请输入你的手机号码</string>
+    <string name="please_enter_your_email">请输入你的电子邮箱</string>
+    <string name="please_enter_your_address">请输入你的住址</string>
+    <string name="new_advice">新增咨询</string>
+    <string name="new_complaint">新增投诉</string>
+    <string name="new_proposal">新增建议</string>
+    <string name="photo_attachments">图片附件</string>
+    <string name="news_search">搜索新闻</string>
+    <string name="work_guide">办事指南</string>
+    <string name="declare_notice">申报须知</string>
+    <string name="basic_information">基本信息</string>
+    <string name="mayor_hotline">市长热线:400-800-8820</string>
+    <string name="declare_materials">申报材料</string>
+    <string name="express_service">快递服务</string>
+    <string name="declare_notify">申报告知</string>
+    <string name="travel">出行</string>
+    <string name="developing">功能开发中，敬请期待...</string>
+    <string name="exchange_information">交换信息</string>
+    <string name="history_attachment">历史附件</string>
+    <string name="service_branch">服务网点</string>
+    <string name="select_enterprise_information">请选择企业</string>
+    <string name="unified_social_credit_code">统一社会信用代码</string>
+
+    <string name="agreement_content">欢迎您在“江西政务服务实名认证服务平台”（以下简称平台）注册，本平台注册用户适用于各级“江西政务服务网”。\n
+\n
+1. 服务内容\n\n
+
+1.1服务的具体内容由江西政务服务网根据实际情况提供。江西政务服务网保留随时变更、中断或终止部分或全部网络服务的权利。目前为注册用户提供以下服务：\n\n
+
+（一）统一申报：您可以登录本站进行审批事项的在线申报，并可查询审批过程信息。\n\n
+
+（二）统一互动：在您提交咨询和投诉时，您注册的相关信息会自动填写，并且可以随时查询您提交问题的办理情况；\n\n
+
+（三）网上支付（建设中）：为注册用户提供相关办事事项的在线收费渠道，实现网上支付。\n\n
+
+（四）用户中心（含用户专属空间）：提供与个人或企业相关的个性化服务，包括网上办件的状态查看、内容检索和用户关联，以及热点事项推荐、我的证照、我的收藏、我的缴费等功能。\n\n
+
+2. 使用规则\n\n
+
+2.1 用户在江西政务服务网注册时，需提供准确的个人资料，如个人资料有任何变动，请及时更新。\n\n
+
+2.2 用户注册成功后，江西政务服务网将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。\n\n
+
+2.3 用户在江西政务服务网注册后，必须遵循以下原则：\n\n
+
+(a) 遵守中国有关的法律和法规；\n\n
+
+(b) 不得为任何非法目的而使用网络服务系统；\n\n
+
+(c) 遵守所有与网络服务有关的网络协议、规定和程序；\n\n
+
+(d) 不得利用江西政务服务网进行任何可能对互联网的正常运转造成不利影响的行为；\n\n
+
+(e) 不得利用江西政务服务网传输任何骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；\n\n
+
+(f) 不得利用江西政务服务网进行任何不利于江西政务服务网的行为；\n\n
+
+(g) 如发现任何非法使用用户帐号或帐号出现安全漏洞的情况，应立即通告江西政务服务网。\n\n
+
+3. 内容所有权\n\n
+
+3.1 江西政务服务网提供的网络服务内容可能包括：文字、软件、声音、图片、录象、图表等。所有这些内容受版权、商标和其它财产所有权法律的保护。\n\n
+
+3.2 用户只有在获得江西政务服务网或其他相关权利人的授权之后才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。\n\n
+
+4. 隐私保护\n\n
+
+4.1 保护用户隐私是江西政务服务网的一项基本政策，江西政务服务网保证不对外公开或向第三方提供用户注册资料及用户在使用网络服务时存储在江西政务服务网的非公开内容，但下列情况除外：\n\n
+
+(a) 事先获得用户的明确授权；\n\n
+
+(b) 根据有关的法律法规要求；\n\n
+
+(c) 按照相关政府主管部门的要求；\n\n
+
+(d) 为维护社会公众的利益；\n\n
+
+(e) 为维护江西政务服务网的合法权益。\n\n
+
+5. 免责声明\n\n
+
+5.1 用户明确同意其使用江西政务服务网网络服务所存在的风险将完全由其自己承担；因其使用江西政务服务网网络服务而产生的一切后果也由其自己承担，江西政务服务网对用户不承担任何责任。\n\n
+
+5.2 江西政务服务网不担保网络服务一定能满足用户的要求，也不担保网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作担保。</string>
+    <string name="modify_email">修改邮箱</string>
+    <string name="modify_phone_number">修改手机号</string>
+    <string name="title_activity_a">AActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

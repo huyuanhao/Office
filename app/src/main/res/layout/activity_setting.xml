@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlt_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="用户名" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/widget_size_3"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/gray"
+                android:text="陈志强 (已认证)" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="@dimen/widget_size_8"
+                android:layout_height="@dimen/widget_size_12"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_mine_direction" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_register_legal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="注册法人账号" />
+
+        <com.yt.simpleframe.view.CircleImageView
+            android:id="@+id/civ_register_legal"
+            android:layout_width="@dimen/widget_size_45"
+            android:layout_height="@dimen/widget_size_45"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/widget_size_60"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_img"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="修改头像" />
+
+        <com.yt.simpleframe.view.CircleImageView
+            android:id="@+id/civ_img"
+            android:layout_width="@dimen/widget_size_45"
+            android:layout_height="@dimen/widget_size_45"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/widget_size_60"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="修改密码" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="修改手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            style="@style/user_info_item_right"
+            android:text="18613245678" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="修改邮箱" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/user_info_item_right"
+            android:text="chenzhiqiang@163.com" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_address"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="收件地址" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="关于我们" />
+
+        <ImageView style="@style/user_info_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:layout_marginLeft="@dimen/widget_size_20"
+        android:layout_marginRight="@dimen/widget_size_20"
+        android:layout_marginTop="@dimen/widget_size_30"
+        android:background="@drawable/blue_corners_dp"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

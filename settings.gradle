@@ -1,0 +1,1 @@
+include ':app', ':simpleframe', ':zxinglibrary',":sDKCore160901",":identify"

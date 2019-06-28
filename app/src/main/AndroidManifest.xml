@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.powerrich.office.oa">
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- OMA权限 -->
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" /> <!-- ————————————————————————————————JPush 所需start—————————————————————————————————————————— -->
+    <!-- Required -->
+    <permission
+        android:name="com.powerrich.office.oa.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" /> <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.powerrich.office.oa.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- ——————————————————————————————————JPush 所需end—————————————————————————————————————————— -->
+    <!-- 人脸识别 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".SIMeID.SIMeIDApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon, android:theme, android:allowBackup">
+
+
+        <activity
+            android:name=".activity.AActivity"
+            android:label="@string/title_activity_a"
+            android:theme="@style/NoActionBar"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- 指定OMA jar包的引用方式 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WorkGuideNewActivity" /> <!-- 我的相关页面 -->
+        <activity
+            android:name=".activity.mine.YtSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.mine.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".activity.mine.CertificateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CertificateListNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CertificateInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.BillRecordListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.LogisticsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AdvisoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.mine.AdvisoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CollectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.mine.ReservationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.mine.ModifyEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ModifyPhoneNumberActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".activity.mine.IdentifyActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".activity.mine.PerfectInfomationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AddressManagerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.EvaluationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App.Theme.Dialog.Alert" />
+        <activity
+            android:name=".activity.mine.ChooseHeadImgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.Register2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.base.IdentifyCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.GetVarificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ChooseIdentifyTypeActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".activity.mine.IdentifyEidActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".activity.mine.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CertificateImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".thirdapp.activity.ArticleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".thirdapp.activity.ArticleInfoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".thirdapp.activity.ArticleTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.things.VolunteerNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.things.VolunteerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.LogisticsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.Identify3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CompanyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baidu.ocr.ui.camera.CameraActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <!--
+            <activity
+            android:name="com.zxing.android.CaptureActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        -->
+
+        <!-- 社保卡部分-->
+        <activity
+            android:name=".activity.home.service.SocialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name=".activity.home.service.SocialPwdModifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".activity.home.service.SocialPwdModify2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".activity.home.service.SocialProcessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".activity.home.service.SocialLossActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <!-- 社保查询-->
+        <activity
+            android:name=".activity.home.service.SocialInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 城乡居民社保查询-->
+        <activity
+            android:name=".activity.home.service.SocialSecurityRuralActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 养老账户查询-->
+        <activity
+            android:name=".activity.home.service.PensionAccountInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 个人基本信息-->
+        <activity
+            android:name=".activity.home.service.PersonalInformatioActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 养老金发放-->
+        <activity
+            android:name=".activity.home.service.PensionPutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 社保缴费信息 -->
+        <activity
+            android:name=".activity.home.service.SocialSecurityInquryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+
+        <!-- 人脸识别 -->
+        <activity
+            android:name="com.aeye.face.view.RecognizeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 人脸识别 -->
+        <service android:name="com.aeye.face.service.InitService" />
+
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 政策解读 -->
+        <activity
+            android:name=".activity.PolicyUnscrambleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 政策详情 -->
+        <activity
+            android:name=".activity.NewsDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我要办事 -->
+        <activity
+            android:name=".activity.MyWorkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 咨询投诉 -->
+        <activity
+            android:name=".activity.ConsultingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我要办件 -->
+        <activity
+            android:name=".activity.QueryHandingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我要办件详情 -->
+        <activity
+            android:name=".activity.QueryHandingDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 办件详情 -->
+        <activity
+            android:name=".activity.DoThingDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我要办事列表 -->
+        <activity
+            android:name=".activity.FamilyRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 网上预约提醒 -->
+        <activity
+            android:name=".activity.OnlineBookingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 网上预约 -->
+        <activity
+            android:name=".activity.OnlineBookingHallActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 在线申报 -->
+        <activity
+            android:name=".activity.OnlineDeclareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.NewsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 办事指南详情 -->
+        <activity
+            android:name=".activity.FamilyRegisterDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业信息列表 -->
+        <activity
+            android:name=".activity.EnterpriseInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 个人中心 -->
+        <activity
+            android:name=".activity.PersonalCenterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.MyQueryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.MySpaceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.MyCertificateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- ssssssssssssssssssssssssssssssssssss服务功能模块sssssssssssssssssssssssssssssssss -->
+        <!-- ssssssssssssssssssssssssssssssssssss服务功能模块sssssssssssssssssssssssssssssssss -->
+        <!-- 生活缴费 -->
+        <activity
+            android:name=".activity.things.LifePaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 停电停水通知详情 -->
+        <activity
+            android:name=".activity.things.WpNoticeDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 选择缴费机构 -->
+        <activity
+            android:name=".activity.things.ChoiceMechanismActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 水电费 -->
+        <activity
+            android:name=".activity.things.PowerRateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 水电费详情 -->
+        <activity
+            android:name=".activity.things.PowerRateDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- ssssssssssssssssssssssssssssssssssss附近模块sssssssssssssssssssssssssssssssss -->
+        <!-- ssssssssssssssssssssssssssssssssssss附近模块sssssssssssssssssssssssssssssssss -->
+        <!-- webView -->
+        <activity
+            android:name=".activity.things.WebNearActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- ssssssssssssssssssssssssssssssssssss互动模块sssssssssssssssssssssssssssssssss -->
+        <!-- ssssssssssssssssssssssssssssssssssss互动模块sssssssssssssssssssssssssssssssss -->
+
+
+        <!-- 互动新闻搜索 -->
+        <activity
+            android:name=".activity.Interaction.NewsSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 咨询列表 -->
+        <activity
+            android:name=".activity.Interaction.ConsultationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 咨询详情 -->
+        <activity
+            android:name=".activity.Interaction.ConsultationDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 咨询投诉 -->
+        <activity
+            android:name=".activity.Interaction.IwantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 部门选择 -->
+        <activity
+            android:name=".activity.Interaction.DepartmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 咨询投诉 -->
+        <activity
+            android:name=".activity.IWantSuggestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 领导信箱 -->
+        <activity
+            android:name=".activity.LeadMailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 给我写信 -->
+        <activity
+            android:name=".activity.WriteToMeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 办件详情下表单详情 -->
+        <activity
+            android:name=".activity.QueryTabInfoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 在线申报-基本信息 -->
+        <activity
+            android:name=".activity.BaseInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!-- 在线申报-相关材料 -->
+        <activity
+            android:name=".activity.RelativeMaterialsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 网上预约-信息 -->
+        <activity
+            android:name=".activity.OnlineBookingInfoVerifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 在线申报-附件文件浏览器 -->
+        <activity
+            android:name=".activity.SDCardFileExplorerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 投诉咨询-个人中心个人建议，咨询，投诉列表 -->
+        <activity
+            android:name=".activity.IWantListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.OpenPharmacyActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.ListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.EnterpriseDeclareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 地址列表 -->
+        <activity
+            android:name=".activity.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AddressDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.ConServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务 -->
+        <activity
+            android:name=".activity.GovernmentAffairsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务部门责任清单 -->
+        <activity
+            android:name=".activity.DepartmentDutyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务部门责任清单详情 -->
+        <activity
+            android:name=".activity.DepartmentDutyListDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政权力清单 -->
+        <activity
+            android:name=".activity.AdminPowerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政权力清单列表 -->
+        <activity
+            android:name=".activity.PowerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政权力清单详情 -->
+        <activity
+            android:name=".activity.PowerListDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务市场准入清单 -->
+        <activity
+            android:name=".activity.MarketAdmittanceListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务市场准入清单详情 -->
+        <activity
+            android:name=".activity.MarketAdmittanceListDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务负面公示 -->
+        <activity
+            android:name=".activity.PublicityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务负面公示详情 -->
+        <activity
+            android:name=".activity.PublicityDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务政策法规 -->
+        <activity
+            android:name=".activity.PolicyStatuteActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务政策法规详情 -->
+        <activity
+            android:name=".activity.PolicyStatuteDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政事业性收费清单 -->
+        <activity
+            android:name=".activity.ChargesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政事业性收费清单详情 -->
+        <activity
+            android:name=".activity.ChargesDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政审批中介服务清单 -->
+        <activity
+            android:name=".activity.AdminApproveServicesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务行政审批中介服务详情 -->
+        <activity
+            android:name=".activity.AdminApproveServicesDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务我要查询 -->
+        <activity
+            android:name=".activity.IWantQueryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 阳光政务查询统计 -->
+        <activity
+            android:name=".activity.QueryStatisticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.PaymentListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.QueryHandingDetail2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LogisticsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LogisticsDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AppointmentListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AppointmentDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name=".activity.RealNameWithSMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EnterpriseAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CollectListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 办理材料寄送 -->
+        <activity
+            android:name=".activity.MaterialSendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.FindPasswordWay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.FindPasswordUsePhone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.FindPasswordUseIdCard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.ReSetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.VerifyIDActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 综合查询 -->
+        <activity
+            android:name=".activity.IntegratedQueryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LeaderMailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LeaderMailInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LeaderEmailAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- ————————————————————————————JPush 所需start————————————————————————————————————————— -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.powerrich.office.oa" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.InsuranceReceiveActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.ResultAliveActivity" />
+
+        <!-- 挂号 -->
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 服务 -->
+        <activity
+            android:name=".activity.ServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 个人、企业在线办事 -->
+        <activity
+            android:name=".activity.OnlineWorkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 个人、企业办事 -->
+        <activity
+            android:name=".activity.WorkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 办事指南 -->
+        <activity
+            android:name=".activity.WorkGuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- 办件查询 -->
+        <activity
+            android:name=".activity.DoThingQueryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 申报须知 -->
+        <activity
+            android:name=".activity.DeclareNoticeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 基本信息 -->
+        <activity
+            android:name=".activity.BasicInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 选择服务网点 -->
+        <activity
+            android:name=".activity.SelectServiceBranchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 申报材料 -->
+        <activity
+            android:name=".activity.DeclareMaterialsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 交换信息 -->
+        <activity
+            android:name=".activity.ExchangeInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 材料库 -->
+        <activity
+            android:name=".activity.MaterialsDepotActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 快递服务 -->
+        <activity
+            android:name=".activity.ExpressServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 供水服务 -->
+        <activity
+            android:name=".activity.WaterServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 申报告知 -->
+        <activity
+            android:name=".activity.DeclareNotifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.powerrich.office.oa.DataProvider"
+            android:exported="false" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.powerrich.office.oa" />
+            </intent-filter>
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能 -->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="com.powerrich.office.oa.DownloadProvider"
+            android:exported="true" />
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.powerrich.office.oa" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.powerrich.office.oa" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <!-- <receiver android:name="com.example.jpushdemo.MyJPushMessageReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" /> -->
+        <!-- <category android:name="com.powerrich.office.oa"></category> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="2ee933c12eec8b02c7cd4fa7" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- ————————————————————————————JPush 所需end——————————————————————————————————————————— -->
+        <!-- 预约详情 -->
+        <activity
+            android:name=".activity.OnlineBookingDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 确认信息 -->
+        <activity
+            android:name=".activity.OnlineBookingVerifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.things.TravelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.things.PublicWebViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- Image Selector Entry -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 社保查询首页 -->
+        <activity
+            android:name=".activity.home.SocialSecurityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 社保查询 -->
+        <activity
+            android:name=".activity.home.InsuranceInquiriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 异地就医备案查询 -->
+        <activity
+            android:name=".activity.home.MedicalRecordsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 参保缴费证明 -->
+        <activity
+            android:name=".activity.home.SocialProveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 养老金收入证明 -->
+        <activity
+            android:name=".activity.home.OldProveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 社保个人信息 -->
+        <activity
+            android:name=".activity.home.SocialInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 公积金查询主页 -->
+        <activity
+            android:name=".activity.AccumulationFundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AccFundBaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AccFundDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.AccFundLoansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LongHuYingTanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.home.MobileBusinessSortActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 百度定位 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fSC2Xmye3iw0vgdopDGoImeQGowGM6UB" />
+
+        <activity android:name=".activity.SearchMoreActivity" />
+        <activity
+            android:name=".activity.WorkNewActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".activity.WorkTimeActivity" />
+        <!-- 注册界面 -->
+        <activity android:name=".activity.RegisterNewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            />
+        <activity android:name=".activity.RegisterAgreementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            ></activity>
+        <activity
+            android:name=".activity.mine.Identify5Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <!-- 修改邮箱 -->
+        <activity
+            android:name=".activity.ModifyNewEmailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 修改邮箱 -->
+        <activity
+            android:name=".activity.ModifyNewEmail2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 修改手机号 -->
+        <activity
+            android:name=".activity.ModifyNewPhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".fund.Activity.LoanForActivity"></activity>
+        <activity android:name=".fund.Activity.EarlyActivity"></activity>
+        <activity android:name=".fund.Activity.DetailsActivity"></activity>
+        <activity android:name=".fund.Activity.EarlySettlementActivity"></activity> <!-- 公积金公积金公积金公积金公积金公积金公积金公积金公积金公积金公积金公积金 -->
+        <!-- 公积金首页 -->
+        <activity
+            android:name=".fund.Activity.FundHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 公积金账户信息 -->
+        <activity
+            android:name=".fund.Activity.FundInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 贷款账户信息 -->
+        <activity
+            android:name=".fund.Activity.LoanAccountInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--房贷计算器-->
+        <activity
+            android:name=".fund.Activity.FundCalculatorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我的业务-->
+        <activity
+            android:name=".fund.Activity.FundBusinessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我要提取-->
+        <activity
+            android:name=".fund.Activity.FundExtractActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我要提取1-->
+        <activity
+            android:name=".fund.Activity.FundExtract1Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我要提取2-->
+        <activity
+            android:name=".fund.Activity.FundExtract2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--还款明细、还款计划、 贷款逾期查询-->
+        <activity
+            android:name=".fund.Activity.RefundDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--签约对冲还贷-->
+        <activity
+            android:name=".fund.Activity.QianYueDuiChongHuaiDaiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--服务网点查询-->
+        <activity
+            android:name=".fund.Activity.FuWuWangDianChaXunActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <!--公积金功能导航-->
+        <activity
+            android:name=".fund.Activity.FundFunctionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--注意事项-->
+        <activity
+            android:name=".fund.Activity.NotesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

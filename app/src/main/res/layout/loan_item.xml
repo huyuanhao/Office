@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="360px">
+
+    <LinearLayout
+        android:paddingTop="10px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="346px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_cllr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料录入"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:textColor="#333333"
+                android:textSize="50px"
+                />
+
+        <TextView
+            android:id="@+id/tv_cllr_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018-05-2210:22"
+            android:layout_marginRight="8dp"
+            android:gravity="right"
+            android:textSize="30px"
+            android:textColor="#666666"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="58px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+        <View
+            android:id="@+id/view_dot"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:background="@drawable/shapcycle3"
+            ></View>
+
+            <ImageView
+                android:id="@+id/iv_columnar"
+                android:layout_width="14px"
+                android:layout_height="313px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="11px"
+                android:background="@drawable/shapcycle2"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/loban_bg"
+            >
+            <LinearLayout
+                android:layout_marginTop="65px"
+                android:layout_marginLeft="74px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_bljd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="办理节点："
+                    style="@style/loanStyle"
+                    />
+                <TextView
+                    android:id="@+id/tv_bljd_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- -"
+                    style="@style/loanStyle"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="36px"
+                android:layout_marginLeft="74px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_blsj_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="办理时间："
+                    style="@style/loanStyle"
+                    />
+                <TextView
+                    android:id="@+id/tv_blsj_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- -"
+                    style="@style/loanStyle"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="36px"
+                android:layout_marginLeft="74px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_blresult_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="办理进度："
+                    style="@style/loanStyle"
+                    />
+                <TextView
+                    android:id="@+id/tv_blresult_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- -"
+                    style="@style/loanStyle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

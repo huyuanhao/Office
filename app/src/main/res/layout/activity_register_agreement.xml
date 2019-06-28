@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterAgreementActivity">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+           android:layout_above="@+id/tv_agree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.1"
+                android:text="bbbbbbbbbb"
+                android:textSize="15sp"
+                android:textColor="#333333" />
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_45"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/widget_size_20"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:layout_marginBottom="@dimen/widget_size_10"
+            android:background="@drawable/blue_corners_dp"
+            android:gravity="center"
+            android:text="我同意遵守协议"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

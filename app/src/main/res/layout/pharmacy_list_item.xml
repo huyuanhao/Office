@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textSize="@dimen/ts16" />
+        <TextView
+            android:id="@+id/tv_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/blue_main"
+            android:text="XXX"
+            android:textSize="@dimen/ts16" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/padding_10"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="@dimen/padding_5"
+	        android:layout_marginRight="@dimen/padding_5"
+	        android:background="@drawable/gray_border_white_bg"
+	        android:padding="@dimen/padding_3"
+	        android:textSize="@dimen/ts16"
+	        android:text="洪泽区"/>
+	    <TextView 
+	        android:id="@+id/tv_declare"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="@dimen/padding_5"
+	        android:layout_marginRight="@dimen/padding_5"
+	        android:background="@drawable/blue_corners_icon"
+	        android:padding="@dimen/padding_3"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/ts16"
+	        android:text="申报"/>
+	    <TextView 
+	        android:id="@+id/tv_material"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="@dimen/padding_5"
+	        android:layout_marginRight="@dimen/padding_5"
+	        android:background="@drawable/yellow_corners_icon"
+	        android:padding="@dimen/padding_3"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/ts16"
+	        android:text="材料"/>
+	    <TextView 
+	        android:id="@+id/tv_consulting"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginLeft="@dimen/padding_5"
+	        android:layout_marginRight="@dimen/padding_5"
+	        android:background="@drawable/red_corners_icon"
+	        android:padding="@dimen/padding_3"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/ts16"
+	        android:text="咨询"/>
+	</LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

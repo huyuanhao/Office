@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.powerrich.office.oa.view.TopActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 头部按钮 -->
+
+    <RelativeLayout
+        style="@style/system_top_titlebar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/system_back"
+            style="@style/common_top_btn"
+            android:drawableLeft="@drawable/back_arrow"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts16"
+            android:text="  返回" />
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/common_top_textview"
+            android:text="@string/app_name" />
+
+        <Button
+            android:id="@+id/btn_top_right"
+            style="@style/common_top_btn"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</com.powerrich.office.oa.view.TopActivity>

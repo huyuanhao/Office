@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <com.yt.simpleframe.view.StatusView
+            android:id="@+id/multiplestatusview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentView="@layout/simple_recycleview"
+            app:emptyView="@layout/no_data_view"
+            app:errorView="@layout/error_view"
+            app:loadingView="@layout/loading_view"
+            app:noNetworkView="@layout/no_network_view"></com.yt.simpleframe.view.StatusView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:layout_gravity="center"
+        android:background="@color/title_bar_color"
+        android:gravity="center"
+        android:text="添加地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_15" />
+
+
+</LinearLayout>

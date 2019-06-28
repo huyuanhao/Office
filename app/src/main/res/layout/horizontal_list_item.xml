@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_table01"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="环节名称" />
+
+
+        <TextView
+            android:id="@+id/tv_table02"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="办理人" />
+
+        <TextView
+            android:id="@+id/tv_table03"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="办理部门" />
+
+        <TextView
+            android:id="@+id/tv_table04"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="办理状态" />
+
+        <TextView
+            android:id="@+id/tv_table05"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="接受时间" />
+
+        <TextView
+            android:id="@+id/tv_table06"
+            style="@style/listViewTableItem"
+            android:layout_weight="1"
+            android:text="办理时间" />
+    </LinearLayout>
+
+</LinearLayout>

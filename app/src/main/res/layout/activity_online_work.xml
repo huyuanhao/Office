@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg">
+
+    <com.powerrich.office.oa.view.GradationScrollView
+        android:id="@+id/gradation_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:background="@drawable/work_banner" />
+
+            <LinearLayout
+                android:id="@+id/ll_recently"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32px"
+                    android:layout_marginLeft="59px"
+                    android:layout_marginTop="32px"
+                    android:text="@string/recently_use"
+                    android:textColor="#5E5E5E"
+                    android:textSize="50px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/gv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32px"
+                    android:layout_marginLeft="59px"
+                    android:layout_marginTop="32px"
+                    android:text="@string/recently_use"
+                    android:textColor="@color/common_gray"
+                    android:textSize="49px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/gray_split_line_bg_group" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="243px"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_file"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="58px"
+                            android:src="@drawable/icon_married_register" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px"
+                            android:gravity="center"
+                            android:text="@string/married_register"
+                            android:textColor="@color/text_color_0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_split_line_bg_group" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_collection"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="58px"
+                            android:src="@drawable/icon_id_card_reapply" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px"
+                            android:gravity="center"
+                            android:text="@string/id_card_reapply"
+                            android:textColor="@color/text_color_0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_split_line_bg_group" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_message"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="58px"
+                            android:src="@drawable/icon_housing_loans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px"
+                            android:gravity="center"
+                            android:text="@string/housing_loans"
+                            android:textColor="@color/text_color_0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_split_line_bg_group" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="58px"
+                            android:src="@drawable/icon_health_certificate_transact" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px"
+                            android:gravity="center"
+                            android:text="@string/health_certificate_transact"
+                            android:textColor="@color/text_color_0e0e0e"
+                            android:textSize="45px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32px"
+                    android:layout_marginLeft="59px"
+                    android:layout_marginTop="32px"
+                    android:text="@string/i_demand_do"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_online_work"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="71px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="10px">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5px">
+
+                            <TextView
+                                android:id="@+id/tv_online_work"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/online_work"
+                                android:textColor="@color/color_333333"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="27px"
+                                android:text="可在线网上办事"
+                                android:textColor="@color/hint"
+                                android:textSize="38px" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="160px"
+                            android:layout_height="160px"
+                            android:layout_marginBottom="30px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="10px"
+                            android:src="@drawable/icon_online_work" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:background="#F1F0F0" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_order_work"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="71px"
+                        android:layout_marginRight="10px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="10px">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5px">
+
+                            <TextView
+                                android:id="@+id/tv_order_work"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/order_work"
+                                android:textColor="@color/color_333333"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="27px"
+                                android:text="可在线预约办事"
+                                android:textColor="@color/hint"
+                                android:textSize="38px" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="160px"
+                            android:layout_height="160px"
+                            android:layout_marginBottom="30px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="10px"
+                            android:src="@drawable/icon_order_work" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginLeft="59px"
+                    android:layout_marginTop="40px"
+                    android:text="@string/i_demand_check"
+                    android:textColor="@color/color_333333"
+                    android:textSize="49px"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_enterprise_information_query"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="71px"
+                        android:layout_marginRight="10px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="10px"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="办事指南"
+                                android:textColor="@color/color_333333"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="27px"
+                                android:text="查看办事指南"
+                                android:textColor="@color/hint"
+                                android:textSize="38px" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="160px"
+                            android:layout_height="160px"
+                            android:layout_marginBottom="30px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="10px"
+                            android:src="@drawable/icon_enterprise_information_query" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:background="#F1F0F0"
+                        android:visibility="visible" />
+                    <LinearLayout
+                        android:id="@+id/ll_do_thing_query"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="71px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="10px">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/do_thing_query"
+                                android:textColor="@color/color_333333"
+                                android:textSize="46px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="27px"
+                                android:text="可在线办理查询"
+                                android:textColor="@color/hint"
+                                android:textSize="38px" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="160px"
+                            android:layout_height="160px"
+                            android:layout_marginBottom="30px"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="10px"
+                            android:src="@drawable/icon_do_thing_query" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32px"
+                    android:layout_marginLeft="59px"
+                    android:layout_marginTop="32px"
+                    android:text="@string/i_demand_look"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_power_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_admin_power_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/admin_power_list"
+                        android:textColor="@color/text_color_0e0e0e"
+                        android:textSize="46px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_charge_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_admin_charge_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/admin_charge_list"
+                        android:textColor="@color/text_color_0e0e0e"
+                        android:textSize="46px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:id="@+id/ll_market_admittance_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_market_admittance_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/market_admittance_list"
+                        android:textColor="@color/text_color_0e0e0e"
+                        android:textSize="46px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+                <LinearLayout
+                    android:id="@+id/ll_admin_approve_intermediary_services_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_admin_approve_intermediary_services_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/admin_approve_intermediary_services_list"
+                        android:textColor="@color/text_color_0e0e0e"
+                        android:textSize="46px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="#F1F0F0" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_department_duty_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="56px"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_department_duty_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/department_duty_list"
+                        android:textColor="@color/text_color_0e0e0e"
+                        android:textSize="46px" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.powerrich.office.oa.view.GradationScrollView>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="225px"
+        android:background="@color/transparent"
+        android:paddingTop="87px">
+
+
+        <ImageView
+            android:id="@+id/system_back"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_back"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/transparent"
+            android:textSize="55px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_top_right"
+            android:layout_width="115px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/white_icon_home"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_custom_right"
+            style="@style/common_top_btn"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_toLeftOf="@id/btn_top_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="440px"
+            android:background="@color/blue_main"/>
+
+        <com.powerrich.office.oa.view.BannerLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="442px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_below="@id/banner"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_interact1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="167px"
+                    android:layout_height="167px"
+                    android:src="@drawable/icon_interact_1"/>
+                <TextView
+                    android:id="@+id/tv_interact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/consultation"
+                    android:textSize="34px"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_interact_bule" />
+
+            <LinearLayout
+                android:id="@+id/ll_interact2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="167px"
+                    android:layout_height="167px"
+                    android:src="@drawable/icon_interact_2"/>
+                <TextView
+                    android:id="@+id/tv_interact2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/complaint"
+                    android:textSize="34px"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_interact_bule" />
+
+            <LinearLayout
+                android:id="@+id/ll_interact3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="167px"
+                    android:layout_height="167px"
+                    android:src="@drawable/icon_interact_4"/>
+                <TextView
+                    android:id="@+id/tv_interact4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/proposal"
+                    android:textSize="34px"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_interact_bule" />
+
+            <LinearLayout
+                android:id="@+id/ll_interact4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="167px"
+                    android:layout_height="167px"
+                    android:src="@drawable/icon_interact_3"/>
+                <TextView
+                    android:id="@+id/tv_interact3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mayoral_mailbox"
+                    android:textSize="34px"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="254px"
+            android:layout_height="41px"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/word_interact_news"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@color/background" />
+    </RelativeLayout>
+</LinearLayout>

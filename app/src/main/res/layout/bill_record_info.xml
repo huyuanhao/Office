@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/widget_size_45"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_40"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/user_info_item_left"
+            android:text="鹰潭供电四月份账单" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/user_info_item_right"
+            android:text="2018-01-07 15:33:24" />
+    </RelativeLayout>
+
+</LinearLayout>

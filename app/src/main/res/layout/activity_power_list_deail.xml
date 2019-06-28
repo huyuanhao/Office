@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35px"
+        android:paddingRight="35px"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/exploiting_work_unit" />
+
+                <TextView
+                    android:id="@+id/tv_exploiting_work_unit"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/power_project_name" />
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/sub_item_name" />
+
+                <TextView
+                    android:id="@+id/tv_sub_item_name"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/sub_item_exploiting_work_unit" />
+
+                <TextView
+                    android:id="@+id/tv_sub_item_exploiting_work_unit"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/power_type" />
+
+                <TextView
+                    android:id="@+id/tv_power_type"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/settings_gist" />
+
+                <TextView
+                    android:id="@+id/tv_setting_gist"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:layout_marginBottom="35px"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_item_text"
+                    android:gravity="center"
+                    android:textSize="45px"
+                    android:text="@string/remark" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    style="@style/normal_item_name"
+                    android:textSize="45px"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

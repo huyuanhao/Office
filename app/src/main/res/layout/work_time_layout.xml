@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="办理地点:" />
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            tools:text="鹰潭市行政服务"
+            android:text="" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="受理时间:" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1px"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="14dp"
+
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看路线"
+                android:textSize="15sp"
+                android:textColor="#0099FF"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/work_map"
+                />
+
+            <TextView
+                 android:id="@+id/tv_local_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无位置信息"
+                android:textSize="15sp"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0701-6216939"
+            android:layout_marginRight="13dp"
+            android:drawableLeft="@drawable/work_tell"
+            android:textSize="15sp"
+            android:autoLink="phone"
+            android:gravity="center_vertical"
+            android:drawablePadding="3dp"
+            android:textColor="#0099FF"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

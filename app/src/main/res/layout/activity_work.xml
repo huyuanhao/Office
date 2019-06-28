@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="120px"
+        android:layout_marginRight="120px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/select_tab_layout_bg"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_tab_checked_left"
+            android:gravity="center"
+            android:paddingBottom="35px"
+            android:paddingTop="35px"
+            android:text="按主题"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="35px"
+            android:paddingTop="35px"
+            android:text="按部门"
+            android:textSize="45px" />
+
+    </LinearLayout>
+
+    <include layout="@layout/common_search_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="256px"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ExpandableListView
+                    android:id="@+id/expand_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:groupIndicator="@null" />
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    style="@style/layout_wrap"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="20px"
+                    android:drawableTop="@drawable/ic_no_data"
+                    android:gravity="center"
+                    android:text="@string/system_no_data"
+                    android:textColor="@color/text_color_8b8b8b"
+                    android:textSize="50px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

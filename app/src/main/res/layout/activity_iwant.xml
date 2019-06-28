@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px30"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/tv_dep_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px40"
+                    android:text="@string/admissible_department"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px50" />
+
+                <com.powerrich.office.oa.view.MySpinner
+                    android:id="@+id/spinner_dep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="visible" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_dep"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_border_white_bg"
+                    android:enabled="false"
+                    android:padding="@dimen/px32"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px50"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/text_black_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px40"
+                    android:text="@string/type_of_letter"
+                    android:textSize="@dimen/px50" />
+
+                <RadioGroup
+                    android:id="@+id/radio_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_ts"
+                        style="@style/normal_item_name"
+                        android:layout_marginLeft="@dimen/px40"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="@dimen/px20"
+                        android:tag="1"
+                        android:text="投诉"
+                        android:checked="true"
+                        android:textColor="@color/black"
+                        android:textSize="50px" />
+
+                    <RadioButton
+                        android:id="@+id/cb_jy"
+                        style="@style/normal_item_name"
+                        android:layout_marginLeft="60px"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="@dimen/px20"
+                        android:tag="0"
+                        android:text="建议"
+                        android:textColor="@color/black"
+                        android:textSize="50px" />
+                </RadioGroup>
+                <com.powerrich.office.oa.view.MySpinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="30px">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:text="@string/theme"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px50" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_title"
+                    style="@style/normal_item_name"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/online_declare_hint_must"
+                    android:inputType="textShortMessage"
+                    android:maxLength="30"
+                    android:paddingLeft="@dimen/px32"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/px50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rg"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px40"
+                    android:text="@string/consulting_open"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px50" />
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_yes"
+                        style="@style/normal_item_name"
+                        android:layout_marginLeft="@dimen/px40"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="@dimen/px20"
+                        android:tag="1"
+                        android:text="@string/consulting_open_yes"
+                        android:textColor="@color/black"
+                        android:textSize="50px" />
+
+                    <RadioButton
+                        android:id="@+id/cb_no"
+                        style="@style/normal_item_name"
+                        android:layout_marginLeft="60px"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/cb_appbg1"
+                        android:drawablePadding="@dimen/px20"
+                        android:tag="0"
+                        android:text="@string/consulting_open_no"
+                        android:textColor="@color/black"
+                        android:textSize="50px" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30px">
+
+                <TextView
+                    style="@style/normal_item_name"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="10px"
+                    android:text="@string/consulting_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px50" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="315px"
+                    android:layout_marginBottom="10px"
+                    android:background="@drawable/edit_bg_appbg"
+                    android:gravity="left|top"
+                    android:hint="请您详细描述您的问题，以便为您提供更为准确的解答"
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:maxLength="500"
+                    android:minLines="5"
+                    android:padding="25px"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="@string/photo_attachments"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/px50" />
+
+            <com.powerrich.office.oa.view.ZzImageBox
+                android:id="@+id/zz_image_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                android:background="@color/white"
+                app:zib_left_margin="30px"
+                app:zib_right_margin="30px"
+                app:zib_img_padding="10px"
+                app:zib_img_size_one_line="4"
+                app:zib_max_line="2"
+                app:zib_img_deletable="true"
+                app:zib_img_add="@drawable/icon_boxmore_add"
+                app:zib_img_default="@mipmap/ic_launcher"
+                app:zib_img_delete="@drawable/iv_delete" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:drawableBottom="@drawable/icon_box_more_up"
+                android:gravity="center"
+                android:paddingBottom="@dimen/px40"
+                android:paddingTop="@dimen/px40"
+                android:text="@string/more"
+                android:textColor="@color/blue_main"
+                android:textSize="@dimen/px50"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="30px"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136px"
+                    android:layout_marginTop="@dimen/px40"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg_appbg"
+                        android:hint="@string/please_enter_your_name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/px32"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/px50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136px"
+                    android:layout_marginTop="22px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:text="@string/id_card_num"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg_appbg"
+                        android:hint="@string/please_enter_your_id"
+                        android:inputType="number"
+                        android:padding="@dimen/px32"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/px50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136px"
+                    android:layout_marginTop="22px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:text="@string/phone_num"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg_appbg"
+                        android:hint="@string/please_enter_your_phone"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:padding="@dimen/px32"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/px50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136px"
+                    android:layout_marginTop="22px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg_appbg"
+                        android:hint="@string/please_enter_your_email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/px32"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/px50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px80"
+                    android:layout_marginTop="@dimen/px20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50"
+                        android:visibility="invisible"
+                        android:text="                "/>
+                    <CheckBox
+                        android:id="@+id/cb_short_msg"
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/px80"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg2"
+                        android:drawablePadding="@dimen/px20"
+                        android:text="@string/consulting_short_msg"
+                        android:textSize="@dimen/px50" />
+
+                    <CheckBox
+                        android:id="@+id/cb_mail"
+                        style="@style/normal_item_name"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/cb_appbg2"
+                        android:drawablePadding="@dimen/px20"
+                        android:text="@string/consulting_mail"
+                        android:textSize="@dimen/px50"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22px"
+                    android:background="@drawable/edit_bg_appbg"
+                    android:drawableRight="@drawable/icon_pull_common"
+                    android:padding="@dimen/px32"
+                    android:text="@string/please_enter_your_address"
+                    android:textSize="@dimen/px50"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136px"
+                    android:layout_marginTop="22px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_item_name"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:text="@string/address2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px50" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_bg_appbg"
+                        android:gravity="left|top"
+                        android:hint="选填"
+                        android:inputType="textLongMessage|textMultiLine"
+                        android:minLines="3"
+                        android:padding="@dimen/px32"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/px50" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px120"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginRight="@dimen/px40"
+                    android:layout_marginTop="@dimen/px40"
+                    android:background="@drawable/rect_titlebarcolor_10"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px50" />
+
+                <TextView
+                    android:id="@+id/tv_cacel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px120"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginRight="@dimen/px40"
+                    android:layout_marginTop="@dimen/px40"
+                    android:background="@drawable/rect_line_titlebarcolor_10"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:visibility="gone"
+                    android:textColor="@color/title_bar_color"
+                    android:textSize="@dimen/px50" />
+
+                <TextView
+                    android:id="@+id/tv_hotline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/px80"
+                    android:layout_marginTop="@dimen/px50"
+                    android:gravity="center"
+                    android:text="@string/mayor_hotline"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/px50"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

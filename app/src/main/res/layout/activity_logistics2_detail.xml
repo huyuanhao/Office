@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_70"
+            android:background="@color/title_bar_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/widget_size_12"
+            android:layout_marginRight="@dimen/widget_size_12"
+            android:layout_marginTop="@dimen/widget_size_25"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widget_size_85"
+                android:background="@drawable/white_shape">
+
+                <TextView
+                    android:id="@+id/tv_send1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_size_10"
+                    android:text="深圳"
+                    android:textColor="@color/color_333333"
+                    android:maxLength="3"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_receive5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/widget_size_10"
+                    android:text="鹰潭"
+                    android:maxLength="3"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_receive5"
+                    android:layout_toRightOf="@+id/tv_send1">
+
+                    <ImageView
+                        android:id="@+id/iv_send2"
+                        android:layout_width="@dimen/widget_size_30"
+                        android:layout_height="@dimen/widget_size_30"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:src="@drawable/icon_send_things" />
+
+                    <ImageView
+                        android:id="@+id/iv_car3"
+                        android:layout_width="@dimen/widget_size_30"
+                        android:layout_height="@dimen/widget_size_30"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:src="@drawable/icon_logistics_car" />
+
+                    <ImageView
+                        android:id="@+id/iv_receive4"
+                        android:layout_width="@dimen/widget_size_30"
+                        android:layout_height="@dimen/widget_size_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:src="@drawable/icon_collect_things" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_receive4"
+                        android:orientation="horizontal">
+
+                        <com.powerrich.office.oa.view.CircularLineaView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/widget_size_10"
+                            android:layout_marginLeft="@dimen/widget_size_10"
+                            android:layout_marginRight="@dimen/widget_size_7"
+                            android:layout_weight="1"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/font_size_10" />
+
+                        <com.yt.simpleframe.view.CircleImageView
+                            android:id="@+id/civ_middler6"
+                            android:layout_width="@dimen/widget_size_8"
+                            android:layout_height="@dimen/widget_size_8"
+                            android:src="@color/login_tv_bt" />
+
+                        <com.powerrich.office.oa.view.CircularLineaView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/widget_size_10"
+                            android:layout_marginLeft="@dimen/widget_size_7"
+                            android:layout_marginRight="@dimen/widget_size_10"
+                            android:layout_weight="1"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/font_size_10" />
+
+
+                        <!--<com.powerrich.office.oa.view.CircularLineaView-->
+                        <!--android:layout_width="200dp"-->
+                        <!--android:layout_height="@dimen/widget_size_10"-->
+                        <!--android:textColor="@color/gray"-->
+                        <!--android:textSize="@dimen/font_size_10"/>-->
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_left7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_receive4"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:text="开始" />
+
+                    <TextView
+                        android:id="@+id/tv_car8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_receive4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:text="运输中" />
+
+                    <TextView
+                        android:id="@+id/tv_right9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/iv_receive4"
+                        android:layout_marginTop="@dimen/widget_size_8"
+                        android:text="已送达" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_size_20"
+                android:background="@drawable/white_shape">
+
+                <RelativeLayout
+                    android:id="@+id/rlt_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_marginLeft="@dimen/widget_size_10"
+                    android:layout_marginRight="@dimen/widget_size_10">
+
+                    <TextView
+                        android:id="@+id/tv_ems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/widget_size_50"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_ems"
+                        android:drawablePadding="@dimen/widget_size_10"
+                        android:gravity="center"
+                        android:text="EMS： "
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_below="@+id/tv_ems"
+                        android:layout_marginLeft="@dimen/widget_size_5"
+                        android:layout_marginRight="@dimen/widget_size_5"
+                        android:background="@color/gray_split_line_bg_group" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llt_logistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlt_middle"
+                    android:layout_marginLeft="@dimen/widget_size_10"
+                    android:layout_marginRight="@dimen/widget_size_10"
+                    android:layout_marginTop="@dimen/widget_size_20"
+                    android:orientation="vertical"></LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

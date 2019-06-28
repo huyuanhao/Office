@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+app/build/
+.idea/
+sDKCore160901/
+.idea/modules.xml
+/identify/identify.iml
+!/app/app.iml
+/app/app.iml

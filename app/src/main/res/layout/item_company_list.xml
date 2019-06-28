@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_size_15"
+        android:layout_marginRight="@dimen/widget_size_15"
+        android:layout_marginTop="@dimen/widget_size_15"
+        android:background="@drawable/white_corners_dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_5"
+            android:layout_marginLeft="@dimen/widget_size_8"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="代码组织机构名称: 萍钢实业股份有限公司能"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <TextView
+            android:id="@+id/tv_company_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_5"
+            android:layout_marginLeft="@dimen/widget_size_8"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="代码组织机构名称: 萍钢实业股份有限公司能"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_company_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_5"
+            android:layout_marginLeft="@dimen/widget_size_8"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="代码组织机构名称: 萍钢实业股份有限公司能"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_company_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_5"
+            android:layout_marginLeft="@dimen/widget_size_8"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="代码组织机构名称: 萍钢实业股份有限公司能"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="点击查看详情信息"
+            android:textColor="@color/login_tv_bt"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+</LinearLayout>

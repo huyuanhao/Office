@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="姓名" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_name"
+            style="@style/user_info_item_right_fft"
+            android:background="@color/transparent"
+            android:hint="请输入名称" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_info_item_left"
+                android:text="性别" />
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_size_40"
+                android:button="@drawable/rb_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="@color/common_gray"
+                android:textSize="@dimen/font_size_14" />
+
+            <RadioButton
+                android:id="@+id/rb_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_size_20"
+                android:button="@drawable/rb_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="@color/common_gray"
+                android:textSize="@dimen/font_size_14" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="民族" />
+
+
+        <TextView
+            android:id="@+id/tv_group"
+            style="@style/user_info_item_right_fft"
+            android:drawablePadding="@dimen/widget_size_70"
+            android:drawableRight="@drawable/icon_expand"
+            android:hint="请选择名族" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="证件类型" />
+
+        <TextView
+            android:id="@+id/tv_card_type"
+            style="@style/user_info_item_right_fft"
+            android:drawablePadding="@dimen/widget_size_70"
+            android:drawableRight="@drawable/icon_expand"
+            android:hint="请选择类型" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="证件号码" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_card_number"
+            style="@style/user_info_item_right_fft"
+            android:background="@color/transparent"
+            android:text="360722199408171815" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="联系电话" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_phone_number"
+            style="@style/user_info_item_right_fft"
+            android:background="@color/transparent"
+            android:hint="请输入手机号" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="区域地址" />
+
+        <TextView
+            android:id="@+id/tv_select_city"
+            style="@style/user_info_item_right_fft"
+            android:drawablePadding="@dimen/widget_size_70"
+            android:drawableRight="@drawable/icon_expand"
+            android:hint="请选择地址" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="详细地址" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_adrress"
+            style="@style/user_info_item_right_fft"
+            android:background="@color/transparent"
+            android:hint="请输入详细地址" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:drawableLeft="@drawable/icon_xh"
+            android:text="邮箱" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/et_email"
+            style="@style/user_info_item_right_fft"
+            android:background="@color/transparent"
+            android:hint="请输入电子邮箱   " />
+
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+    <TextView
+        android:id="@+id/tv_modify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_40"
+        android:layout_marginLeft="@dimen/widget_size_20"
+        android:layout_marginRight="@dimen/widget_size_20"
+        android:layout_marginTop="@dimen/widget_size_40"
+        android:background="@drawable/blue_corners_dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14"
+        android:gravity="center"
+        android:text="提交" />
+</LinearLayout>

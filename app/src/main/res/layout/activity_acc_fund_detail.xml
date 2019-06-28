@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    tools:context=".activity.AccFundDetailActivity">
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_title_bar"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/top_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0px">
+    <include layout="@layout/acc_fund_toolbar_layout"/>
+    </android.support.design.widget.AppBarLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/ic_no_data"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="@string/system_no_data"
+                android:textColor="@color/white"
+                android:textSize="50px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="@drawable/blue_corners3_icon"
+            android:layout_marginTop="45px"
+            android:layout_marginLeft="35px"
+            android:layout_marginRight="35px"
+            android:layout_marginBottom="58px"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:text="返回"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="33px"
+            android:textSize="30px"
+            android:textColor="#999999"
+            android:text="鹰潭市住房公积金管理中心"/>
+    </LinearLayout>
+</RelativeLayout>

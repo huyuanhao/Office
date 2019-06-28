@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办件"
+            android:background="@color/appbar_color"
+            android:textSize="@dimen/font_size_14"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/widget_size_3"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_5"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_type"
+            style="@style/user_info_item_left"
+            android:textSize="@dimen/font_size_14"
+            android:text="办件信息"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/widget_size_10"
+            android:textSize="@dimen/font_size_13"
+            android:text="2018-01-07 15:33:24"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_size_10"
+        android:layout_marginTop="@dimen/widget_size_5"
+        android:layout_marginBottom="@dimen/widget_size_5"
+        android:layout_marginRight="@dimen/widget_size_10"
+        android:textSize="@dimen/font_size_13"
+        android:text="您的网上办件已经审核通过，请携带个人身份证到政务中心领取新证件"/>
+
+</LinearLayout>

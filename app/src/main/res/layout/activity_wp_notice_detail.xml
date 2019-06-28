@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="100px"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="title"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:textSize="60px"
+        android:textColor="@color/black"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/line_color"/>
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="50px"
+        android:text="time"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="50px"
+        android:text="range"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="50px"
+        android:text="line"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="50px"
+        android:text="name"
+        android:textColor="@color/black" />
+</LinearLayout>

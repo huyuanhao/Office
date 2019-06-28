@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp60"
+        android:layout_margin="@dimen/padding_10"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            style="@style/normal_item_name"
+            android:maxLines="2"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_policy_data"
+                style="@style/normal_item_name"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_policy_type"
+                style="@style/normal_item_name"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:paddingRight="5dp"
+        android:src="@drawable/arrow_left"
+        android:visibility="gone" />
+
+</LinearLayout>

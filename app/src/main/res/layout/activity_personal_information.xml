@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/llt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="姓名"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="张三"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="性别"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="女"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="身份证号码"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="56***564"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tv_4"
+                            android:layout_alignBottom="@+id/tv_4"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:text="户口所在地"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="罗河镇新田村新田五组40号"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="首次参保年月"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="2015-6"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="参保状态"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="正常参保"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="缴费状态"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="参保缴"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150px"
+                        android:background="@drawable/layout_line_bg">
+
+                        <TextView
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:text="所属统筹区"
+                            android:textColor="@color/color_999999"
+                            android:textSize="46px" />
+
+                        <TextView
+                            android:id="@+id/tv_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="80px"
+                            android:layout_marginRight="80px"
+                            android:text="贵溪市"
+                            android:textColor="@color/color_333333"
+                            android:textSize="46px" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <include layout="@layout/activity_medical_bottom" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/empty_view_social"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

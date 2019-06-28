@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/check_box_bg_selector"
+            android:button="@null"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/basic_line_layout_style"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附件名称："
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_attachment_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/basic_line_layout_style"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="环节名称："
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_link_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/basic_line_layout_style"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传时间："
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/tv_upload_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/common_gray"
+                    android:textSize="46px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_check_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30px"
+            android:background="@drawable/icon_check_attachment" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/gray_system_bg" />
+
+</LinearLayout>

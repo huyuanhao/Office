@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <View
+        android:id="@+id/view_dot"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:layout_marginLeft="358px"
+        android:background="@drawable/shapcycle3"
+        ></View>
+
+
+    <TextView
+        android:layout_marginTop="7px"
+        android:layout_width="198px"
+        android:layout_height="198px"
+        android:text="结"
+        android:gravity="center"
+        android:textSize="60px"
+        android:layout_marginLeft="276px"
+        android:layout_marginBottom="30px"
+        android:textColor="@color/white"
+        android:background="@drawable/end"
+        />
+
+
+
+
+</LinearLayout>

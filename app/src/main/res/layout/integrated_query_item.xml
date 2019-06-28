@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:background="@color/gray_system_bg"
+        android:gravity="center">
+
+        <TableRow>
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="事项名称" />
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="办理范围" />
+
+            <TextView
+                android:id="@+id/tv_transact_scope"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="办理机构" />
+
+            <TextView
+                android:id="@+id/tv_transact_organization"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="办理时限" />
+
+            <TextView
+                android:id="@+id/tv_transact_limit"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="是否收费" />
+
+            <TextView
+                android:id="@+id/tv_is_charge"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="办事次数" />
+
+            <TextView
+                android:id="@+id/tv_transact_count"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="办理地址" />
+
+            <TextView
+                android:id="@+id/tv_transact_window_address"
+                style="@style/listViewTableItem"
+                android:layout_weight="6"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="咨询电话" />
+
+            <TextView
+                android:id="@+id/tv_consult_phone"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="投诉电话" />
+
+            <TextView
+                android:id="@+id/tv_complain_phone"
+                style="@style/listViewTableItem"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

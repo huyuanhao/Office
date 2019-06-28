@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_50"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="当前绑定邮箱为：" />
+
+        <TextView
+            android:id="@+id/tv_current_email"
+            style="@style/user_info_item_right"
+            android:text="12341231231@163.com" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_50"
+        android:layout_marginTop="@dimen/widget_size_15"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="新邮箱地址：" />
+
+        <!--<com.yt.simpleframe.view.edittext.TypeEditTextView-->
+        <!--android:id="@+id/edt_email"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/widget_size_120"-->
+        <!--android:layout_marginRight="@dimen/widget_size_20"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:background="@drawable/bg_edit_view"-->
+        <!--android:hint="请输入邮箱"-->
+        <!--android:textSize="@dimen/font_size_13"-->
+        <!--android:paddingBottom="@dimen/widget_size_8"-->
+        <!--android:paddingLeft="@dimen/widget_size_15"-->
+        <!--android:paddingRight="@dimen/widget_size_15"-->
+
+        <!--android:paddingTop="@dimen/widget_size_8"-->
+        <!--app:failview="@drawable/icon_pasw_remove"-->
+        <!--app:okview="@drawable/icon_pasw_removecheck"-->
+        <!--app:type="email">-->
+
+        <!--</com.yt.simpleframe.view.edittext.TypeEditTextView>-->
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/widget_size_120"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:background="@color/transparent"
+            android:hint="请输入邮箱"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="@dimen/widget_size_8"
+            android:paddingLeft="@dimen/widget_size_15"
+            android:paddingRight="@dimen/widget_size_15"
+            android:paddingTop="@dimen/widget_size_8"
+            android:textSize="@dimen/font_size_13" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_50"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="再次确认：" />
+
+        <!--<com.yt.simpleframe.view.edittext.TypeEditTextView-->
+        <!--android:id="@+id/edt_email_compare"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/widget_size_120"-->
+        <!--android:layout_marginRight="@dimen/widget_size_20"-->
+        <!--android:background="@drawable/bg_edit_view"-->
+        <!--android:hint="请再次输入邮箱"-->
+        <!--android:textSize="@dimen/font_size_13"-->
+        <!--android:paddingBottom="@dimen/widget_size_8"-->
+        <!--android:paddingLeft="@dimen/widget_size_15"-->
+        <!--android:paddingRight="@dimen/widget_size_15"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:paddingTop="@dimen/widget_size_8"-->
+        <!--app:failview="@drawable/icon_pasw_remove"-->
+        <!--app:okview="@drawable/icon_pasw_removecheck"-->
+        <!--app:type="equals">-->
+        <!--</com.yt.simpleframe.view.edittext.TypeEditTextView>-->
+
+
+        <EditText
+            android:id="@+id/edt_email_compare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/widget_size_120"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:background="@color/transparent"
+            android:hint="请再次输入邮箱"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="@dimen/widget_size_8"
+            android:paddingLeft="@dimen/widget_size_15"
+            android:paddingRight="@dimen/widget_size_15"
+            android:paddingTop="@dimen/widget_size_8"
+            android:textSize="@dimen/font_size_13" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_50"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="登录密码：" />
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/widget_size_120"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:background="@color/transparent"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/widget_size_8"
+            android:paddingLeft="@dimen/widget_size_15"
+            android:paddingRight="@dimen/widget_size_15"
+            android:paddingTop="@dimen/widget_size_8"
+            android:maxLength="17"
+            android:textSize="@dimen/font_size_13">
+
+        </com.powerrich.office.oa.view.NoEmojiEditText>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_error"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/widget_size_20"-->
+    <!--android:text="密码输入错误，请重新输入"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:textColor="@color/red"-->
+    <!--android:textSize="@dimen/font_size_14"/>-->
+
+    <TextView
+        android:id="@+id/tv_modify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_40"
+        android:layout_marginLeft="@dimen/widget_size_20"
+        android:layout_marginRight="@dimen/widget_size_20"
+        android:layout_marginTop="@dimen/widget_size_100"
+        android:background="@drawable/blue_corners_dp"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_40"
+        android:layout_marginLeft="@dimen/widget_size_20"
+        android:layout_marginRight="@dimen/widget_size_20"
+        android:layout_marginTop="@dimen/widget_size_20"
+        android:visibility="gone"
+        android:background="@drawable/white_corners_dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/appbar_color"
+        android:textSize="@dimen/font_size_14" />
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="13dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-11-13"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line1_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                apps:text="业务摘要:"
+                />
+            <TextView
+                android:id="@+id/tv_line1_value1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:layout_marginLeft="5dp"
+                apps:text="正常还款"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line1_name2"
+                style="@style/refund_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                apps:text="业务摘要:"
+                />
+            <TextView
+                android:id="@+id/tv_line1_value2"
+                style="@style/refund_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="正常还款"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line2_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:text="偿还本金:"
+                />
+            <TextView
+                android:id="@+id/tv_line2_value1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 1666.67"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line2_name2"
+                style="@style/refund_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已还本金:"
+                />
+            <TextView
+                android:id="@+id/tv_line2_value2"
+                style="@style/refund_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 5000.01"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line3_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:text="偿还利息:"
+                />
+            <TextView
+                android:id="@+id/tv_line3_value1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 1615.97"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line3_name2"
+                style="@style/refund_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已还利息:"
+                />
+            <TextView
+                android:id="@+id/tv_line3_value2"
+                style="@style/refund_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 4861.46"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_line4"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line4_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:text="偿还罚息:"
+                />
+            <TextView
+                android:id="@+id/tv_line4_value1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/refund_item"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 0.00"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_line4_name2"
+                style="@style/refund_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已还罚息:"
+                />
+            <TextView
+                android:id="@+id/tv_line4_value2"
+                style="@style/refund_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="¥ 0.00"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

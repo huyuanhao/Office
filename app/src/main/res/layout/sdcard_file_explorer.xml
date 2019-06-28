@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="@color/gray_system_bg">
+
+    <include
+        android:id="@+id/top_activity"
+        layout="@layout/common_top" />
+    
+    
+    <TextView
+        android:id="@+id/tv_path"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="当前路径"
+        android:textSize="14sp" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="类型：doc,docx,xls,xlsx,ppt,png,jgp,png"
+        android:textColor="@color/blue_main"
+        android:textSize="14sp"
+        android:visibility="gone" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_split_line_bg" />
+
+    <ListView android:id="@+id/lv_files"
+        style="@style/layout_full"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true"
+        android:gravity="center"
+        android:groupIndicator="@null"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarSize="1dp"
+        android:scrollbars="none" />
+        
+    
+</LinearLayout>

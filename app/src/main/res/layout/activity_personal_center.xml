@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_system_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mobile_phone_number"
+        style="@style/common_setting_style"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/mobile_phone_number" />
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/normal_item_name"
+            android:layout_toLeftOf="@+id/iv_phone"
+            android:layout_marginRight="@dimen/dp20"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_real_name_grade"
+        style="@style/common_setting_style"
+        android:layout_marginTop="0.1dp"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/real_name_grade" />
+
+        <TextView
+            android:id="@+id/tv_is_real_name"
+            style="@style/normal_item_name"
+            android:layout_toLeftOf="@+id/iv_is_real_name"
+            android:layout_marginRight="@dimen/dp20"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_is_real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/common_setting_style"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/user_name" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/normal_item_name"
+            android:layout_toLeftOf="@+id/iv_username"
+            android:layout_marginRight="@dimen/dp20"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/common_setting_style"
+        android:layout_marginTop="0.1dp"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/mailbox" />
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/normal_item_name"
+            android:layout_toLeftOf="@+id/iv_email"
+            android:layout_marginRight="@dimen/dp20"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/common_setting_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0.1dp"
+        android:background="@drawable/btn_item_white_bg_selector">
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/address"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/normal_item_name"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/iv_address"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/common_setting_style"
+        android:layout_marginTop="0.1dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/zip_code" />
+
+        <TextView
+            android:id="@+id/tv_postcode"
+            style="@style/normal_item_name"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/iv_postcode"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/common_setting_style"
+        android:layout_marginTop="0.1dp"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/id_card" />
+
+        <TextView
+            android:id="@+id/tv_idcard"
+            style="@style/normal_item_name"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/iv_idcard"
+            android:text=""
+            android:textSize="@dimen/ts12"
+            />
+
+        <ImageView
+            android:id="@+id/iv_idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login_password"
+        style="@style/common_setting_style"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/btn_item_white_bg_selector" >
+
+        <TextView
+            style="@style/normal_item_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="@string/login_password" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

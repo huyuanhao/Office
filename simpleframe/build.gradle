@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //没有使用特殊Header，可以不加这行
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.3.0'
+    api 'io.reactivex.rxjava2:rxjava:2.1.11'
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api('com.thoughtworks.xstream:xstream:1.4.7') {
+        exclude group: 'xpp3'
+        exclude group: 'xmlpull'
+    }
+    //    compile 'com.zhouyou:rxeasyhttp:2.0.6'
+    //    compile files('src/main/java/lib/javax.xml.bind-2.0.jar')
+    //    compile files('libs/rt.jar')
+    api 'com.github.martin90s:ImagePicker:v1.3.2'
+    //    api 'com.github.bumptech.glide:glide:4.8.0'
+    //    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    //权限管理
+    api 'com.contrarywind:Android-PickerView:4.1.8'
+    //选择器
+    api 'org.jsoup:jsoup:1.11.3'
+
+}

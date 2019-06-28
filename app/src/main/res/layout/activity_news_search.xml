@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px60"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px60">
+
+        <com.powerrich.office.oa.view.NoEmojiEditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px120"
+            android:layout_weight="1"
+            android:background="@drawable/ele_search_bg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/px30"
+            android:gravity="center_vertical|left"
+            android:hint="搜索新闻"
+            android:paddingLeft="@dimen/px30"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/px50" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px60"
+            android:paddingRight="@dimen/px60"
+            android:textSize="@dimen/px50"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/px10"
+        android:paddingRight="@dimen/px60"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="@dimen/px40" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <include
+            layout="@layout/empty_view"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_system_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_table1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/table_item_bg"
+            android:gravity="center"
+            android:text="@string/material_name"
+            android:textColor="#0e0e0e"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_table01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/table_item_bg"
+            android:gravity="center"
+            android:text="@string/material_piece"
+            android:textColor="#0e0e0e"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_table03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_item_bg"
+            android:gravity="center"
+            android:text="@string/material_electrical_parts"
+            android:textColor="#0e0e0e"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_table02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_item_bg"
+            android:gravity="center"
+            android:text="@string/material_original_copy"
+            android:textColor="#0e0e0e"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_table04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_item_bg"
+            android:gravity="center"
+            android:text="@string/material_paper"
+            android:textColor="#0e0e0e"
+            android:textSize="40px"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

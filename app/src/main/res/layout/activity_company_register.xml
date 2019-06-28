@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="100px"
+        android:paddingRight="100px">
+
+        <ImageView
+            android:layout_width="700px"
+            android:layout_height="280px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:src="@drawable/logo" />
+
+        <com.powerrich.office.oa.view.DeletableEditText
+            android:id="@+id/et_company_name"
+            style="@style/normal_item_name"
+            android:layout_width="match_parent"
+            android:background="@drawable/gray_border_white_bg"
+            android:drawablePadding="15px"
+            android:ems="10"
+            android:hint="@string/company_name"
+            android:padding="30px"
+            android:singleLine="true"
+            android:textColorHint="#666666"
+            android:textSize="42px" />
+
+        <com.powerrich.office.oa.view.DeletableEditText
+            android:id="@+id/et_company_linkman"
+            style="@style/normal_item_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:background="@drawable/gray_border_white_bg"
+            android:drawablePadding="15px"
+            android:ems="10"
+            android:hint="@string/company_linkman"
+            android:padding="30px"
+            android:singleLine="true"
+            android:textSize="42px"
+            android:textColorHint="#666666" />
+
+        <com.powerrich.office.oa.view.DeletableEditText
+            android:id="@+id/et_user_name"
+            style="@style/normal_item_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:background="@drawable/gray_border_white_bg"
+            android:drawablePadding="15px"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:padding="30px"
+            android:singleLine="true"
+            android:textSize="42px"
+            android:textColorHint="#666666" />
+
+        <com.powerrich.office.oa.view.DeletableEditText
+            android:id="@+id/et_password"
+            style="@style/normal_item_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:background="@drawable/gray_border_white_bg"
+            android:drawablePadding="15px"
+            android:ems="10"
+            android:hint="@string/password"
+            android:padding="30px"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="42px"
+            android:textColorHint="#666666" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal">
+
+            <com.powerrich.office.oa.view.DeletableEditText
+                android:id="@+id/et_mobile_phone_number"
+                style="@style/normal_item_name"
+                android:layout_width="0dp"
+                android:layout_marginRight="30px"
+                android:layout_weight="3"
+                android:background="@drawable/gray_border_white_bg"
+                android:drawablePadding="15px"
+                android:hint="@string/mobile_phone_number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="30px"
+                android:singleLine="true"
+                android:textColorHint="#666666"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tv_timer"
+                style="@style/normal_item_name"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_corner_selector"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="@string/online_Booking_infoVerify_veeify"
+                android:textColor="@color/white"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <com.powerrich.office.oa.view.DeletableEditText
+            android:id="@+id/et_code"
+            style="@style/normal_item_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:background="@drawable/gray_border_white_bg"
+            android:drawablePadding="15px"
+            android:hint="@string/online_Booking_infoVerify_veeify_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="30px"
+            android:singleLine="true"
+            android:textSize="42px"
+            android:textColorHint="#666666" />
+
+        <CheckBox
+            android:id="@+id/cb_protocols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="30px"
+            android:button="@drawable/check_box_selecter"
+            android:paddingLeft="15px"
+            android:textColor="@color/common_gray"
+            android:text="@string/protocols"
+            android:textSize="42px" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/blue_corners_icon"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="50px" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            android:paddingLeft="15px"
+            android:paddingRight="15px">
+
+            <TextView
+                android:id="@+id/tv_person_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/user_register"
+                android:textColor="@color/common_gray"
+                android:textSize="42px"/>
+
+            <TextView
+                android:id="@+id/tv_goto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_login"
+                android:textColor="@color/common_gray"
+                android:textSize="42px"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

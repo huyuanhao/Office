@@ -1,0 +1,305 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.powerrich.office.oa.view.KeyboardLayout
+        android:id="@+id/kb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="750px"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/login_bg">
+
+                    <ImageView
+                        android:layout_width="250px"
+                        android:layout_height="250px"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="220px"
+                        android:layout_marginBottom="120px"
+                        android:src="@drawable/logo_bg_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="65px"
+                        android:layout_marginBottom="30px"
+                        android:text="智 慧 鹰 潭"
+                        android:textColor="@color/white"
+                        android:textSize="50px"
+                        android:textStyle="bold" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="个人用户"
+                            android:textColor="@color/login_user_name_select"
+                            android:textSize="53px" />
+
+                        <View
+                            android:id="@+id/v_user_name"
+                            android:layout_width="80px"
+                            android:layout_height="11px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:background="@color/colorPrimary"></View>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_legal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_legal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="法人用户"
+                            android:textColor="@color/login_logal_nomal"
+                            android:textSize="53px" />
+
+                        <View
+                            android:id="@+id/v_legal"
+                            android:layout_width="80px"
+                            android:layout_height="11px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:background="@color/colorPrimary"
+                            android:visibility="gone"></View>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginRight="100px"
+                    android:layout_marginBottom="30px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <!-- <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/bm_ty"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginBottom="60dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/ts24"
+                        android:textColor="@color/blue_main"
+                        android:text="办事服务"/> -->
+
+                    <com.powerrich.office.oa.view.DeletableEditText
+                        android:id="@+id/et_name"
+                        style="@style/normal_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="80px"
+                        android:background="@drawable/layout_line_bg_px"
+                        android:drawableLeft="@drawable/reg_mobile_phone"
+                        android:drawableRight="@drawable/login_clear_s"
+                        android:drawablePadding="15px"
+                        android:hint="请输入手机号/用户名/身份证号"
+                        android:padding="30px"
+                        android:singleLine="true"
+                        android:textColorHint="#666666"
+                        android:textSize="42px" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80px">
+
+                        <com.powerrich.office.oa.view.DeletableEditText
+                            android:id="@+id/et_psw"
+                            style="@style/normal_item_name"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/layout_line_bg_px"
+                            android:drawableLeft="@drawable/reg_password"
+                            android:drawableRight="@drawable/login_clear_s"
+                            android:drawablePadding="15px"
+                            android:ems="10"
+                            android:hint="请输入密码"
+                            android:maxLength="16"
+                            android:padding="30px"
+                            android:password="true"
+                            android:singleLine="true"
+                            android:textColorHint="#666666"
+                            android:textSize="42px" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_eye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="100px"
+                            android:src="@drawable/login_eye_grey"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="50px"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<CheckBox-->
+                    <!--android:id="@+id/cb_save_pwd"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:button="@drawable/check_box_selecter"-->
+                    <!--android:paddingLeft="15px"-->
+                    <!--android:text="@string/save_password"-->
+                    <!--android:textColor="@color/common_gray"-->
+                    <!--android:textSize="42px" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_forget_pwd"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:gravity="right"-->
+                    <!--android:text="@string/forget_psw"-->
+                    <!--android:textColor="@color/common_gray"-->
+                    <!--android:textSize="42px"-->
+                    <!--android:typeface="serif" />-->
+
+                    <!--</RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60px">
+
+
+                        <TextView
+                            android:id="@+id/bt_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40px"
+                            android:text="用户注册"
+                            android:textColor="@color/login_tv_bt"
+                            android:textSize="42px"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_forget_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50px"
+                            android:gravity="right"
+                            android:text="忘记密码?"
+                            android:textColor="@color/login_tv_bt"
+                            android:textSize="42px"
+                            android:typeface="serif" />
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_login"
+                        style="@style/normal_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="140px"
+                        android:layout_marginTop="60px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/login_bg_shap"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="53px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50px"
+                    android:text="没有账号? 立即注册"
+                    android:textSize="45px" />
+
+                <TextView
+                    android:id="@+id/tv_eid_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80px"
+                    android:text="eid用户请使用eid登录"
+                    android:textSize="45px"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+        </ScrollView>
+    </com.powerrich.office.oa.view.KeyboardLayout>
+
+    <ImageView
+        android:id="@+id/system_back"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="100px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:src="@drawable/white_icon_back" />
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlt_eid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/widget_size_15"
+        android:visibility="gone"
+        android:background="@drawable/white_shape">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_15"
+            android:text="eid认证"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginRight="@dimen/widget_size_40"
+            android:layout_marginBottom="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_7"
+            android:text="eID是以密码技术为基础、以智能安全芯片为载体、由“公安部公民网络身份识别系统”签发给公民的网络身份标识，能够在不泄露身份信息的前提下在线远程识别身份
+"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/font_size_12" />
+
+        <ImageView
+            android:layout_width="@dimen/widget_size_10"
+            android:layout_height="@dimen/widget_size_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:background="@drawable/icon_mine_direction" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_user_compare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_size_15"
+        android:layout_marginRight="@dimen/widget_size_15"
+        android:layout_margin="@dimen/widget_size_15"
+        android:background="@drawable/white_shape">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_15"
+            android:text="人口库对比认证"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginRight="@dimen/widget_size_40"
+            android:layout_marginTop="@dimen/widget_size_7"
+            android:layout_marginBottom="@dimen/widget_size_20"
+            android:text="填写姓名、身份证号码进行对比认证"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/font_size_12" />
+
+        <ImageView
+            android:layout_width="@dimen/widget_size_10"
+            android:layout_height="@dimen/widget_size_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:background="@drawable/icon_mine_direction" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_40"
+        android:layout_marginLeft="@dimen/widget_size_20"
+        android:layout_marginRight="@dimen/widget_size_20"
+        android:layout_marginTop="@dimen/widget_size_40"
+        android:background="@drawable/blue_corners_dp"
+        android:gravity="center"
+        android:text="跳过，直接登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_14" />
+
+
+</LinearLayout>

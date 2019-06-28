@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="50px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/project_name"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/name"
+                    android:textSize="44px" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:inputType="text"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/phone"
+                    android:textSize="44px" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/postal_code"
+                    android:textSize="44px" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_postal_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/collect_materials_time"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/tv_collect_materials_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:drawableRight="@drawable/icon_calendar"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/province_name"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/et_province_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/city_name"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/et_city_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="@string/receive_address"
+                    android:textSize="44px" />
+
+                <com.powerrich.office.oa.view.NoEmojiEditText
+                    android:id="@+id/et_receive_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_stroke_corners_bg"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:padding="30px"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_send_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+                android:layout_marginTop="30px"
+                android:paddingBottom="20px"
+                android:paddingTop="20px"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="50px"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="match_parent"
+                android:layout_height="127px"
+                android:layout_marginBottom="150px"
+                android:layout_marginLeft="35px"
+                android:layout_marginRight="35px"
+                android:layout_marginTop="150px"
+                android:background="@drawable/blue_corners_icon"
+                android:text="@string/speediness_order"
+                android:textColor="@color/white"
+                android:textSize="50px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

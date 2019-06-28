@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ll_banner"
+        android:layout_width="match_parent"
+        android:layout_height="606px"
+        android:scaleType="fitXY"
+        android:src="@drawable/scenery_banner" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="1168px"
+        android:layout_height="135px"
+        android:layout_marginLeft="37px"
+        android:layout_marginTop="-33px"
+        android:background="@drawable/white_shape"
+        android:gravity="center_vertical"
+        android:paddingLeft="44px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/scan_view"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="查找服务"
+            android:textColorHint="#999999"
+            android:textSize="40px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1168px"
+        android:layout_height="460px"
+        android:layout_marginLeft="37px"
+        android:layout_marginRight="37px"
+        android:layout_marginTop="37px"
+        android:background="@drawable/white_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46px"
+            android:layout_marginTop="52px"
+            android:text="为你推荐"
+            android:textColor="#b2b2b2"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57px"
+            android:layout_marginTop="20px"
+            android:text="鹰潭"
+            android:textColor="#4c4c4c"
+            android:textSize="64px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30px">
+
+            <LinearLayout
+                android:id="@+id/ll_view_spot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/icon_trade_blue_on" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:text="景点"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/icon_trade_blue_tw" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:text="美食"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hotel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/icon_trade_blue_tr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:text="酒店"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_travel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:src="@drawable/icon_trade_blue_fo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:text="出行"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="273px"
+        android:layout_marginBottom="25px"
+        android:layout_marginLeft="37px"
+        android:layout_marginRight="37px"
+        android:layout_marginTop="25px"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_lhs"
+                android:layout_width="482px"
+                android:layout_height="273px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic_trade_yt_on" />
+
+            <ImageView
+                android:id="@+id/iv_lxh"
+                android:layout_width="482px"
+                android:layout_height="273px"
+                android:layout_marginLeft="20px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic_trade_yt_tw" />
+
+            <ImageView
+                android:id="@+id/iv_sqgz"
+                android:layout_width="482px"
+                android:layout_height="273px"
+                android:layout_marginLeft="20px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic_trade_yt_thr" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</merge>

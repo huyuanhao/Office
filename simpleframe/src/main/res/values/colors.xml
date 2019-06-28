@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48BAF3</color>
+    <color name="colorPrimaryDark">#40A7DA</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#1b1a1b</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#ecc91d</color>
+    <color name="line_color">#cdcdcd</color>
+    <color name="cacheColorHint">#00000000</color>
+    <color name="app_style_color">#0D1E2F</color>
+    <color name="nav_bar_bg">#0e1422</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="order_normal_color">#f1eeee</color>
+    <color name="bg_editview_color">#f1efef</color>
+    <color name="transparent">#00000000</color>
+
+
+    //app title bar 背景颜色
+    <color name="appbar_color">#9fdbff</color>
+    <color name="tablebar_color">#b0dde2</color>
+    <color name="background">#f2f2f2</color>
+    <color name="app_button_color">#58ccfe</color>
+    <color name="app_button_color_press">#4ba3c9</color>
+    <color name="main_select_color">#e0f17c07</color>
+    <color name="main_select_color_press">#e0703b05</color>
+
+    <color name="loan_text_dark">#333333</color>
+    <color name="loan_text_cllr_gray">#B0B0B0</color>
+
+</resources>

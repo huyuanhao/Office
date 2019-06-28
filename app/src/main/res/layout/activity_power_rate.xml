@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="38px"
+        android:paddingRight="38px">
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/icon_servicefunc_org" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="电费"
+            android:textColor="@color/black"
+            android:textSize="50px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:padding="30px"
+        android:text="@string/user_number"
+        android:textColor="@color/black"
+        android:textSize="48px" />
+
+    <com.powerrich.office.oa.view.NoEmojiEditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/white"
+        android:hint="@string/please_enter_the_user_number"
+        android:paddingLeft="30px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:inputType="numberSigned"
+        android:maxLength="9"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px"
+        android:paddingTop="10px"
+        android:text="用户编号是9位数字，请查看账单/短信"
+        android:textColor="@color/gray"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_query"
+        android:layout_width="1171px"
+        android:layout_height="127px"
+        android:layout_marginTop="250px"
+        android:text="@string/query_bill"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="50px"
+        android:background="@drawable/rect_titlebarcolor_10" />
+</LinearLayout>

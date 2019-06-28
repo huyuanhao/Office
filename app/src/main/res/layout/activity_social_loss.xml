@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:text="姓名"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:text="酷啦啦"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:text="身份证号"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_card_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80px"
+            android:text="4648135165"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_group"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:text="民族"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80px"
+            android:text="汉族"
+            android:drawableRight="@drawable/icon_mine_direction"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px"
+            android:drawablePadding="30px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_type"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/layout_line_bg">
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:text="挂失类型"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80px"
+            android:text="临时挂失"
+            android:drawableRight="@drawable/icon_mine_direction"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="46px"
+            android:drawablePadding="30px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="200px"
+        android:background="@drawable/blue_corners_dp"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/white_corners_dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/title_bar_color"
+        android:textSize="48px" />
+
+</LinearLayout>

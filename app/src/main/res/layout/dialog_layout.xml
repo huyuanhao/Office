@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="73px"
+            android:gravity="center"
+            android:text="请实名认证后再操作"
+            android:textColor="@color/black"
+            android:textSize="60px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="77px"
+            android:background="@drawable/icon_frame_head" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28px"
+            android:gravity="center"
+            android:text="未实名认证账户将无法使用办事\n服务，不能查询个人相关信息"
+            android:textColor="@color/hint"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tv_identification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="68px"
+            android:layout_marginTop="63px"
+            android:gravity="center"
+            android:background="@drawable/identification_bg"
+            android:paddingBottom="35px"
+            android:paddingLeft="73px"
+            android:paddingRight="73px"
+            android:paddingTop="39px"
+            android:text="立即认证"
+            android:textColor="@color/white"
+            android:textSize="50px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60px"
+        android:layout_marginTop="99px"
+        android:background="@drawable/icon_frame_cancel" />
+
+</LinearLayout>

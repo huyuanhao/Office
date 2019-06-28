@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="46px"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_color_0e0e0e"
+        android:text="姓名"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="46px"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_999999"
+        android:text="信息"/>
+</RelativeLayout>

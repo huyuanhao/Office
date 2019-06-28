@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title_bar" />
+
+    <include
+        android:id="@+id/ll_head"
+        layout="@layout/work_progress_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"
+        android:layout_below="@+id/ll_head"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12px"
+                    android:layout_height="61px"
+                    android:background="@color/blue_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:text="申报材料"
+                    android:textColor="@color/color_333333"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66px"
+                android:layout_marginTop="49px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_xh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(提示：如果您上传的附件名称含有空格，文件上传后系统会去掉文件名的空格，目前只能上传pdf、bmp、gif、jpg、jpeg、png格式的附件)"
+                    android:textColor="@color/hint"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <com.powerrich.office.oa.view.CustomExpandableListView
+                android:id="@+id/expand_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:divider="@null"
+                android:groupIndicator="@null" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="35px"
+                android:layout_marginRight="35px"
+                android:layout_marginBottom="35px"
+                android:background="@color/gray_system_bg" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33px"
+        android:layout_marginLeft="31px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/blue_corners_icon"
+        android:text="@string/online_booking_next"
+        android:textColor="@color/white"
+        android:textSize="50px" />
+
+</RelativeLayout>

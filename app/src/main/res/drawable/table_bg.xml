@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="0"
+        android:endColor="#FFFFFF"
+        android:startColor="#FFFFFF" />
+    <stroke
+        android:width="0.2dp"
+        android:color="#DEDCD2" />
+    <solid android:color="@color/table_item_color" />
+    <!--<corners
+        android:radius="2dp"/>-->
+
+    <!-- 圆角的幅度 -->
+    <corners
+        android:bottomLeftRadius="0dip"
+        android:bottomRightRadius="0dip"
+        android:topLeftRadius="0dip"
+        android:topRightRadius="0dip" />
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" />
+</shape>

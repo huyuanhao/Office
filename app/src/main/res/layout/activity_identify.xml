@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_80"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:layout_marginLeft="@dimen/widget_size_30"
+            android:layout_marginRight="@dimen/widget_size_30"
+            android:background="@drawable/realname_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lt_page1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/widget_size_70">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_120"
+                    android:layout_marginTop="@dimen/widget_size_15"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_card1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/widget_size_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/realname_idca_oppo" />
+
+                    <ImageView
+                        android:id="@+id/iv_card2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/widget_size_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/realname_idca_up" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:drawableLeft="@drawable/icon_xh"
+                        style="@style/user_info_item_left"
+                        android:text="姓名" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_name"
+                        style="@style/user_info_item_right_fft"
+                        android:background="@color/transparent"
+                        android:inputType="text"
+                        android:hint="请输入名称" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/default_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:drawableLeft="@drawable/icon_xh"
+                            style="@style/user_info_item_left"
+                            android:text="性别" />
+
+                        <RadioButton
+                            android:id="@+id/rb_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/widget_size_60"
+                            android:text="男"
+                            android:textSize="@dimen/font_size_13"
+                            android:textColor="@color/hint"
+                            android:drawablePadding="@dimen/widget_size_5"
+                            android:drawableLeft="@drawable/cb_appbg1"
+                            android:button="@null" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/widget_size_20"
+                            android:text="女"
+                            android:textSize="@dimen/font_size_13"
+                            android:textColor="@color/hint"
+                            android:drawablePadding="@dimen/widget_size_5"
+                            android:drawableLeft="@drawable/cb_appbg1"
+                            android:button="@null"/>
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_man"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="@dimen/widget_size_60"-->
+                            <!--android:button="@drawable/rb_selector" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="男"-->
+                            <!--android:textColor="@color/common_gray"-->
+                            <!--android:textSize="@dimen/font_size_14" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_women"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="@dimen/widget_size_20"-->
+                            <!--android:button="@drawable/rb_selector" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="女"-->
+                            <!--android:textColor="@color/common_gray"-->
+                            <!--android:textSize="@dimen/font_size_14" />-->
+                    </RadioGroup>
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="民族" />
+
+
+                    <TextView
+                        android:id="@+id/tv_group"
+                        style="@style/user_info_item_right_fft"
+                        android:drawablePadding="@dimen/widget_size_70"
+                        android:drawableRight="@drawable/icon_expand"
+                        android:hint="请选择名族" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/default_line" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/widget_size_10">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="证件类型" />
+
+                    <TextView
+                        android:id="@+id/tv_card_type"
+                        style="@style/user_info_item_right_fft"
+                        android:drawablePadding="@dimen/widget_size_70"
+                        android:drawableRight="@drawable/icon_expand"
+                        android:hint="请选择类型" />
+
+                </RelativeLayout>
+
+                <!--<include layout="@layout/default_line" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="证件号码" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_idcard"
+                        style="@style/user_info_item_right_fft"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray"
+                        android:inputType="text"
+                        android:hint="请输入身份证号码"
+                        />
+
+                </RelativeLayout>
+
+                <include layout="@layout/default_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="区域地址" />
+
+                    <TextView
+                        android:id="@+id/tv_select_city"
+                        style="@style/user_info_item_right_fft"
+                        android:drawablePadding="@dimen/widget_size_70"
+                        android:drawableRight="@drawable/icon_expand"
+                        android:hint="请选择地址" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/default_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="详细地址" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_adrress"
+                        style="@style/user_info_item_right_fft"
+                        android:background="@color/transparent"
+                        android:inputType="text"
+                        android:hint="请输入详细地址" />
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/default_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/widget_size_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/user_info_item_left"
+                        android:drawableLeft="@drawable/icon_xh"
+                        android:text="邮箱" />
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_email"
+                        style="@style/user_info_item_right_fft"
+                        android:background="@color/transparent"
+                        android:hint="请输入电子邮箱   " />
+
+                </RelativeLayout>
+
+                <include layout="@layout/default_line" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_40"
+                    android:layout_marginLeft="@dimen/widget_size_20"
+                    android:layout_marginTop="@dimen/widget_size_10"
+                    android:background="@color/transparent"
+                    android:text="请确认身份证信息，如果有误请手动修改"
+                    android:textSize="@dimen/font_size_14" />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_40"
+            android:layout_marginLeft="@dimen/widget_size_20"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginBottom="@dimen/widget_size_20"
+            android:background="@drawable/blue_corners_dp"
+            android:gravity="center"
+            android:text="下一步"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lt_page2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/widget_size_20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widget_size_15"
+            android:gravity="center_horizontal"
+            android:text="请将脸放入提示框内，并按照提示做动作"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_dynamic"
+            android:layout_width="@dimen/widget_size_170"
+            android:layout_height="@dimen/widget_size_270"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/widget_size_20"
+            android:background="@drawable/realname_phoneface" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="@dimen/widget_size_150"
+            android:layout_height="@dimen/widget_size_40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/widget_size_20"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_40"
+            android:background="@drawable/blue_corners_dp"
+            android:gravity="center"
+            android:text="准备好了，开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lt_page3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/widget_size_20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/widget_size_20"
+            android:background="@drawable/realname_suce" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/widget_size_20"
+            android:text="审核中....请等待"
+            android:textSize="@dimen/font_size_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="@dimen/widget_size_120"
+            android:layout_height="@dimen/widget_size_40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/widget_size_20"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:layout_marginTop="@dimen/widget_size_40"
+            android:background="@drawable/blue_corners_dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+</LinearLayout>

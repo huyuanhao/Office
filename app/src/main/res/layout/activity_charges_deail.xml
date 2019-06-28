@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_title_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35px"
+        android:paddingRight="35px"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/normal_item_text"
+                android:gravity="center"
+                android:textSize="45px"
+                android:text="@string/department" />
+
+            <TextView
+                android:id="@+id/tv_department"
+                style="@style/normal_item_name"
+                android:textSize="45px"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/normal_item_text"
+                android:gravity="center"
+                android:textSize="45px"
+                android:text="@string/project_approval" />
+
+            <TextView
+                android:id="@+id/tv_project_approval"
+                style="@style/normal_item_name"
+                android:textSize="45px"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/normal_item_text"
+                android:gravity="center"
+                android:textSize="45px"
+                android:text="@string/charge_project" />
+
+            <TextView
+                android:id="@+id/tv_charge_project"
+                style="@style/normal_item_name"
+                android:textSize="45px"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/normal_item_text"
+                android:gravity="center"
+                android:textSize="45px"
+                android:text="@string/funds_management" />
+
+            <TextView
+                android:id="@+id/tv_funds_management"
+                style="@style/normal_item_name"
+                android:textSize="45px"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:layout_marginBottom="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/normal_item_text"
+                android:gravity="center"
+                android:textSize="45px"
+                android:text="@string/policy_gist" />
+
+            <TextView
+                android:id="@+id/tv_policy_gist"
+                style="@style/normal_item_name"
+                android:textSize="45px"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

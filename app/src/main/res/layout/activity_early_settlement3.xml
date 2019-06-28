@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fund.Activity.EarlySettlementActivity">
+    <include layout="@layout/common_title_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F8F8F8">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前贷款余额"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dqdkye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00元" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提前还款合计"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tqhkhj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00元" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提前归还利息"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tqghlx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00元" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前逾期合计"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dqyqhj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00元" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已申请支取主借款人公积金"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ysqzqzjkrgjj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00元" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待还款金额(元)"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dhje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="0.00" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:layout_centerVertical="true"
+                    style="@style/found_tv_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/found_tv_vlue"
+                    android:text="18888888888" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="8dp"
+                    android:text="验证码"
+                    style="@style/found_tv_name" />
+
+
+
+                    <com.powerrich.office.oa.view.NoEmojiEditText
+                        android:id="@+id/et_verify_code"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入验证码"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        style="@style/found_tv_vlue"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#F8F8F8"/>
+                    <TextView
+                        android:id="@+id/tv_verify_code"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="发送短信验证码"
+                        style="@style/found_tv_name" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="我要提前结清"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/eary_selector"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

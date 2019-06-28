@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:background="#E9F0F5"
+        android:gravity="center"
+        android:text="鹰潭市住房公积金管理中心"
+        android:textColor="#7AA2BF"
+        android:textSize="46px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="42px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jj_extract1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="180px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离职提取"
+                android:textColor="@color/white"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劳动部门相关证明..."
+                android:textColor="#DCF9FF"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="42px"
+            android:background="@drawable/jj_extract2"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="180px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离休、退休提取"
+                android:textColor="@color/white"
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劳动部门相关证明..."
+                android:textColor="#DCF9FF"
+                android:textSize="35px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

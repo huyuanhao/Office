@@ -1,0 +1,464 @@
+package com.powerrich.office.oa.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+
+import com.alibaba.fastjson.JSONException;
+import com.alibaba.fastjson.JSONObject;
+import com.powerrich.office.oa.R;
+import com.powerrich.office.oa.SIMeID.ResultParams;
+import com.powerrich.office.oa.SIMeID.SIMeIDApplication;
+import com.powerrich.office.oa.SIMeID.URLContextSMS;
+import com.powerrich.office.oa.api.OAInterface;
+import com.powerrich.office.oa.base.BaseActivity;
+import com.powerrich.office.oa.base.BaseRequestCallBack;
+import com.powerrich.office.oa.base.IRequestCallBack;
+import com.powerrich.office.oa.bean.UserInfo;
+import com.powerrich.office.oa.common.ResultItem;
+import com.powerrich.office.oa.network.http.HttpResponse;
+import com.powerrich.office.oa.tools.BeanUtils;
+import com.powerrich.office.oa.tools.Constants;
+import com.powerrich.office.oa.tools.DialogUtils;
+import com.powerrich.office.oa.tools.LoginUtils;
+import com.powerrich.office.oa.tools.StringUtils;
+import com.powerrich.office.oa.tools.ToastUtils;
+
+import java.net.URLEncoder;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+/**
+ * @author MingPeng
+ *         个人实名认证
+ */
+public class RealNameWithSMSActivity extends BaseActivity implements View.OnClickListener {
+
+    private static final String TAG = RealNameWithSMSActivity.class.getName();
+
+    //UI线程Handler
+    private Handler mUIHandler = null;
+
+    //Background线程Handler
+    private Handler mBKHandler = null;
+    //Background线程
+    private HandlerThread handlerThread = null;
+
+
+    private static final int MSG_SIGN_BEGIN = 1;
+    private static final int MSG_SIGN_END = 2;
+
+    private EditText mobileNo;
+    private EditText nation;
+
+    private String strMobileNo = "";
+    private String strNation = "";
+
+    private String strUserName = "";
+    private String strUserId = "";
+    private EditText userName;
+    private EditText userId;
+
+    private String envTag;
+    private String reqURL;
+    private SIMeIDApplication app;
+    private OkHttpClient client;
+    private String registUserName;
+    private String registUserduty;
+    /**
+     * 是否从注册界面跳转过来
+     */
+    private boolean isFromRegister;
+
+    public class SECTION {
+
+        static final String ENV_TAG = "env_tag";
+
+        static final String BIZ_ID = "biz_id";
+        static final String RESULT = "result";
+        static final String RESULT_DETAILS = "result_details";
+        static final String REQ_TIME = "req_time";
+        static final String RESP_TIME = "resp_time";
+        static final String EID_SIGN = "eid_sign";
+        static final String USER_INFO = "user_info";
+        static final String APP_EID_CODE = "appeidcode";
+
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        app = ((SIMeIDApplication) getApplication());
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
+        initTitleBar(R.string.auth, this, null);
+
+        initOkHttp();
+
+        initializeHandler();
+
+        initView();
+
+        getUserInfo();
+
+    }
+
+    @Override
+    protected int provideContentViewId() {
+        return R.layout.realname_with_sms;
+    }
+
+    /**
+     * 获取用户相关信息
+     */
+    private void getUserInfo() {
+        Intent intent = getIntent();
+        isFromRegister = intent.getBooleanExtra("isFromRegister", false);
+        UserInfo.DATABean userInfo = (UserInfo.DATABean) intent.getSerializableExtra("userInfo");
+        LoginUtils loginUtils = LoginUtils.getInstance();
+        boolean loginSuccess = loginUtils.isLoginSuccess();
+
+        registUserName = loginSuccess ? loginUtils.getUserInfo().getDATA().getUSERNAME() : userInfo.getUSERNAME();
+        registUserduty = loginSuccess ? loginUtils.getUserInfo().getDATA().getUSERDUTY() : userInfo.getUSERDUTY();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.system_back:
+                finish();
+                break;
+            case R.id.submit:
+                startAuth();
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void startAuth() {
+        strMobileNo = mobileNo.getEditableText().toString().trim();
+        if (BeanUtils.isEmptyStr(strMobileNo) || !BeanUtils.isMobileNO(strMobileNo)) {
+            ToastUtils.showMessage(getApplicationContext(), "手机号码输入无效！");
+            mobileNo.requestFocus();
+            return;
+        }
+
+        strNation = nation.getEditableText().toString().trim();
+        if (strNation.isEmpty()) {
+            ToastUtils.showMessage(getApplicationContext(), "请输入民族！");
+            nation.requestFocus();
+            return;
+        }
+
+        strUserName = userName.getEditableText().toString().trim();
+        if (strUserName.isEmpty()) {
+            ToastUtils.showMessage(getApplicationContext(), "真实姓名输入无效！");
+            userName.requestFocus();
+            return;
+        }
+
+        strUserId = userId.getEditableText().toString().trim();
+        if (!BeanUtils.validCard(strUserId)) {
+            ToastUtils.showMessage(getApplicationContext(), "身份证号输入无效！");
+            userId.requestFocus();
+            return;
+
+        }
+
+        //启动线程
+        startDoRealNameThread();
+    }
+
+    private void initOkHttp() {
+
+        if (null == client) {
+
+            client = new OkHttpClient.Builder()
+                    .connectTimeout(120, TimeUnit.SECONDS)
+                    .readTimeout(120, TimeUnit.SECONDS)
+                    .build();
+
+        }
+
+    }
+
+    private void initView() {
+        envTag = "联调测试";
+        reqURL = Constants.SIM_EID_AUTH_URL;
+
+        mobileNo = (EditText) findViewById(R.id.mobile_no_input);
+        nation = (EditText) findViewById(R.id.nation);
+        userName = (EditText) findViewById(R.id.userName);
+        userId = (EditText) findViewById(R.id.userId);
+
+        final Button submit = (Button) findViewById(R.id.submit);
+        submit.setOnClickListener(this);
+
+    }
+
+    private void initializeHandler() {
+
+        Looper looper;
+        if (null != (looper = Looper.myLooper())) {
+
+            mUIHandler = new EventHandler(this, looper);
+
+        } else if (null != (looper = Looper.getMainLooper())) {
+
+            mUIHandler = new EventHandler(this, looper);
+
+        } else {
+
+            mUIHandler = null;
+
+        }
+    }
+
+    private static class EventHandler extends Handler {
+
+        private RealNameWithSMSActivity curAT = null;
+
+        public EventHandler(RealNameWithSMSActivity curAT, Looper looper) {
+            super(looper);
+
+            this.curAT = curAT;
+
+        }
+
+        public void handleMessage(Message msg) {
+
+            if (null != curAT) {
+
+                curAT.processMsg(msg);
+                return;
+
+            }
+
+            super.handleMessage(msg);
+
+        }
+
+    }
+
+
+    void startDoRealNameThread() {
+
+        //创建一个HandlerThread并启动它
+        handlerThread = new HandlerThread("DoRealNameThread");
+        handlerThread.start();
+
+        //使用HandlerThread的looper对象创建Handler，如果使用默认的构造方法，会阻塞UI线程。
+        mBKHandler = new Handler(handlerThread.getLooper(), new DoRealNameCallback());
+        mBKHandler.sendEmptyMessage(MSG_SIGN_BEGIN);
+
+    }
+
+
+    class DoRealNameCallback implements Handler.Callback {
+
+        @Override
+        public boolean handleMessage(Message msg) {
+
+            //在子线程中进行耗时操作
+            mUIHandler.sendEmptyMessage(MSG_SIGN_BEGIN);
+
+            //执行网络请求
+            String URL = reqURL + URLContextSMS.REAL_NAME;
+            ResultParams result = doSign(URL, strMobileNo, strNation, strUserName, strUserId);
+            Message msgToUI = mUIHandler.obtainMessage(MSG_SIGN_END, result);
+            mUIHandler.sendMessage(msgToUI);
+
+            return false;
+
+        }
+
+    }
+
+    private void processMsg(Message msg) {
+
+        switch (msg.what) {
+
+            case MSG_SIGN_BEGIN: {
+
+                String title = strMobileNo + " - 提示";
+                String message = "正在请求身份识别";
+                showProgressDlg(title, message);
+
+            }
+            break;
+
+            case MSG_SIGN_END: {
+
+                hideProgressDlg();
+                ResultParams resultParams = (ResultParams) msg.obj;
+                parseResp(resultParams.more);
+
+            }
+            break;
+
+            default:
+                break;
+        }
+    }
+
+    private void parseResp(String resp) {
+
+        try {
+
+            JSONObject root = JSONObject.parseObject(resp);
+            String result = root.getString(SECTION.RESULT);
+            String resultDetails = root.getString(SECTION.RESULT_DETAILS);
+
+            if (result.length() == 4) {
+                // 认证失败
+                ToastUtils.showMessage(this, resultDetails);
+            } else {
+
+                if (result.equals("00")) {
+                    String userInfoForEID = root.getString(SECTION.USER_INFO);
+                    JSONObject object = JSONObject.parseObject(userInfoForEID);
+                    String appEIDCode = object.getString(SECTION.APP_EID_CODE);
+                    // 认证成功，调用后台实名认证接口保存实名信息
+                    invoke.invokeWidthDialog(OAInterface.saveUserInfoPersonal(registUserName, registUserduty, strMobileNo, strUserName, strUserId, StringUtils.getGenderByIdCard(strUserId), strNation, appEIDCode), callBack);
+                } else {
+                    // 认证失败
+                    ToastUtils.showMessage(this, resultDetails);
+                }
+            }
+            Log.e(TAG, result);
+            Log.e(TAG, resultDetails);
+        } catch (JSONException e) {
+            ToastUtils.showMessage(this, e.getMessage());
+        }
+
+    }
+
+    IRequestCallBack callBack = new BaseRequestCallBack() {
+
+        @Override
+        public void process(HttpResponse response, int what) {
+            ResultItem item = response.getResultItem(ResultItem.class);
+            String message = item.getString("message");
+            String code = item.getString("code");
+            DialogUtils.showToast(RealNameWithSMSActivity.this, message);
+
+            if (Constants.SUCCESS_CODE.equals(code)) {
+                if (isFromRegister) {
+                    startActivity(new Intent(context, LoginActivity.class));
+                }else {
+                    LoginUtils.getInstance().getUserInfo().getDATA().setSFSMRZ("1");
+                    LoginUtils.getInstance().getUserInfo().getDATA().setREALNAME(strUserName);
+                    LoginUtils.getInstance().getUserInfo().getDATA().setIDCARD(strUserId);
+                }
+                RealNameWithSMSActivity.this.finish();
+            }
+        }
+    };
+
+    public static final MediaType JSON
+            = MediaType.parse("application/json; charset=utf-8");
+
+
+    /**
+     * 请求签名
+     *
+     * @param url
+     * @param mobileNo
+     * @param dataToSign
+     * @param userName
+     * @param userId
+     * @return
+     */
+    private ResultParams doSign(
+            String url,
+            String mobileNo,
+            String dataToSign,
+            String userName,
+            String userId) {
+
+
+        ResultParams resultParams = new ResultParams(envTag);
+
+        JSONObject obj = new JSONObject();
+
+        try {
+
+            obj.put("mobile_no", mobileNo);
+            obj.put("data_to_sign", dataToSign);
+
+            if (null != userName && userName.length() > 0) {
+
+                obj.put("name", userName);
+
+            }
+
+            if (null != userId && userId.length() > 0) {
+
+                obj.put("idnum", userId);
+
+            }
+            //涉及到中文字段提交的，需要再进行一次UTF-8编码，此处userName为中文
+            RequestBody body = RequestBody.create(JSON, URLEncoder.encode(obj.toString(),"UTF-8"));
+
+            Request request = new Request.Builder()
+                    .url(url)
+                    .post(body)
+                    .build();
+
+            Response response = client.newCall(request).execute();
+            int statusCode = response.code();
+            Log.d(TAG, "HTTP Code : " + statusCode);
+            if (response.isSuccessful()) {
+
+                resultParams.build(true, response.body().string());
+
+            } else {
+
+                String result = "服务器返回错误：statusCode = " + statusCode;
+                resultParams.build(false, result);
+                Log.e(TAG, response.toString());
+
+            }
+
+
+        } catch (Exception e) {
+
+            Log.e(TAG, e.toString());
+
+            String result = "请求异常，url = \"" + url + "\"[" + e.toString() + "]";
+            resultParams.build(false, result);
+
+        }
+
+        return resultParams;
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (null != handlerThread) {
+
+            handlerThread.quit();
+
+        }
+        app.removeActivity(this);
+    }
+}

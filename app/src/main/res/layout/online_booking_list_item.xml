@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/gray_system_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68px"
+            android:layout_marginTop="63px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="000000000"
+            android:textColor="@color/black"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65px">
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="7"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_to_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_todo"
+            android:background="@drawable/white_corners2_icon"
+            android:paddingBottom="16px"
+            android:paddingLeft="32px"
+            android:paddingRight="34px"
+            android:paddingTop="16px"
+            android:text="办事指南"
+            android:textColor="#0293ea"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="51px"
+            android:background="@drawable/blue2_corners2_icon"
+            android:paddingBottom="16px"
+            android:paddingLeft="32px"
+            android:paddingRight="34px"
+            android:paddingTop="16px"
+            android:text="立即预约"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="姓名："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="性别："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="证件号码："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="个人社保编号："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/id_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="参保单位："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="单位管理码："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/company_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="待遇发放金额："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/money_get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158px"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="56px"
+                        android:text="待遇领取时间："
+                        android:textColor="#999999"
+                        android:textSize="46px" />
+
+                    <TextView
+                        android:id="@+id/time_get"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36px"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="46px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="1171px"
+                    android:layout_height="128px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/blue_corners_64px"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/white"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginTop="50px"
+                    android:text="鹰潭市人力资源和社会保障局"
+                    android:textColor="#999999"
+                    android:textSize="30px" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/empty_view_social" />
+    </FrameLayout>
+</LinearLayout>

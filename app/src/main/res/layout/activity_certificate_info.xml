@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/user_info_item_right_userinfo"
+            android:text="陈志强 (已认证)" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="证件号码" />
+
+        <TextView
+            android:id="@+id/tv_certificate_num"
+            style="@style/user_info_item_right_userinfo"
+            android:text="65468616166516816" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/widget_size_45"-->
+    <!--android:background="@color/white">-->
+    <!--<TextView-->
+    <!--style="@style/user_info_item_left"-->
+    <!--android:text="证件真实名称" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_certificate_realname"-->
+    <!--style="@style/user_info_item_right_userinfo"-->
+    <!--android:maxLines="1"-->
+    <!--android:ellipsize="end"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+    <!--<include layout="@layout/default_line_5" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/widget_size_13"
+        android:paddingTop="@dimen/widget_size_13">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="证件照名称" />
+
+        <TextView
+            android:id="@+id/tv_certificate_name"
+            style="@style/user_info_item_right_userinfo"
+            android:ellipsize="end"
+            android:maxLines="4" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="有效期至" />
+
+        <TextView
+            android:id="@+id/tv_card_time"
+            style="@style/user_info_item_right_userinfo"
+            android:text="2022年3月22日" />
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_45"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/user_info_item_left"
+            android:text="发证机关" />
+
+        <TextView
+            android:id="@+id/tv_office"
+            style="@style/user_info_item_right_userinfo"
+            android:text="鹰潭公安局" />
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/widget_size_8"-->
+        <!--android:layout_height="@dimen/widget_size_12"-->
+        <!--android:background="@drawable/icon_mine_direction"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/widget_size_20"/>-->
+    </RelativeLayout>
+
+    <include layout="@layout/default_line_5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_size_120"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/widget_size_10"
+            android:layout_marginTop="@dimen/widget_size_10"
+            android:text="证件照片"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_15" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/widget_size_10"
+            android:layout_marginRight="@dimen/widget_size_20"
+            android:orientation="horizontal"
+            tools:ignore="WebViewLayout">
+
+            <!--<com.lidong.pdf.PDFView-->
+            <!--android:id="@+id/pdfv_car1"-->
+            <!--android:layout_width="@dimen/widget_size_100"-->
+            <!--android:layout_height="@dimen/widget_size_80"/>-->
+            <FrameLayout
+                android:layout_width="@dimen/widget_size_100"
+                android:layout_height="@dimen/widget_size_80">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_file"
+
+                android:layout_width="@dimen/widget_size_100"
+                android:layout_height="@dimen/widget_size_80"
+                android:layout_marginTop="@dimen/widget_size_10" />
+
+            <TextView
+                android:id="@+id/tv_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_size_10"
+                android:gravity="center" />
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_car2"-->
+            <!--android:layout_width="@dimen/widget_size_90"-->
+            <!--android:layout_height="@dimen/widget_size_60"-->
+            <!--android:layout_marginLeft="@dimen/widget_size_5"-->
+            <!--android:background="@drawable/white_shape_gray"/>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
